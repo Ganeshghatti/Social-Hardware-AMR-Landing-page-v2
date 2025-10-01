@@ -1,8 +1,13 @@
+import Gallery from "@/components/Gallery";
+import HeroSection from "@/components/HeroSection";
 
 export default function Home() {
   return (
      <div>
-      <h1>Social Hardware</h1>
-     </div>
+      <HeroSection/>
+      <div>
+        <Gallery/>
+      </div>
+      </div>
   );
 }
