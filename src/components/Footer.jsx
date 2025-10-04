@@ -1,3 +1,4 @@
+import { ArrowRight, Facebook } from "lucide-react";
 import React from "react";
 import {
   FaFacebookF,
@@ -45,16 +46,16 @@ export default function Footer() {
             </h3>
             <div className="flex gap-5 text-2xl">
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaFacebookF />
+                <FaFacebookF/>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaInstagram />
+                <FaInstagram/>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaLinkedinIn />
+                <FaLinkedinIn/>
               </a>
               <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaYoutube />
+                <FaYoutube/>
               </a>
             </div>
           </div>
@@ -76,9 +77,9 @@ export default function Footer() {
             />
             <button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 w-fit font-medium flex items-center gap-2 rounded-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 w-fit font-medium flex items-center gap-2"
             >
-              Submit Now →
+              Submit Now <ArrowRight/>
             </button>
           </form>
         </div>

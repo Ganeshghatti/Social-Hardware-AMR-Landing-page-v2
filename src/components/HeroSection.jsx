@@ -2,6 +2,7 @@ import Image from "next/image";
 import a1 from "../../public/heroimage2.png";
 import a2 from "../../public/heroimage1.png";
 import arrow from "../../public/arrow.png";
+import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
@@ -14,8 +15,8 @@ export default function HeroSection() {
             innovation, our technology meets global standards and empowers
             industries to scale beyond limits.
           </p>
-          <button className="bg-[#FF6600] text-white px-4 sm:px-5 py-2 sm:py-3 mt-6 shadow-md hover:bg-[#e05500] transition-colors duration-300 text-sm sm:text-base">
-            Discover Products
+          <button className="bg-[#FF6600] flex gap-2 text-white px-4 sm:px-5 py-2 sm:py-3 mt-6 shadow-md hover:bg-[#e05500] transition-colors duration-300 text-sm sm:text-base">
+            Discover Products <ArrowRight/>
           </button>
         </div>
 
@@ -84,8 +85,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          {/* Right Block */}
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px]">
+          <div className="relative w-full h-[350px] sm:h-[400px] md:h-[500px] lg:h-[550px]">
             <Image
               src={a1}
               alt="Engineers working"
