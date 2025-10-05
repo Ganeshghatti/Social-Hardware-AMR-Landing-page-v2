@@ -25,7 +25,6 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Hamburger Button */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}

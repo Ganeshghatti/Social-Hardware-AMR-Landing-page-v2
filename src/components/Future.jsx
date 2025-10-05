@@ -4,7 +4,7 @@ import hand from "../../public/robot_hand.png"
 
 export default function HeroSection() {
   return (
-    <section className="flex min-h-screen relative w-full">
+    <section className=" min-h-screen relative w-full hidden md:flex">
       <div className="relative w-full overflow-hidden flex ">
         <div>
           <Image

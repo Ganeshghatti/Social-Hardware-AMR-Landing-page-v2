@@ -73,9 +73,9 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col sm:flex-row  sm:items-center sm:mt-5 md:mt-10">
-        <div className="flex w-2/3 justify-between mx-20">
-          <div className="flex items-center gap-3 ">
+      <div className="flex md:flex-col flex-row  mt-8 md:mt-10">
+        <div className="flex w-full md:w-2/3 justify-between md:mx-20 mx-2">
+          <div className="flex md:items-center gap-3 ">
             <p className="text-2xl font-semibold">4.9</p>
             <div className="flex flex-col">
               <span className="text-black">★★★★★</span>
@@ -84,8 +84,12 @@ export default function About() {
           </div>
 
           <div className="flex flex-col">
-            <p className="text-gray-800 font-medium">One Platform. Infinite</p>
-            <p className="font-medium">Industrial Applications.</p>
+            <p className="text-gray-800 text-sm md:text-md  font-medium">
+              One Platform. Infinite
+            </p>
+            <p className="text-sm md:text-md font-medium">
+              Industrial Applications.
+            </p>
           </div>
         </div>
       </div>
