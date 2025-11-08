@@ -71,13 +71,14 @@ export default function Products() {
 
   return (
     <section className="w-full bg-white">
-      <div className="py-16 px-6 sm:px-10 flex flex-col gap-3 text-center sm:text-left">
+      <div className="py-12 px-6 sm:px-10 flex flex-col gap-3 text-center sm:text-left">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-normal mb-2">
-          Our Products
+          Collaborative Robots{" "}
         </h1>
-        <p className="text-gray-500 text-sm sm:text-base max-w-md mx-auto sm:mx-0">
-          Contact us as soon as possible to reach your hands towards the most
-          advanced form of productivity.
+        <p className="text-[#6D6D6D] text-sm sm:text-base max-w-2xl ml-20 sm:mx-0">
+          Cost-effective, ready-made cobot solutions with payloads from 3kg to
+          20kg.Safe, fast to deploy, and flexible from small-part assembly to
+          palletizing.
         </p>
       </div>
 

@@ -10,13 +10,14 @@ export default function Home() {
     <div>
       <HeroSection />
       <div>
-        <About />
+        {/* <About /> */}
+
+        <div>
+          <Products />
+        </div>
         <Future />
       </div>
 
-      <div>
-        <Products />
-      </div>
       <div>
         <CustomerQuote />
       </div>
