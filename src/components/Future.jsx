@@ -14,15 +14,28 @@ export default function HeroSection() {
             className="object-cover scale-150 blur-xs"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/94 via-black/80 to-transparent" />
 
           <div className="absolute z-2  text-white top-2 left-16 max-w-full ">
             <p className="uppercase text-sm mb-4 mt-20">
               Advanced Robotics & Automation
             </p>
-            <h2 className="md:text-3xl text-2xl font-nromal  mb-6 max-w-xl">
-              Engineer Your <br /> Advantage
+            <h2 className="md:text-5xl text-2xl font-nromal  mb-6 max-w-2xl">
+              Engineer Your Advantage
             </h2>
+
+            <div className="mt-4">
+              <p className="max-w-sm">
+                Sign up for instant access to our Company Profile and curated news that helps you automate smarter.
+              </p>
+
+              <div className="mt-10 max-w-2xl">
+                <input type="text" placeholder="Enter your Email address" className="bg-black py-3 px-10 text-white"/> 
+                <button className="text-black bg-white py-3 px-10">Send</button>
+              </div>
+
+
+            </div>
           </div>
 
           {/* <div className="absolute z-2 top-20 right-1/3 items-start">
@@ -33,10 +46,8 @@ export default function HeroSection() {
             </p>
           </div> */}
         </div>
-        <div className="bg-black absolute right-0 w-1/4 h-full text-white flex flex-col px-12">
-          <button className="bg-white font-medium text-black px-5 py-2 rounded-sm flex items-center gap-2 w-fit">
-            Get a Custom Quote →
-          </button>
+        <div className="bg-black absolute right-0  w-1/3 h-full text-white flex flex-col px-12">
+         <p className="relative top-20 max-w-sm mx-auto text-right">Gain a competitive edge with indigenous robotic systems. We provide custom-built cobots, UGVs, and end-of-arm tooling .</p>
         </div>
       </div>
       <div className="absolute right-20 bottom-70 flex flex-col justify-center  leading-[0.8]">

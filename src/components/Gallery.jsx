@@ -6,8 +6,7 @@ import Image from "next/image";
 
 export default function Gallery() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-10 py-6 w-full bg-[#F5F5F5]">
-      {/* Image Box 1 */}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-5 px-10 py-6 w-full bg-[#F5F5F5]">
       <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-md">
         <Image
           src={image1}
@@ -27,7 +26,6 @@ export default function Gallery() {
         />
       </div>
 
-      {/* Image Box 3 */}
       <div className="relative aspect-square w-full overflow-hidden rounded-lg shadow-md">
         <Image
           src={image3}

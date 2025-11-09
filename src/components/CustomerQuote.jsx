@@ -6,10 +6,10 @@ export default function CustomerQuote() {
   return (
     <div className="w-full flex flex-col md:flex-row bg-[#F5F5F5] ">
       {/* LEFT SIDE */}
-      <div className="w-full md:w-2/3 flex flex-col justify-center px-6 py-10 md:px-16">
+      <div className="w-full  flex flex-col justify-center px-6 py-10 md:px-16">
         <p className="text-sm text-[#000000] mb-3">Indigenous Platform</p>
 
-        <h1 className="text-3xl sm:text-4xl md:text-5xl text-[#232323] font-normal leading-snug mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl text-[#232323] font-normal leading-snug mb-6">
           One Platform.<br/> Infinit Applications. <br /> Unstoppable
           Automation.
         </h1>
@@ -26,9 +26,8 @@ export default function CustomerQuote() {
         </button>
       </div>
 
-      {/* RIGHT SIDE */}
       <div className="w-full md:w-11/12 relative h-[500px] md:h-[700px] overflow-hidden">
-        <div className="absolute inset-0 left-1/3">
+        <div className="absolute inset-0 left-1/5">
           <Image
             src={robot}
             alt="Customer Quote Expo"
