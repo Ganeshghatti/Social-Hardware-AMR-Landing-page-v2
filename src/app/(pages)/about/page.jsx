@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function PhilosophySection() {
   return (
@@ -21,9 +22,11 @@ export default function PhilosophySection() {
             Whether you’re assembling, manufacturing, or performing quality
             control, our process feels natural, fast, and reliable.
           </p>
-          <button className="bg-orange-500 hover:bg-orange-600 flex items-center mx-auto md:mx-0 gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
-            Request Free Consultation <ArrowRight size={18} />
-          </button>
+          <Link href="/contact">
+            <button className="bg-orange-500 hover:bg-orange-600 flex items-center mx-auto md:mx-0 gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
+              Request Free Consultation <ArrowRight size={18} />
+            </button>
+          </Link>
         </div>
 
         <div className="flex  relative py-10 md:py-0">

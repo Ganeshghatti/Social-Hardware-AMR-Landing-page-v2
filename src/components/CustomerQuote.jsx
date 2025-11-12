@@ -1,6 +1,7 @@
 import Image from "next/image";
 import robot from "../../public/robot3.png";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function CustomerQuote() {
   return (
@@ -12,7 +13,8 @@ export default function CustomerQuote() {
 
         <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-6xl text-[#232323] font-normal leading-tight mb-6">
           One Platform.
-          <br /> Infinit Applications. <br /> Build your custom <br/>system with us.
+          <br /> Infinit Applications. <br /> Build your custom <br />
+          system with us.
         </h1>
 
         <p className="text-[#6D6D6D] text-sm md:text-base max-w-xl mb-8">
@@ -23,9 +25,11 @@ export default function CustomerQuote() {
           throughput, and sustained performance.
         </p>
 
-        <button className="bg-orange-500 hover:bg-orange-600 flex items-center mx-auto md:mx-0 gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
-          Request Custom Quote <ArrowRight size={18} />
-        </button>
+        <Link href="/contact">
+          <button className="bg-orange-500 hover:bg-orange-600 flex items-center mx-auto md:mx-0 gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
+            Request Custom Quote <ArrowRight size={18} />
+          </button>
+        </Link>
       </div>
 
       <div className="w-full md:w-11/12 relative h-[500px] md:h-[700px] overflow-hidden">
