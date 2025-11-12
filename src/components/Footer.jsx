@@ -45,12 +45,7 @@ export default function Footer() {
               Follow Us
             </h3>
             <div className="flex gap-5 text-2xl">
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaFacebookF/>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <FaInstagram/>
-              </a>
+             
               <a href="#" target="_blank" rel="noopener noreferrer">
                 <FaLinkedinIn/>
               </a>

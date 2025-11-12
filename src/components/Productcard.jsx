@@ -8,6 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import Link from "next/link";
 
 export default function Productcard({
   title,
@@ -54,12 +55,12 @@ export default function Productcard({
     { label: "Communication Bus", value: Communication_Bus },
     { label: "Brake", value: Brake },
     { label: "Actuators", value: Actuators },
-    { label: "Max Torque (Nm)", value: Max_Torque_Nm },
-    { label: "Rated Torque (Nm)", value: Rated_Torque_Nm },
-    { label: "Peak Torque (Nm)", value: Peak_Torque_Nm },
-    { label: "Motor Power (W)", value: Motor_Power_W },
-    { label: "Max Speed (RPM)", value: Max_Speed_RPM },
-    { label: "Strain Wave Gear Ratio", value: Strain_Wave_Gear_Ratio },
+    // { label: "Max Torque (Nm)", value: Max_Torque_Nm },
+    // { label: "Rated Torque (Nm)", value: Rated_Torque_Nm },
+    // { label: "Peak Torque (Nm)", value: Peak_Torque_Nm },
+    // { label: "Motor Power (W)", value: Motor_Power_W },
+    // { label: "Max Speed (RPM)", value: Max_Speed_RPM },
+    // { label: "Strain Wave Gear Ratio", value: Strain_Wave_Gear_Ratio },
   ];
 
   return (
@@ -82,15 +83,21 @@ export default function Productcard({
           </p>
         </div>
 
-        <div className="flex items-center mx-auto">
+        <div className="flex items-center mx-auto  flex-col">
           <Dialog>
             <DialogTrigger className="bg-orange-500 hover:bg-orange-600 flex items-center gap-2 text-white font-medium px-5 py-2 rounded-tl-xl rounded-br-xl w-fit text-sm sm:text-base transition-colors duration-200">
-              Get a Custom Quote <ArrowRight size={18} />
+              Get a Technical Overview <ArrowRight size={18} />
             </DialogTrigger>
+            <Link href="/contact">
+                <button  className="bg-orange-500  hover:bg-orange-600 flex items-center gap-2 text-white font-medium px-5 py-1 mt-1  w-fit text-sm sm:text-base transition-colors duration-200">
+              Get Customer Quote
+            </button>
+            </Link>
+        
 
-            <DialogContent className="max-w-4xl max-h-[80vh] overflow-y-auto p-8 bg-white rounded-2xl shadow-lg">
+            <DialogContent className="max-w-4xl max-h-[80vh] w-full overflow-y-auto p-8 bg-white rounded-2xl shadow-lg">
               <DialogHeader>
-                <DialogTitle className="text-2xl font-semibold text-gray-900 mb-6 text-center">
+                <DialogTitle className="text-3xl font-semibold text-gray-900 mb-6 text-center">
                   {title} Specifications
                 </DialogTitle>
               </DialogHeader>
@@ -126,6 +133,11 @@ export default function Productcard({
                     )}
                   </tbody>
                 </table>
+              </div>
+              <div className="flex justify-center mt-6">
+                <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                  Get more Specifications Details
+                </button>
               </div>
             </DialogContent>
           </Dialog>
