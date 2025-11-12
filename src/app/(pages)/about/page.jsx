@@ -88,6 +88,7 @@ export default function PhilosophySection() {
         <div className="mx-auto w-2/3 flex justify-between mb-10 ">
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
+              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
               src="/Gemini_Generated_Image_y9tu7sy9tu7sy9tu-removebg-preview.png-0 (SVG).png"
               alt="image1"
               width={70}
@@ -95,8 +96,9 @@ export default function PhilosophySection() {
             />
             <p className="bg-gray-200 px-3 py-1 rounded-xl">Inspection</p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-2">
+          <div className="flex flex-col items-center justify-center gap-2 ">
             <Image
+              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
               src="/Gemini_Generated_Image_thmtmfthmtmfthmt-removebg-preview 2.png-1 (SVG).png"
               alt="image1"
               width={70}
@@ -108,6 +110,7 @@ export default function PhilosophySection() {
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
+              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
               src="/Frame 1000003840.png"
               alt="image1"
               width={70}
@@ -116,11 +119,18 @@ export default function PhilosophySection() {
             <p className="bg-gray-200 px-3 py-1 rounded-xl">Assembly</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
-            <Image src="/container.png" alt="image1" width={70} height={50} />
+            <Image
+              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
+              src="/container.png"
+              alt="image1"
+              width={70}
+              height={50}
+            />
             <p className="bg-gray-200 px-3 py-1 rounded-xl">Machine Tending</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
+              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
               src="/Frame 1000003841.png"
               alt="image1"
               width={70}

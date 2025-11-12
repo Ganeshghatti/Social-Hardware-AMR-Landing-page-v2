@@ -32,7 +32,7 @@ export default function CustomerQuote() {
         </Link>
       </div>
 
-      <div className="w-full md:w-11/12 relative h-[500px] md:h-[700px] overflow-hidden">
+      <div className="w-full md:w-full relative h-[500px] md:h-[700px] overflow-hidden">
         <div className="absolute inset-0 left-1/12">
           <Image
             src={robot}

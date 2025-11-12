@@ -32,7 +32,7 @@ export default function HeroSection() {
               <input
                 type="text"
                 placeholder="Enter your Email address"
-                className="bg-black py-3 px-4 md:px-10 text-white text-sm md:text-base flex-1"
+                className="bg-black py-4 px-4 md:px-10 text-white text-sm md:text-base flex-1"
               />
               <button className="text-black bg-white py-3 px-6 md:px-10 text-sm md:text-base font-semibold">
                 Send

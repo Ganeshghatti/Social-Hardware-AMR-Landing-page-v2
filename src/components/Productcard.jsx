@@ -89,11 +89,10 @@ export default function Productcard({
               Get a Technical Overview <ArrowRight size={18} />
             </DialogTrigger>
             <Link href="/contact">
-                <button  className="bg-orange-500  hover:bg-orange-600 flex items-center gap-2 text-white font-medium px-5 py-1 mt-1  w-fit text-sm sm:text-base transition-colors duration-200">
-              Get Customer Quote
-            </button>
+              <button className="bg-orange-500  hover:bg-orange-600 flex items-center gap-2 text-white font-medium px-5 py-1 mt-1  w-fit text-sm sm:text-base transition-colors duration-200">
+                Get Customer Quote
+              </button>
             </Link>
-        
 
             <DialogContent className="max-w-4xl max-h-[80vh] w-full overflow-y-auto p-8 bg-white rounded-2xl shadow-lg">
               <DialogHeader>
@@ -135,9 +134,11 @@ export default function Productcard({
                 </table>
               </div>
               <div className="flex justify-center mt-6">
-                <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-                  Get more Specifications Details
-                </button>
+                <Link href={`/products/${id}`}>
+                  <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200">
+                    Get more Specifications Details
+                  </button>
+                </Link>
               </div>
             </DialogContent>
           </Dialog>
