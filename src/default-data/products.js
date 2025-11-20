@@ -1,4 +1,4 @@
-import product1 from "../../public/product1.png";
+import product1 from "../../public/1e1e6d20c1a1861a20c116e5d6f5efffd5862f89.png";
 import product4 from "../../public/advanced-ugv.webp";
 import product2 from "../../public/vision-system.webp";
 import product3 from "../../public/reach-v1.webp";
@@ -10,14 +10,14 @@ export const products = [
     title: "P3-R600-100",
     image: product1,
     Degrees_of_freedom: "6",
-    Payload_kg: "3",
-    Reach_mm: "540",
+    Payload_kg: "3kg",
+    Reach_mm: "540nm",
     Repeatability_mm: "A±0.03",
     Weight_kg: "13",
     IP_Classification: "IP54",
-    Linear_Velocity_m_s: "1.5",
-    Average_Power_W: "150",
-    Peak_Power_W: "750",
+    Linear_Velocity_m_s: "1.5m/s",
+    Average_Power_W: "150W",
+    Peak_Power_W: "750W",
     Ambient_Temperature: "0-60",
     Ambient_Humidity: "90% RH (non-condensing)",
     Installation_Orientation: "Any ceiling, floor, wall",

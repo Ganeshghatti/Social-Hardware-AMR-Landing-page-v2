@@ -65,13 +65,14 @@ export default function Productcard({
 
   return (
     <div className="flex justify-center items-center">
+      <Link href={`/products/${id}`}>
       <div className="bg-white flex flex-col shadow-md hover:shadow-lg transition-transform duration-300 overflow-hidden w-[320px] md:w-[360px] h-[440px] hover:-translate-y-1">
-        <div className="flex justify-center items-center bg-gray-100 h-56">
+        <div className="flex justify-center items-center bg-gray-100 h-64">
           <Image
             src={image}
             alt={title}
             width={240}
-            height={240}
+            height={300}
             className="object-contain"
           />
         </div>
@@ -88,11 +89,11 @@ export default function Productcard({
             <DialogTrigger className="bg-orange-500 hover:bg-orange-600 flex items-center gap-2 text-white font-medium px-5 py-2 rounded-tl-xl rounded-br-xl w-fit text-sm sm:text-base transition-colors duration-200">
               Get a Technical Overview <ArrowRight size={18} />
             </DialogTrigger>
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <button className="bg-orange-500  hover:bg-orange-600 flex items-center gap-2 text-white font-medium px-5 py-1 mt-1  w-fit text-sm sm:text-base transition-colors duration-200">
                 Get Customer Quote
               </button>
-            </Link>
+            </Link> */}
 
             <DialogContent className="max-w-4xl max-h-[80vh] w-full overflow-y-auto p-8 bg-white rounded-2xl shadow-lg">
               <DialogHeader>
@@ -144,6 +145,8 @@ export default function Productcard({
           </Dialog>
         </div>
       </div>
+            </Link>
+
     </div>
   );
 }

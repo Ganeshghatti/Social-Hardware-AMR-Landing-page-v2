@@ -17,10 +17,10 @@ export const metadata = {
   title: "Social Hardware",
   description:
     "We specialize in designing advanced all-terrain, multi-purpose robots for mission-critical tasks. Our cutting-edge systems prioritize safety.",
-    keywords: ["robots", "automation", "AI", "Next.js", "technology"],
-  icons : {
-    icon : "/Frame 1000003840.png"
-  }
+  keywords: ["robots", "automation", "AI", "Next.js", "technology"],
+  icons: {
+    icon: "/logo1.png",
+  },
 };
 
 export default function RootLayout({ children }) {

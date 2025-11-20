@@ -14,7 +14,7 @@ export default function HeroSection() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/80 to-transparent" />
 
-        <div className="absolute z-10 text-white top-10 md:top-20 left-6 md:left-16 max-w-full p-4 md:p-0">
+        <div className="absolute z-10 text-white top-10 md:top-20  md:left-16 max-w-full p-4 md:p-0">
           <p className="uppercase text-xs md:text-sm mb-3 md:mb-4">
             Advanced Robotics & Automation
           </p>
@@ -32,9 +32,10 @@ export default function HeroSection() {
               <input
                 type="text"
                 placeholder="Enter your Email address"
+                required
                 className="bg-black py-4 px-4 md:px-10 text-white text-sm md:text-base flex-1"
               />
-              <button className="text-black bg-white py-3 px-6 md:px-10 text-sm md:text-base font-semibold">
+              <button className="text-black bg-white py-2 px-6 md:px-10 text-sm md:text-base font-semibold">
                 Send
               </button>
             </div>
