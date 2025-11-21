@@ -64,89 +64,48 @@ export default function Productcard({
   ];
 
   return (
-    <div className="flex justify-center items-center">
-      <Link href={`/products/${id}`}>
-      <div className="bg-white flex flex-col shadow-md hover:shadow-lg transition-transform duration-300 overflow-hidden w-[320px] md:w-[360px] h-[440px] hover:-translate-y-1">
-        <div className="flex justify-center items-center bg-gray-100 h-64">
-          <Image
-            src={image}
-            alt={title}
-            width={240}
-            height={300}
-            className="object-contain"
-          />
-        </div>
-
-        <div className="p-6 flex flex-col gap-3 items-center text-center">
-          <h1 className="text-2xl font-medium text-[#000000]">{title}</h1>
-          <p className="text-sm text-gray-600 leading-relaxed line-clamp-4">
-            {description}
-          </p>
-        </div>
-
-        <div className="flex items-center mx-auto  flex-col">
-          <Dialog>
-            <DialogTrigger className="bg-orange-500 hover:bg-orange-600 flex items-center gap-2 text-white font-medium px-5 py-2 rounded-tl-xl rounded-br-xl w-fit text-sm sm:text-base transition-colors duration-200">
-              Get a Technical Overview <ArrowRight size={18} />
-            </DialogTrigger>
-            {/* <Link href="/contact">
-              <button className="bg-orange-500  hover:bg-orange-600 flex items-center gap-2 text-white font-medium px-5 py-1 mt-1  w-fit text-sm sm:text-base transition-colors duration-200">
-                Get Customer Quote
-              </button>
-            </Link> */}
-
-            <DialogContent className="max-w-4xl max-h-[80vh] w-full overflow-y-auto p-8 bg-white rounded-2xl shadow-lg">
-              <DialogHeader>
-                <DialogTitle className="text-3xl font-semibold text-gray-900 mb-6 text-center">
-                  {title} Specifications
-                </DialogTitle>
-              </DialogHeader>
-
-              <div className="overflow-x-auto">
-                <table className="min-w-full border border-gray-200 text-sm text-gray-700">
-                  <thead className="bg-gray-100">
-                    <tr>
-                      <th className="border px-4 py-2 text-left font-semibold w-1/2">
-                        Specification
-                      </th>
-                      <th className="border px-4 py-2 text-left font-semibold w-1/2">
-                        Details
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {specs.map(
-                      (spec, index) =>
-                        spec.value && (
-                          <tr
-                            key={index}
-                            className={`${
-                              index % 2 === 0 ? "bg-white" : "bg-gray-50"
-                            } hover:bg-gray-100 transition`}
-                          >
-                            <td className="border px-4 py-2 font-medium text-gray-800">
-                              {spec.label}
-                            </td>
-                            <td className="border px-4 py-2">{spec.value}</td>
-                          </tr>
-                        )
-                    )}
-                  </tbody>
-                </table>
-              </div>
-              <div className="flex justify-center mt-6">
-                <Link href={`/products/${id}`}>
-                  <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-md text-sm font-medium transition-colors duration-200">
-                    Get more Specifications Details
-                  </button>
-                </Link>
-              </div>
-            </DialogContent>
-          </Dialog>
-        </div>
-      </div>
-            </Link>
-
+    <div className="flex justify-center items-center font-geist w-full">
+  <div className="
+      bg-white flex flex-col shadow-md mt-3 hover:shadow-lg rounded-2xl 
+      transition-transform duration-300 overflow-hidden 
+      w-full max-w-[300px] sm:max-w-[300px] lg:max-w-[360px]
+      hover:-translate-y-1
+    "
+  >
+    {/* IMAGE SECTION */}
+    <div className="flex justify-center items-center bg-gray-100 h-48 sm:h-56 md:h-64">
+      <Image
+        src={image}
+        alt={title}
+        width={300}
+        height={300}
+        className="object-contain w-full h-full p-3"
+      />
     </div>
+
+    {/* CONTENT */}
+    <div className="p-4 sm:p-6 flex flex-col gap-3 items-center text-center">
+      <h1 className="text-lg sm:text-xl font-medium text-[#000000]">
+        {title}
+      </h1>
+
+      <p className="text-xs sm:text-sm text-[#6D6D6D] leading-relaxed line-clamp-4">
+        {description}
+      </p>
+    </div>
+
+    {/* BUTTON */}
+    <Link href={`/products/${id}`} className="w-full flex items-center">
+      <button className="
+          bg-[#FF6600] font-semibold text-white py-2 px-3 
+          w-2/3 mx-auto mb-6 sm:mb-10 cut-corners text-sm sm:text-base
+        "
+      >
+        View Specifications →
+      </button>
+    </Link>
+  </div>
+</div>
+
   );
 }

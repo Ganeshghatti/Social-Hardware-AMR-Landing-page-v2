@@ -7,19 +7,19 @@ export default function TechnicalOverview({id}) {
   return (
     <div className=" w-full ">
       <div className="flex flex-col py-16 ">
-        <div className="w-52 mx-auto items-center justify-center flex border-1 shadow-md bg-[#FFFFFF] border-[#E5E5E5] rounded-2xl px-3 py-1">
-          <h2 className="font-Geist text-[#232323] font-semibold">
+        <div className="w-52 mx-auto items-center justify-center flex border-2 shadow-md bg-[#FFFFFF] border-[#E5E5E5] rounded-2xl px-3 py-1">
+          <h2 className="font-geist text-[#232323] font-semibold">
             Technical Specifications
           </h2>
         </div>
         <div className="mt-10 justify-center flex items-center">
-          <h1 className="text-6xl max-w-4xl text-center">
-            {product.title} Cobot Performance Overview
+          <h1 className="2xl:text-6xl md:text-5xl text-4xl mx-auto max-w-4xl text-center">
+            {product.title} Cobot <br/>Performance Overview
           </h1>
         </div>
       </div>
 
-      <div className="w-full max-w-4xl mx-auto p-6 md:p-10 mt-10 ">
+      <div className="w-full max-w-4xl md:mx-auto p-6 md:p-10 md:mt-5 ">
         <h2 className="text-xl font-bold text-gray-800  bg-gray-50 py-4 px-5 rounded-t-xl ">
           General Specifications
         </h2>
@@ -85,10 +85,10 @@ export default function TechnicalOverview({id}) {
       </div>
 
       <div className="flex justify-center items-center py-10 px-2 sm:px-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-14 w-full lg:w-3/4 mx-auto text-center">
+        <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mt-4 lg:gap-14 w-full lg:w-3/4 mx-auto text-center">
           <div className="flex flex-col items-center ">
             <Image src="/Filter.png" alt="icon" width={30} height={25} />
-            <h3 className="text-[#141414] font-semibold mt-1 max-w-20 text-xl">
+            <h3 className="text-[#141414] font-semibold  md:mt-1 max-w-20 text-md md:text-xl">
               Linear Velocity
             </h3>
             <p className="mt-2 text-md md:text-lg">({product.Linear_Velocity_m_s})</p>
@@ -96,38 +96,38 @@ export default function TechnicalOverview({id}) {
 
           <div className="flex flex-col items-center">
             <Image src="/Icon (3).png" alt="icon" width={25} height={30} />
-            <h3 className="text-[#141414] font-semibold mt-2 max-w-20 text-xl">
+            <h3 className="text-[#141414] font-semibold mt-2 max-w-20 text-md md:text-xl">
               Average Power
             </h3>
             <p className="mt-2 text-md md:text-lg">({product.Average_Power_W})</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-4">
             <Image src="/Icon (2).png" alt="icon" width={20} height={20} />
-            <h3 className="text-[#141414] font-semibold text-xl max-w-20 mt-2">
+            <h3 className="text-[#141414] font-semibold text-md md:text-xl max-w-20 mt-2">
               Peak Power
             </h3>
             <p className="mt-2 text-md md:text-lg">({product.Peak_Power_W})</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-4">
             <Image src="/Flame.png" alt="icon" width={30} height={30} />
-            <h3 className="text-[#141414] font-semibold text-xl max-w-30 mt-2">
+            <h3 className="text-[#141414] font-semibold text-md md:text-xl max-w-30 mt-2">
               Ambient Temperature
             </h3>
             <p className="mt-2 text-md md:text-lg">({product.Ambient_Temperature})</p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-4">
             <Image src="/Son.png" alt="icon" width={30} height={30} />
-            <h3 className="text-[#141414] font-semibold text-xl mt-2">
+            <h3 className="text-[#141414] font-semibold text-md md:text-xl mt-2">
               Ambient Humidity
             </h3>
             <p className="mt-2 text-md md:text-lg">({product.Ambient_Humidity})</p>
           </div>
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center mt-4">
             <Image src="/eye.png" alt="icon" width={30} height={30} />
-            <h3 className="text-[#141414] font-semibold text-xl mt-2">
+            <h3 className="text-[#141414] font-semibold text-md md:text-xl mt-2">
               Installation Orientation
             </h3>
             <p className="mt-2 text-md md:text-lg">{product.Installation_Orientation}</p>
@@ -159,7 +159,7 @@ export default function TechnicalOverview({id}) {
               Ready to dive deeper?
             </h1>
 
-            <div className="mt-10 md:mt-20">
+            <div className="mt-10 md:mt-14">
               <h2 className="text-3xl md:text-5xl font-normal">
                 Download the official
               </h2>
@@ -170,7 +170,7 @@ export default function TechnicalOverview({id}) {
           </div>
 
           <div
-            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/2
+            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/3
                     bg-[#D9D9D91A] backdrop-blur-md rounded-3xl
                     w-[90%] md:w-2/5 h-auto py-10 flex justify-center"
           >
@@ -187,17 +187,19 @@ export default function TechnicalOverview({id}) {
                 className="px-8 py-4 w-full md:w-3/4 mt-4 bg-[#282828] text-white rounded-2xl"
               />
 
-              <button className="flex w-full md:w-3/4 gap-2 mt-4">
+              <button className="flex w-full md:w-3/4  mt-4">
                 <p className="bg-white py-5 px-6 rounded-l-2xl font-medium text-black flex-1 text-center">
                   Download Technical Datasheet
+                  
                 </p>
-
-                <Image
+                  <Image
                   src="/arrow-right.png"
                   alt="arrow"
                   width={54}
                   height={50}
                 />
+
+              
               </button>
             </form>
           </div>

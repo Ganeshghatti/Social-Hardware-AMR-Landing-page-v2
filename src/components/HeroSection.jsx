@@ -6,15 +6,15 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="w-full bg-[#E5E5E5]">
-      <div className="mx-auto  flex flex-col-reverse md:flex-row border border-gray-300 justify-between px-6 sm:px-10 md:px-12 lg:px-20 gap-6 ">
-       <div className="md:w-2/5 md:border-r  border-gray-300 py-0 md:py-16 flex flex-col justify-center items-center md:items-start">
-          <p className="text-[#8D8D8D] leading-relaxed text-xs sm:text-base md:text-md max-w-2xl items-center ">
-            We’re a Bengaluru-based robotics company with over eight years of
-            experience partnering with local and global brands. From smart
-            factories to research labs, we design and deliver customizable
-            cobots, UGVs, vision systems, and end-of-arm tooling that enhance
-            productivity and precision.
+    <section className="w-full bg-[#E5E5E5] font-geist">
+      <div className="mx-auto  flex flex-col-reverse md:flex-row border border-gray-300 justify-between px-6 sm:px-10 md:px-8 lg:px-10 gap-6 ">
+        <div className="md:w-2/4 md:border-r  border-gray-300 py-0 md:py-10 flex flex-col justify-center items-center md:items-start">
+          <p className="text-[#8D8D8D] font-geist leading-relaxed text-xs sm:text-base md:text-md max-w-xl ">
+            We’re a Bengaluru-based robotics company, designing, building, and
+            integrating cobots and vision systems for Indian industry and
+            research. Engineered for real-world conditions and high-impact
+            applications, our systems make advanced robotics safe, affordable,
+            and easy to deploy.
           </p>
 
           <button className="bg-[#FF6600] flex items-center gap-2 text-white px-4 sm:px-6 py-2 sm:py-3 mt-6 mb-4  shadow-md hover:bg-[#e05500] transition-colors duration-300 text-sm sm:text-base w-fit">
@@ -23,7 +23,7 @@ export default function HeroSection() {
         </div>
 
         <div className="md:w-1/2 flex items-center justify-center md:justify-start text-center md:text-left py-2 mt-5 md:py-16">
-          <h1 className="text-[#FF6600] font-normal md:ml-10 text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug md:leading-tight max-w-2xl">
+          <h1 className="text-[#FF6600] font-normal md:ml-10 text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-snug md:leading-tight max-w-2xl">
             Made in India <br /> Engineered for the World
           </h1>
         </div>
@@ -52,10 +52,11 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-black/50"></div>
 
             <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-6 md:p-8 text-white">
-              <p className="text-xs sm:text-sm md:text-base max-w-xs sm:max-w-sm md:max-w-md mt-2 sm:mt-4 leading-relaxed">
+              <p className="text-xs text-[#FFFFFF] sm:text-sm md:text-base max-w-sm mt-2 sm:mt-4 leading-relaxed">
                 From collaborative robots and UGVs to vision systems and custom
-                end-of-arm tooling, we tailor our solutions to your specific
-                needs.
+                end-of-arm tooling, we can design and deliver solutions
+                precisely tailored to your application, process, and performance
+                targets.
               </p>
 
               <div className="flex items-end justify-between mt-auto">
@@ -63,13 +64,13 @@ export default function HeroSection() {
                   One Platform,
                   <br /> Infinite Solutions
                 </h1>
-                <button className="shrink-0 hover:scale-105 transition-transform">
+                {/* <button className="shrink-0 hover:scale-105 transition-transform">
                   <Image
                     src={arrow}
                     alt="arrow"
                     className="w-8 sm:w-10 md:w-12 lg:w-16 h-auto"
                   />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

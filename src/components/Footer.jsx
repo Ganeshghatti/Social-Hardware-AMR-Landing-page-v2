@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   FaLinkedinIn,
   FaYoutube,
@@ -9,89 +10,184 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 pt-16 pb-10 border-t border-gray-700">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-14">
-
-        <div className="space-y-6 md:col-span-1">
-          <div>
-            <Image src="/logo1.png" alt="img" width={50} height={50}/>
-          </div>
-          <h2 className="text-3xl font-bold text-white tracking-wide">
-            Social Hardware
+    <footer className="bg-[#FFFFFF] font-geist w-full pt-16 pb-10">
+      <div
+        className="mx-auto px-5 sm:px-10 
+                  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 
+                  gap-10 lg:gap-20"
+      >
+        <div className="space-y-6 max-w-sm">
+          <h1 className="text-[#333333] font-semibold text-2xl">Contacts</h1>
+          <h2 className="text-lg font-medium text-[#333333] tracking-wide">
+            Questions? Let’s talk cobots.
           </h2>
-          <p className="text-gray-400 leading-relaxed">
-            Innovating the future of robotics with cutting-edge automation
-            systems designed for real-world mission-critical operations.
+          <p className="text-[#333333] leading-relaxed text-sm font-medium">
+            We’re ready to help with product options, specs, pricing, and to
+            discuss distributor partnerships and ongoing support.
           </p>
+          <div className="gap-2 flex flex-col">
+            <div className="gap-2 flex">
+              <Image src="/SVG.png" alt="m" width={15} height={10} />
+              <p className="text-[#333333] leading-relaxed text-sm font-medium">
+                +91 7337743354
+              </p>
+            </div>
+            <div className="gap-2 flex">
+              <Image src="/SVG (1).png" alt="m" width={15} height={10} />
+              <p className="text-[#333333] leading-relaxed text-sm font-medium">
+                info@socialhardware.in
+              </p>
+            </div>
+          </div>
+        </div>
 
-          <div className="flex gap-4 text-xl">
-            <a href="#" className="hover:text-orange-500">
-              <FaLinkedinIn />
-            </a>
-            <a href="#" className="hover:text-orange-500">
-              <FaYoutube />
-            </a>
-            <a href="#" className="hover:text-orange-500">
-              <FaInstagram />
-            </a>
-            <a href="#" className="hover:text-orange-500">
-              <FaFacebookF />
-            </a>
+        <div className="max-w-sm">
+          <h1 className="text-[#333333] font-semibold text-2xl">Locations</h1>
+
+          <div>
+            <h2 className="text-[#000000] text-md font-medium mt-4">
+              Corporate Office:
+            </h2>
+            <p className="text-[#333333] mt-3 text-sm font-medium">
+              8, 34/4, 3rd Cross Rd, Pragathi Layout, Veerannapalya, Bengaluru,
+              Karnataka 560045, India
+            </p>
+          </div>
+
+          <div>
+            <h2 className="text-[#000000] text-md font-medium mt-4">
+              R&D Lab:
+            </h2>
+            <p className="text-[#333333] mt-3 text-sm font-medium">
+              679, 9th A Cross Rd, West of Chord Road 2nd Stage, Basaveshwar
+              Nagar, Bengaluru, Karnataka 560086, India
+            </p>
           </div>
         </div>
 
         <div>
-          <h3 className="text-sm text-gray-400 uppercase font-semibold mb-4">
-            General
-          </h3>
-          <ul className="space-y-3">
-            <li><a href="/" className="hover:text-orange-500">Home</a></li>
-            <li><a href="/products" className="hover:text-orange-500">Products</a></li>
-            <li><a href="/customise" className="hover:text-orange-500">Customise</a></li>
-            <li><a href="/profile" className="hover:text-orange-500">Company Profile</a></li>
+          <h1 className="text-[#333333] font-semibold text-2xl">
+            ISO Certifications
+          </h1>
+
+          <ul className="list-disc pl-5 space-y-2 mt-5">
+            <li>
+              <Link
+                href="/"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                ISO 9001:2015
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                ISO 31000:2018
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                ISO 31000:2018
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                ISO 13850:2015
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                ISO 10218-1:2011
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                ISOMEC 17025
+              </Link>
+            </li>
           </ul>
         </div>
 
         <div>
-          <h3 className="text-sm text-gray-400 uppercase font-semibold mb-4">
-            Our Solutions
-          </h3>
-          <ul className="space-y-3">
-            <li><a href="#" className="hover:text-orange-500">Autonomous Robots</a></li>
-            <li><a href="#" className="hover:text-orange-500">Industrial Automation</a></li>
+          <h1 className="text-[#333333] font-semibold text-2xl">Quick Links</h1>
+
+          <ul className="space-y-3 mt-4">
+            <li>
+              <Link
+                href="/"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#product"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                Products
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#customise"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                Customise
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#profile"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                Company Profile
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="#gallery"
+                className="font-medium text-md text-[#333333] hover:text-orange-600"
+              >
+                Gallery
+              </Link>
+            </li>
           </ul>
-        </div>
-
-        <div>
-          <h3 className="text-sm text-gray-400 uppercase font-semibold mb-4">
-            Stay Updated
-          </h3>
-          <p className="text-gray-400 mb-4">
-            Subscribe to get the latest updates on robotics, innovation, and future tech.
-          </p>
-
-          <form className="space-y-4">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="w-full bg-transparent border-b border-gray-500 focus:border-orange-500 focus:outline-none py-2 text-white"
-            />
-            <button
-              type="submit"
-              className="bg-orange-600 hover:bg-orange-700 px-6 py-2 flex items-center gap-2 rounded-md text-white font-medium shadow-md"
-            >
-              Subscribe <ArrowRight size={18} />
-            </button>
-          </form>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 mt-12 pt-6 border-t border-gray-700 flex flex-col md:flex-row justify-between text-sm text-gray-500">
-        <p>© {new Date().getFullYear()} Social Hardware. All rights reserved.</p>
-        <div className="flex gap-6 mt-3 md:mt-0">
-          <a href="#" className="hover:text-orange-500">Privacy Policy</a>
-          <a href="#" className="hover:text-orange-500">Terms & Conditions</a>
-          <a href="#" className="hover:text-orange-500">Support</a>
+      <div
+        className="max-w-8xl mx-auto px-6 mt-10 pt-6 border-t border-gray-700 
+                  flex flex-col md:flex-row justify-between text-sm"
+      >
+        <div className="flex justify-between w-full mx-10">
+          <p className="text-[#333333]  text-sm font-medium">
+            Terms & Conditions
+          </p>
+          <p className="text-[#333333]  text-sm font-medium">
+            © {new Date().getFullYear()} Social Hardware International Pvt. Lrd.
+            All rights reserved.{" "}
+          </p>
+
+          <div className="text-[#333333]  text-sm font-medium">
+            <a href="#" className="hover:text-orange-500">
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>

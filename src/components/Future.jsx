@@ -3,7 +3,7 @@ import robot from "../../public/robot3.png";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen relative w-full bg-black text-white flex flex-col md:flex-row">
+    <section className="min-h-screen relative w-full font-geist bg-black text-white flex flex-col md:flex-row">
       <div className="relative w-full overflow-hidden flex">
         <Image
           src={robot}
@@ -18,7 +18,7 @@ export default function HeroSection() {
           <p className="uppercase text-xs md:text-sm mb-3 md:mb-4">
             Advanced Robotics & Automation
           </p>
-          <h2 className="text-3xl md:text-5xl font-normal mb-4 md:mb-6 max-w-2xl leading-tight">
+          <h2 className="text-3xl md:text-5xl font-medium mb-4 md:mb-6 max-w-2xl leading-tight">
             Engineer Your Advantage
           </h2>
 
@@ -50,14 +50,14 @@ export default function HeroSection() {
         </p>
       </div>
 
-      <div className="absolute right-4 md:right-20 bottom-40 md:bottom-70 flex flex-col justify-center leading-[0.8]">
-        <h1 className="text-[100px] sm:text-[160px] md:text-[280px] font-extrabold text-white/95 tracking-tight">
+      <div className="absolute right-4 md:right-20 bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
+        <h1 className="text-[100px] sm:text-[160px] md:text-[230px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
           BUILD
         </h1>
       </div>
 
       <div className="absolute left-4 md:left-20 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
-        <h1 className="text-[100px] sm:text-[160px] md:text-[280px] font-extrabold text-white/40 tracking-tight">
+        <h1 className="text-[100px] sm:text-[160px] md:text-[230px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
           FUTURE
         </h1>
       </div>

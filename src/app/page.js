@@ -7,17 +7,19 @@ import Future from "@/components/Future";
 
 export default function Home() {
   return (
-    <div className="bg-[#F5F5F5]">
+    <div className="bg-[#F5F5F5] w-full">
       <HeroSection />
       <div>
         <div>
           <Products />
         </div>
+      </div>
+      <div>
+        <About />
+      </div>
+      <div>
         <Future />
       </div>
-       <div>
-        <About/>
-       </div>
       <div>
         <CustomerQuote />
       </div>

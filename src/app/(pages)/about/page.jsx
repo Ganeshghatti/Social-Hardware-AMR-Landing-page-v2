@@ -4,29 +4,36 @@ import Link from "next/link";
 
 export default function PhilosophySection() {
   return (
-    <div className="py-8">
+    <div className="py-8 font-geist">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        <div className="md:px-20 px-6 py-10 md:py-20">
-          <p className="text-[#000000] text-sm mb-3">
+        <div className="2xl:px-20 px-10 mx-auto md:mx-0 py-10 md:py-20">
+          <p className="text-[#232323] font-medium text-sm mb-3">
             Our Philosophy. Engineered for the World.
           </p>
-          <h1 className="text-3xl md:text-6xl max-w-xl leading-tight mb-6">
+          <h1 className="text-3xl lg:text-5xl 2xl:text-6xl md:max-w-6xl max-w-xl leading-tight mb-6">
             Simple, cost-effective <br />
             automation solutions. <br />
-            Indigenous robotics without boundaries.
+            Indigenous robotics <br /> without boundaries.
           </h1>
-          <p className="text-[#6D6D6D] text-sm md:text-base mb-6 max-w-lg">
-            We believe industrial automation should be accessible and adaptable.
-            That’s why we build indigenous systems that lead the way—no steep
-            import dependencies, no support delays, just pure performance.
-            Whether you’re assembling, manufacturing, or performing quality
-            control, our process feels natural, fast, and reliable.
+          <p className="text-[#6D6D6D] text-sm md:text-base mb-6 max-w-xl">
+            We believe advanced robotics should be accessible, adaptable, and
+            locally supported. That’s why we build indigenous systems that lead
+            the way—no steep import dependencies, no support delays, just pure
+            performance.{" "}
+          </p>
+          <p className="text-[#6D6D6D] text-sm md:text-base mb-6 max-w-xl">
+            Whether you’re assembling, packaging, or running quality control,
+            our robots feel natural to operate, fast to deploy, and reliable to
+            maintain. Request a consultation to see how we can tailor a system
+            to your line.{" "}
           </p>
           <Link href="/contact">
-            <button className="bg-orange-500 hover:bg-orange-600 flex items-center mx-auto md:mx-0 gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
+            <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
               Request Free Consultation <ArrowRight size={18} />
             </button>
           </Link>
+
+      
         </div>
 
         <div className="flex  relative py-10 md:py-0">
@@ -88,55 +95,50 @@ export default function PhilosophySection() {
         <div className="mx-auto w-2/3 flex justify-between mb-10 ">
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
-              src="/Gemini_Generated_Image_y9tu7sy9tu7sy9tu-removebg-preview.png-0 (SVG).png"
+              src="/3de3f26c39b50a1ca4777861f39cc71a97ca65a1.png"
               alt="image1"
-              width={70}
-              height={50}
+              width={50}
+              height={40}
             />
-            <p className="bg-gray-200 px-3 py-1 rounded-xl">Inspection</p>
+            <p className="bg-gray-200 px-3 py-1 text-sm rounded-xl">Inspection</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 ">
             <Image
-              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
-              src="/Gemini_Generated_Image_thmtmfthmtmfthmt-removebg-preview 2.png-1 (SVG).png"
+              src="/e99540f3ca9af8df2135b09ec4caacd4a47fa96b.png"
               alt="image1"
-              width={70}
-              height={50}
+              width={30}
+              height={30}
             />
-            <p className="bg-gray-200 px-3 py-1 rounded-xl">
+            <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">
               Material Handling
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-2">
+          <div className="flex flex-col text-sm items-center justify-center gap-2">
             <Image
-              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
-              src="/Frame 1000003840.png"
+              src="/f65577d576288aa40c096b47573f3b3e9a51e10d.png"
               alt="image1"
-              width={70}
-              height={50}
+              width={30}
+              height={30}
             />
-            <p className="bg-gray-200 px-3 py-1 rounded-xl">Assembly</p>
+            <p className="bg-gray-200 px-3 py-1  text-sm rounded-xl">Assembly</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
-              src="/container.png"
+              src="/ee34bc284bfcbccb991689c43e0fd5212e9b817f.png"
               alt="image1"
-              width={70}
-              height={50}
+              width={30}
+              height={30}
             />
-            <p className="bg-gray-200 px-3 py-1 rounded-xl">Machine Tending</p>
+            <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">Machine Tending</p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              className=" hover:scale-110 hover:bg-orange-200 hover:rounded-full hover:px-2 hover:py-2 transition-all duration-300 ease-in-out"
-              src="/Frame 1000003841.png"
+              src="/bdde462fbdf621d704a62fe2da0cb89504e3c0be.png"
               alt="image1"
-              width={70}
-              height={50}
+              width={30}
+              height={30}
             />
-            <p className="bg-gray-200 px-3 py-1 rounded-xl">Palletizing</p>
+            <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">Palletizing</p>
           </div>
         </div>
       </div>

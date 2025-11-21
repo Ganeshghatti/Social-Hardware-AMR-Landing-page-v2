@@ -3,10 +3,11 @@
 
 @custom-variant dark (&:is(.dark *));
 
-body{
-  background-color:  white;
-  overflow-x:  hidden;
+
+html, body {
+  overflow-x: hidden;
 }
+
 
 @theme inline {
   --radius-sm:  calc(var(--radius) - 4px);
@@ -127,4 +128,15 @@ body{
 
 .clip-hex {
   clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+}
+
+.cut-corners {
+  clip-path: polygon(
+    20px 0,    /* top-left cut */
+    100% 0,
+    100% calc(100% - 20px), /* bottom-right cut */
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 20px
+  );
 }
