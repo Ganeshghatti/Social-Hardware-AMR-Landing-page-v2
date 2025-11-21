@@ -7,8 +7,8 @@ export default function TechnicalOverview({id}) {
   return (
     <div className=" w-full ">
       <div className="flex flex-col py-16 ">
-        <div className="w-52 mx-auto items-center justify-center flex border-2 shadow-md bg-[#FFFFFF] border-[#E5E5E5] rounded-2xl px-3 py-1">
-          <h2 className="font-geist text-[#232323] font-semibold">
+        <div className="w-64 mx-auto items-center justify-center flex border-2 shadow-md bg-[#FFFFFF] border-[#E5E5E5] rounded-2xl px-3 py-1">
+          <h2 className=" text-[#232323] font-semibold">
             Technical Specifications
           </h2>
         </div>

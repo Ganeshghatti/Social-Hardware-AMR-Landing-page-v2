@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#FFFFFF] font-geist w-full pt-16 pb-10">
       <div
-        className="mx-auto px-5 sm:px-10 
+        className="mx-auto px-5 sm:px-10 mb-20
                   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 
                   gap-10 lg:gap-20"
       >
@@ -174,10 +174,23 @@ export default function Footer() {
         className="max-w-8xl mx-auto px-6 mt-10 pt-6 border-t border-gray-700 
                   flex flex-col md:flex-row justify-between text-sm"
       >
-        <div className="flex justify-between w-full mx-10">
-          <p className="text-[#333333]  text-sm font-medium">
-            Terms & Conditions
-          </p>
+        <div className=" flex flex-col md:flex-row justify-between w-full md:mx-10 gap-4">
+          <div className="flex gap-2">
+            <a href="https://x.com/social_hardware" target="_blank">
+              <Image src="/Vector.png" alt="img" width={20} height={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/social-hardware"
+              target="_blank"
+            >
+              <Image src="/Vector (1).png" alt="img" width={20} height={20} />
+            </a>
+          </div>
+          <div className="text-[#333333]  text-sm font-medium">
+            <a href="#" className="hover:text-orange-500">
+              Terms and Conditions
+            </a>
+          </div>
           <p className="text-[#333333]  text-sm font-medium">
             © {new Date().getFullYear()} Social Hardware International Pvt. Lrd.
             All rights reserved.{" "}

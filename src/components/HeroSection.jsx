@@ -9,7 +9,7 @@ export default function HeroSection() {
     <section className="w-full bg-[#E5E5E5] font-geist">
       <div className="mx-auto  flex flex-col-reverse md:flex-row border border-gray-300 justify-between px-6 sm:px-10 md:px-8 lg:px-10 gap-6 ">
         <div className="md:w-2/4 md:border-r  border-gray-300 py-0 md:py-10 flex flex-col justify-center items-center md:items-start">
-          <p className="text-[#8D8D8D] font-geist leading-relaxed text-xs sm:text-base md:text-md max-w-xl ">
+          <p className="text-[#8D8D8D] font-geist font-normal leading-relaxed text-xs sm:text-base md:text-md max-w-xl ">
             We’re a Bengaluru-based robotics company, designing, building, and
             integrating cobots and vision systems for Indian industry and
             research. Engineered for real-world conditions and high-impact

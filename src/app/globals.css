@@ -8,6 +8,10 @@ html, body {
   overflow-x: hidden;
 }
 
+body {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
 
 @theme inline {
   --radius-sm:  calc(var(--radius) - 4px);
