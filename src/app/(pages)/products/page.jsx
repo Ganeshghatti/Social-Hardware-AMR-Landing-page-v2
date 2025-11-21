@@ -45,14 +45,13 @@ export default function Products() {
           </div>
         </div>
       </div>
-<div className="bg-[#F0F0F0] w-full px-5 sm:px-10 py-10">
-  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-    {products.map((p) => (
-      <Productcard key={p.id} {...p} />
-    ))}
-  </div>
-</div>
-
+      <div className="bg-[#F0F0F0] w-full px-5 sm:px-10 py-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+          {products.map((p) => (
+            <Productcard key={p.id} {...p} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 }

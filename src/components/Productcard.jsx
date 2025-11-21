@@ -72,7 +72,6 @@ export default function Productcard({
       hover:-translate-y-1
     "
   >
-    {/* IMAGE SECTION */}
     <div className="flex justify-center items-center bg-gray-100 h-48 sm:h-56 md:h-64">
       <Image
         src={image}
@@ -83,7 +82,6 @@ export default function Productcard({
       />
     </div>
 
-    {/* CONTENT */}
     <div className="p-4 sm:p-6 flex flex-col gap-3 items-center text-center">
       <h1 className="text-lg sm:text-xl font-medium text-[#000000]">
         {title}
@@ -94,7 +92,6 @@ export default function Productcard({
       </p>
     </div>
 
-    {/* BUTTON */}
     <Link href={`/products/${id}`} className="w-full flex items-center">
       <button className="
           bg-[#FF6600] font-semibold text-white py-2 px-3 

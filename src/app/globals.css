@@ -136,10 +136,10 @@ body {
 
 .cut-corners {
   clip-path: polygon(
-    20px 0,    /* top-left cut */
+    15px 0,    
     100% 0,
-    100% calc(100% - 20px), /* bottom-right cut */
-    calc(100% - 20px) 100%,
+    100% calc(100% - 15px), /* bottom-right cut */
+    calc(100% - 10px) 100%,
     0 100%,
     0 20px
   );
