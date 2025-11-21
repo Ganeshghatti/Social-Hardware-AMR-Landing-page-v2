@@ -1,7 +1,7 @@
-import product1 from "../../public/1e1e6d20c1a1861a20c116e5d6f5efffd5862f89.png";
-import product4 from "../../public/advanced-ugv.webp";
-import product2 from "../../public/vision-system.webp";
-import product3 from "../../public/reach-v1.webp";
+import product1 from "../../public/3KG_1.png";
+import product4 from "../../public/20KG_1.png";
+import product2 from "../../public/5KG_1.png";
+import product3 from "../../public/10KG_1.png";
 
 
 export const products = [

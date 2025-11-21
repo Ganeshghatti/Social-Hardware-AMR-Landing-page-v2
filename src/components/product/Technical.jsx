@@ -88,7 +88,7 @@ export default function TechnicalOverview({id}) {
         <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mt-4 lg:gap-14 w-full lg:w-3/4 mx-auto text-center">
           <div className="flex flex-col items-center ">
             <Image src="/Filter.png" alt="icon" width={30} height={25} />
-            <h3 className="text-[#141414] font-semibold  md:mt-1 max-w-20 text-md md:text-xl">
+            <h3 className="text-[#141414] font-semibold  md:mt-1 max-w-20  text-md md:text-xl">
               Linear Velocity
             </h3>
             <p className="mt-2 text-md md:text-lg">({product.Linear_Velocity_m_s})</p>
@@ -102,7 +102,7 @@ export default function TechnicalOverview({id}) {
             <p className="mt-2 text-md md:text-lg">({product.Average_Power_W})</p>
           </div>
 
-          <div className="flex flex-col items-center mt-4">
+          <div className="flex flex-col items-center mt-4 md:mt-0 ">
             <Image src="/Icon (2).png" alt="icon" width={20} height={20} />
             <h3 className="text-[#141414] font-semibold text-md md:text-xl max-w-20 mt-2">
               Peak Power
@@ -110,7 +110,7 @@ export default function TechnicalOverview({id}) {
             <p className="mt-2 text-md md:text-lg">({product.Peak_Power_W})</p>
           </div>
 
-          <div className="flex flex-col items-center mt-4">
+          <div className="flex flex-col items-center mt-4 md:mt-0 ">
             <Image src="/Flame.png" alt="icon" width={30} height={30} />
             <h3 className="text-[#141414] font-semibold text-md md:text-xl max-w-30 mt-2">
               Ambient Temperature
@@ -118,14 +118,14 @@ export default function TechnicalOverview({id}) {
             <p className="mt-2 text-md md:text-lg">({product.Ambient_Temperature})</p>
           </div>
 
-          <div className="flex flex-col items-center mt-4">
+          <div className="flex flex-col items-center mt-4 md:mt-0">
             <Image src="/Son.png" alt="icon" width={30} height={30} />
             <h3 className="text-[#141414] font-semibold text-md md:text-xl mt-2">
               Ambient Humidity
             </h3>
             <p className="mt-2 text-md md:text-lg">({product.Ambient_Humidity})</p>
           </div>
-          <div className="flex flex-col items-center mt-4">
+          <div className="flex flex-col items-center mt-4 md:mt-0">
             <Image src="/eye.png" alt="icon" width={30} height={30} />
             <h3 className="text-[#141414] font-semibold text-md md:text-xl mt-2">
               Installation Orientation

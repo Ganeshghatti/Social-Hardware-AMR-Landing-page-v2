@@ -48,7 +48,7 @@ export default async function ProductDetail({ params }) {
       absolute 
       -top-10
       right-0
-      w-[500px]
+      w-[400px]
       sm:w-[700px]
       md:w-[740px]
       opacity-90
@@ -59,7 +59,7 @@ export default async function ProductDetail({ params }) {
           />
 
           <Image
-            src="/1e1e6d20c1a1861a20c116e5d6f5efffd5862f89.png"
+            src={product.image}
             alt="robot"
             width={600}
             height={600}
@@ -67,17 +67,17 @@ export default async function ProductDetail({ params }) {
       absolute
       translate-x-0
       md:top-30
-      xl:top-20
+      xl:top-26
       xl:-right-15
-      md:-right-20
+      md:-right-0
       md:-translate-x-1/2
-      xl:-translate-x-1/3
+      xl:-translate-x-2/3
       z-10
       w-[400px]
       sm:w-[300px]
       md:w-[380px]
       lg:w-[450px]
-      xl:w-[550px]
+      xl:w-[570px]
     "
           />
         </div>
