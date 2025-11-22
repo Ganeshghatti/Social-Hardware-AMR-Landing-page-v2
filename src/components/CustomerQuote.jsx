@@ -95,15 +95,17 @@ export default function CustomerQuote() {
       </div>
 
       <div className="w-full flex flex-col md:flex-row bg-[#F5F5F5] font-geist gap-5">
-        <div className="w-full md:w-full relative h-[500px] md:h-[620px] overflow-hidden">
+        <div className="w-full md:w-full relative h-[500px] md:h-[620px] overflow-hidden ">
           <Image
             src="/1bc621bb2c43e9f8453de52b8d002f9f5f4a92eb.png"
             alt="img"
             fill
-            className="object-cover "
+            className="object-cover  "
           />
+                      <div className="absolute inset-0 bg-black/50"></div>
+
         </div>
-        <div className="w-full  flex flex-col  mt-10 px-5 ">
+        <div className="w-full  flex flex-col  mt-5 px-5 ">
           <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-tight mb-6">
             Tele-op data capture.
             <br />

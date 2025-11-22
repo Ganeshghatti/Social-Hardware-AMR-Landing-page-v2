@@ -1,9 +1,8 @@
 import { products } from "@/default-data/products";
 import Image from "next/image";
 
-export default function TechnicalOverview({id}) {
-
-  const product = products.find((p)=> p.id == id);
+export default function TechnicalOverview({ id }) {
+  const product = products.find((p) => p.id == id);
   return (
     <div className=" w-full ">
       <div className="flex flex-col py-16 ">
@@ -14,7 +13,8 @@ export default function TechnicalOverview({id}) {
         </div>
         <div className="mt-10 justify-center flex items-center">
           <h1 className="2xl:text-6xl md:text-5xl text-4xl mx-auto max-w-4xl text-center">
-            {product.title} Cobot <br/>Performance Overview
+            {product.title} Cobot <br />
+            Performance Overview
           </h1>
         </div>
       </div>
@@ -32,7 +32,9 @@ export default function TechnicalOverview({id}) {
 
           <div className="grid grid-cols-2 border-b border-gray-100 p-4">
             <p className="text-black font-semibold">Degrees of Freedom</p>
-            <p className="text-gray-900 font-medium">{product.Degrees_of_freedom}</p>
+            <p className="text-gray-900 font-medium">
+              {product.Degrees_of_freedom}
+            </p>
           </div>
 
           <div className="grid grid-cols-2 border-b border-gray-100 p-4">
@@ -47,7 +49,9 @@ export default function TechnicalOverview({id}) {
 
           <div className="grid grid-cols-2 border-b border-gray-100 p-4">
             <p className="text-black font-semibold">Repeatability (mm)</p>
-            <p className="text-gray-900 font-medium">{product.Repeatability_mm}</p>
+            <p className="text-gray-900 font-medium">
+              {product.Repeatability_mm}
+            </p>
           </div>
 
           <div className="grid grid-cols-2 border-b border-gray-100 p-4">
@@ -57,7 +61,9 @@ export default function TechnicalOverview({id}) {
 
           <div className="grid grid-cols-2 border-b border-gray-100 p-4">
             <p className="text-black font-semibold">IP Classification</p>
-            <p className="text-gray-900 font-medium">{product.IP_Classification}</p>
+            <p className="text-gray-900 font-medium">
+              {product.IP_Classification}
+            </p>
           </div>
 
           <div className="grid grid-cols-2 border-b border-gray-100 p-4">
@@ -69,12 +75,16 @@ export default function TechnicalOverview({id}) {
 
           <div className="grid grid-cols-2 border-b border-gray-100 p-4">
             <p className="text-black font-semibold">Encoder Resolution</p>
-            <p className="text-gray-900 font-medium">{product.Encoder_Resolution}</p>
+            <p className="text-gray-900 font-medium">
+              {product.Encoder_Resolution}
+            </p>
           </div>
 
           <div className="grid grid-cols-2 p-4">
             <p className="text-black font-semibold">Communication Bus</p>
-            <p className="text-gray-900 font-medium">{product.Communication_Bus}</p>
+            <p className="text-gray-900 font-medium">
+              {product.Communication_Bus}
+            </p>
           </div>
 
           <div className="grid grid-cols-2 p-4 border-t border-gray-100">
@@ -85,7 +95,7 @@ export default function TechnicalOverview({id}) {
       </div>
 
       <div className="flex justify-center items-center py-10 px-2 sm:px-4">
-        <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mt-4 lg:gap-14 w-full lg:w-3/4 mx-auto text-center">
+        {/* <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mt-4 lg:gap-14 w-full lg:w-3/4 mx-auto text-center">
           <div className="flex flex-col items-center ">
             <Image src="/Filter.png" alt="icon" width={30} height={25} />
             <h3 className="text-[#141414] font-semibold  md:mt-1 max-w-20  text-md md:text-xl">
@@ -132,18 +142,24 @@ export default function TechnicalOverview({id}) {
             </h3>
             <p className="mt-2 text-md md:text-lg">{product.Installation_Orientation}</p>
           </div>
+        </div> */}
+        <div className="max-w-4xl mx-auto flex gap-2 ">
+          {product.otherimages.map((image, idx) => (
+            <Image key={idx} src={image} alt="img" width={200} height={200} />
+          ))}
         </div>
       </div>
-      <div className="w-full h-screen">
-        <div className="relative w-full h-full">
+      <div className="w-full">
+        <div className="relative w-full h-screen">
           <Image
-            src="/5aa566b92b2af368e5009d17a92f407fe09c932b.jpg"
+            src="/f53e0ad7b543cdecf768ca6156f604d73a1a1811.png"
             alt="bg"
-            fill
-            className="object-cover w-full h-full scale-x-[-1]"
+            width={1000}
+            height={800}
+            className=" w-full h-[120vh] object-fill"
           />
-          <div className="absolute inset-0 bg-black opacity-60"></div>
-
+          <div className="absolute inset-0 bg-black opacity-40"></div>
+          {/* 
           <div className="absolute -right-40 bottom-10 md:bottom-20">
             <Image
               src="/3483ca5d500f39deaa906ec4ad26ebd25967ba7d.png"
@@ -152,17 +168,15 @@ export default function TechnicalOverview({id}) {
               height={700}
               className="scale-x-[-1] opacity-30"
             />
-          </div>
+          </div> */}
 
-          <div className="absolute top-20 md:top-32 left-1/2 -translate-x-1/2 text-white text-center px-4">
+          <div className="absolute top-20 md:top-32 md:left-1/2 md:-translate-x-1/2 text-white text-center px-4">
             <h1 className="text-3xl md:text-5xl font-normal">
               Ready to dive deeper?
             </h1>
 
             <div className="mt-10 md:mt-14">
-              <h2 className="text-3xl md:text-5xl font-normal">
-                Download the official
-              </h2>
+              <h2 className="text-3xl md:text-5xl ">Download the official</h2>
               <h2 className="text-3xl md:text-5xl  mt-3">
                 {product.title} cobot datasheet.
               </h2>
@@ -170,7 +184,7 @@ export default function TechnicalOverview({id}) {
           </div>
 
           <div
-            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/3
+            className="absolute top-2/3 left-1/2 -translate-x-1/2 -translate-y-1/3 md:mt-5
                     bg-[#D9D9D91A] backdrop-blur-md rounded-3xl
                     w-[90%] md:w-2/5 h-auto py-10 flex justify-center"
           >
@@ -190,16 +204,13 @@ export default function TechnicalOverview({id}) {
               <button className="flex w-full md:w-3/4  mt-4">
                 <p className="bg-white py-5 px-6 rounded-l-2xl font-medium text-black flex-1 text-center">
                   Download Technical Datasheet
-                  
                 </p>
-                  <Image
+                <Image
                   src="/arrow-right.png"
                   alt="arrow"
                   width={54}
                   height={50}
                 />
-
-              
               </button>
             </form>
           </div>

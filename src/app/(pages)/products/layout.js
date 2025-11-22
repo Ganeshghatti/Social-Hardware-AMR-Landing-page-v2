@@ -6,7 +6,7 @@ export const metadata = {
 export default function RroductLayout({ children }) {
   return (
     <div>
-      <body>{children}</body>
+      <div>{children}</div>
     </div>
   );
 }

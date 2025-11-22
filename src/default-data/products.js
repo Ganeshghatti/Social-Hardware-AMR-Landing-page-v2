@@ -1,15 +1,27 @@
 import product1 from "../../public/3KG_1.png";
-import product4 from "../../public/20KG_1.png";
-import product2 from "../../public/5KG_1.png";
-import product3 from "../../public/10KG_1.png";
+import product1a from "../../public/3KG_2.png";
+import product1b from "../../public/3KG_3.png";
 
+import product4 from "../../public/20KG_1.png";
+import product4a from "../../public/20KG_2.png";
+import product4b from "../../public/20KG_3.png";
+
+import product2 from "../../public/5KG_1.png";
+import product2a from "../../public/5KG_2.png";
+import product2b from "../../public/5KG_3.png";
+
+import product3 from "../../public/10KG_1.png";
+import product3a from "../../public/10KG_2.png";
+import product3b from "../../public/10KG_3.png";
 
 export const products = [
   {
     id: "1",
     title: "P3-R600-100",
     image: product1,
-    description : "3 kg payload, 540 mm reach.Ideal for bench tops, tight spaces, and safe collaboration.",
+    otherimages: [product1a, product1b],
+    description:
+      "3 kg payload, 540 mm reach.Ideal for bench tops, tight spaces, and safe collaboration.",
     Degrees_of_freedom: "6",
     Payload_kg: "3kg",
     Reach_mm: "540nm",
@@ -37,7 +49,10 @@ export const products = [
     id: "2",
     title: "P5-R900-120",
     image: product2,
-    description : "5 kg payload, 912 mm reach, optimized for larger work envelopes and high‑throughput handling.",
+    otherimages: [product2a, product2b],
+
+    description:
+      "5 kg payload, 912 mm reach, optimized for larger work envelopes and high‑throughput handling.",
     Degrees_of_freedom: "6",
     Payload_kg: "5",
     Reach_mm: "912",
@@ -64,7 +79,10 @@ export const products = [
   {
     id: "3",
     image: product3,
-    description : "10 kg payload, 1300 mm reach, ready for heavy handling and expanded work envelopes.",
+    otherimages: [product3a, product3b],
+
+    description:
+      "10 kg payload, 1300 mm reach, ready for heavy handling and expanded work envelopes.",
     title: "P5-R900-121",
     Degrees_of_freedom: "6",
     Payload_kg: "10",
@@ -92,8 +110,11 @@ export const products = [
   {
     id: "4",
     image: product4,
+    otherimages: [product4a, product4b],
+
     title: "P5-R900-122",
-    description : "20 kg payload , 1650 mm reach. made for heavy picks and long reach placement.",
+    description:
+      "20 kg payload , 1650 mm reach. made for heavy picks and long reach placement.",
     Degrees_of_freedom: "6",
     Payload_kg: "20",
     Reach_mm: "1650",

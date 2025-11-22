@@ -4,6 +4,7 @@ import Image from "next/image";
 
 export default async function ProductDetail({ params }) {
   const { id } = await params;
+ 
 
   const product = products.find((p) => p.id == id);
 
@@ -18,7 +19,7 @@ export default async function ProductDetail({ params }) {
   return (
     <div className="w-full bg-[#F9F9F9] font-geist relative overflow-hidden">
       <div className="w-full md:h-[700px] overflow-hidden flex flex-col md:flex-row items-center md:items-start ">
-        <div className="w-full md:w-2/3  space-y-6 md:space-y-8 py-20 pl-5 md:pl-20">
+        <div className="w-full md:w-2/3 2xl:w-1/2  space-y-6 md:space-y-8 py-20 pl-5 md:pl-20">
           <div className="bg-white border border-gray-300 rounded-full px-6 py-2 shadow-lg w-fit">
             <p className="text-[#252525] text-sm md:text-base font-medium">
               {product.title} Collaborative Robot
@@ -48,9 +49,11 @@ export default async function ProductDetail({ params }) {
       absolute 
       -top-10
       right-0
+      2xl:-top-20
       w-[400px]
       sm:w-[700px]
       md:w-[740px]
+      2xl:w-[800px]
       opacity-90
       -translate-x-2
       -translate-y-10
@@ -69,15 +72,17 @@ export default async function ProductDetail({ params }) {
       md:top-30
       xl:top-26
       xl:-right-15
+      2xl:-translate-x-2/3
       md:-right-0
       md:-translate-x-1/2
-      xl:-translate-x-2/3
+      xl:-translate-x-90
       z-10
       w-[400px]
       sm:w-[300px]
       md:w-[380px]
       lg:w-[450px]
       xl:w-[570px]
+      2xl:w-[600px]
     "
           />
         </div>
