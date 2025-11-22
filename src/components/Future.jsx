@@ -43,21 +43,21 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="hidden md:flex bg-black absolute right-0 w-1/3 h-full text-white flex-col px-12">
+      <div className=" md:flex bg-black absolute right-0 w-full md:w-1/3 h-full text-white flex-col px-12">
         <p className="relative top-20 max-w-sm mx-auto text-right">
           Gain a competitive edge with indigenous robotic systems. We provide
           custom-built cobots, UGVs, and end-of-arm tooling.
         </p>
       </div>
 
-      <div className="absolute right-4 md:right-20 bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
-        <h1 className="text-[100px] sm:text-[160px] md:text-[230px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
+      <div className="absolute right-4 md:right-20 bottom-40 md:bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
+        <h1 className="text-[110px] sm:text-[160px] md:text-[200px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
           BUILD
         </h1>
       </div>
 
       <div className="absolute left-4 md:left-20 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
-        <h1 className="text-[100px] sm:text-[160px] md:text-[230px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
+        <h1 className="text-[110px] sm:text-[160px] md:text-[200px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
           FUTURE
         </h1>
       </div>

@@ -10,9 +10,9 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#FFFFFF] font-geist w-full pt-16 pb-10">
+    <footer className="  font-geist w-full">
       <div
-        className="mx-auto px-5 sm:px-10 mb-20
+        className="mx-auto px-5 py-20 sm:px-10  bg-[#F5F5F5]
                   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 
                   gap-10 lg:gap-20"
       >
@@ -26,14 +26,14 @@ export default function Footer() {
             discuss distributor partnerships and ongoing support.
           </p>
           <div className="gap-2 flex flex-col">
-            <div className="gap-2 flex">
-              <Image src="/SVG.png" alt="m" width={15} height={10} />
+            <div className=" flex">
+              {/* <Image src="/SVG.png" alt="m" width={15} height={10} /> */}
               <p className="text-[#333333] leading-relaxed text-sm font-medium">
                 +91 7337743354
               </p>
             </div>
-            <div className="gap-2 flex">
-              <Image src="/SVG (1).png" alt="m" width={15} height={10} />
+            <div className=" flex">
+              {/* <Image src="/SVG (1).png" alt="m" width={15} height={10} /> */}
               <p className="text-[#333333] leading-relaxed text-sm font-medium">
                 info@socialhardware.in
               </p>
@@ -171,7 +171,7 @@ export default function Footer() {
       </div>
 
       <div
-        className="max-w-8xl mx-auto px-6 mt-10 pt-6 border-t border-gray-700 
+        className="max-w-8xl mx-auto px-6 py-8 pt-6  bg-[#FFFFFF] 
                   flex flex-col md:flex-row justify-between text-sm"
       >
         <div className=" flex flex-col md:flex-row justify-between w-full md:mx-10 gap-4">
