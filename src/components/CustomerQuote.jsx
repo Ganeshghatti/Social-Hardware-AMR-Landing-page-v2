@@ -102,8 +102,7 @@ export default function CustomerQuote() {
             fill
             className="object-cover  "
           />
-                      <div className="absolute inset-0 bg-black/50"></div>
-
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
         <div className="w-full  flex flex-col  mt-5 px-5 ">
           <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-tight mb-6">
@@ -132,7 +131,12 @@ export default function CustomerQuote() {
 
           <div className="flex w-full mt-5 md:mt-8 gap-8">
             <div className="flex flex-col items-center gap-3 justify-center">
-              <Image src="/e34164118a20d9c4283429da7392c5774a406392.png" alt="img" width={60} height={60} />
+              <Image
+                src="/e34164118a20d9c4283429da7392c5774a406392.png"
+                alt="img"
+                width={60}
+                height={60}
+              />
               <p className="bg-[#ECECEC] px-3 py-1 text-xs md:text-sm rounded-xl">
                 Plug-and-play{" "}
               </p>
