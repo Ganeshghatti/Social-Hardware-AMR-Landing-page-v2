@@ -48,17 +48,17 @@ export default function PhilosophySection() {
           <div className="-top-24  relative">
             <div className="hidden md:flex flex-col relative">
               <div className="flex m-0 p-0">
-                <div className="relative w-72 aspect-[1/1] clip-hex overflow-hidden group">
+                <div className="relative w-80 aspect-[1/1] clip-hex overflow-hidden group">
                   <Image
-                    src="/heroimage2.png"
+                    src="/08a656df6d37321563836e4c05b2a3b2eaf73263.jpg"
                     alt="Customizable Cobots"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-black/40 flex flex-col p-4 opacity-100"></div>
+                  {/* <div className="absolute inset-0 bg-black/40 flex flex-col p-4 opacity-100"></div> */}
                 </div>
 
-                <div className="w-72 aspect-[1/1] clip-hex overflow-hidden group  absolute left-64">
+                <div className="w-80 aspect-[1/1] clip-hex overflow-hidden group  absolute left-72">
                   <Image
                     src="/image1.png"
                     alt="Robot 2"
@@ -69,18 +69,18 @@ export default function PhilosophySection() {
               </div>
 
               <div className="flex w-full justify-center p-0 m-0">
-                <div className=" w-72 aspect-[1/1] clip-hex overflow-hidden group absolute left-32 top-56 ">
+                <div className=" w-80 aspect-[1/1] clip-hex overflow-hidden group absolute left-36 top-62 ">
                   <Image
-                    src="/image2.png"
+                    src="/webinar.png"
                     alt="Robot 3"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
 
-                <div className=" w-72 aspect-[1/1] clip-hex overflow-hidden group absolute -right-96 top-57">
+                <div className=" w-80 aspect-[1/1] clip-hex overflow-hidden group absolute -right-108 top-62">
                   <Image
-                    src="/image3.png"
+                    src="/dd742b64aede2d05ae65e82d00ca2bc224863134.png"
                     alt="Robot 4"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105 "
@@ -91,8 +91,8 @@ export default function PhilosophySection() {
           </div>
         </div>
       </div>
-      <div className="hidden md:flex border-1 border-gray-200 w-full py-5 text-[#232323]">
-        <div className="mx-auto w-2/3 flex justify-between mb-10 ">
+      <div className="hidden md:flex border-t-1 border-gray-200 w-full py-5 text-[#232323]">
+        <div className="mx-auto w-2/3 mt-0 md:mt-10 flex justify-between mb-10 ">
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
               src="/3de3f26c39b50a1ca4777861f39cc71a97ca65a1.png"

@@ -28,14 +28,14 @@ export default function Footer() {
           <div className="gap-2 flex flex-col">
             <div className=" flex">
               {/* <Image src="/SVG.png" alt="m" width={15} height={10} /> */}
-              <p className="text-[#333333] leading-relaxed text-sm font-medium">
-                +91 7337743354
+              <p className="text-[#333333] leading-relaxed text-sm font-semibold">
+                Call: +91 7337743354
               </p>
             </div>
             <div className=" flex">
               {/* <Image src="/SVG (1).png" alt="m" width={15} height={10} /> */}
-              <p className="text-[#333333] leading-relaxed text-sm font-medium">
-                info@socialhardware.in
+              <p className="text-[#333333] leading-relaxed text-sm font-semibold">
+                Email: info@socialhardware.in
               </p>
             </div>
           </div>
@@ -144,18 +144,18 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="#customise"
+                href="#profile"
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
-                Customise
+                Consultation{" "}
               </Link>
             </li>
             <li>
               <Link
-                href="#profile"
+                href="#customise"
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
-                Company Profile
+                Customization{" "}
               </Link>
             </li>
             <li>
@@ -163,7 +163,7 @@ export default function Footer() {
                 href="#gallery"
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
-                Gallery
+                Teleoperation{" "}
               </Link>
             </li>
           </ul>
@@ -176,19 +176,18 @@ export default function Footer() {
       >
         <div className=" flex flex-col md:flex-row justify-between w-full md:mx-10 gap-4">
           <div className="flex gap-2">
-            <a href="https://x.com/social_hardware" target="_blank">
-              <Image src="/Vector.png" alt="img" width={20} height={20} />
-            </a>
+            {/* <a href="https://x.com/social_hardware" target="_blank">
+            </a> */}
             <a
               href="https://www.linkedin.com/company/social-hardware"
               target="_blank"
             >
-              <Image src="/Vector (1).png" alt="img" width={20} height={20} />
+              <Image src="/Vector.png" alt="img" width={20} height={20} />
             </a>
           </div>
-          <div className="text-[#333333]  text-sm font-medium">
-            <a href="#" className="hover:text-orange-500">
-              Terms and Conditions
+          <div className="text-[#333333] text-md font-medium">
+            <a href="#" className="hover:text-orange-500 ">
+              Terms & Conditions
             </a>
           </div>
           <p className="text-[#333333]  text-sm font-medium">

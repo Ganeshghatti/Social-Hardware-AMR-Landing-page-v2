@@ -20,13 +20,13 @@ export default async function ProductDetail({ params }) {
     <div className="w-full bg-[#F9F9F9] font-geist relative overflow-hidden">
       <div className="w-full md:h-[700px] overflow-hidden flex flex-col md:flex-row items-center md:items-start ">
         <div className="w-full md:w-2/3 2xl:w-1/2  space-y-6 md:space-y-8 py-20 pl-5 md:pl-20">
-          <div className="bg-white border border-gray-300 rounded-full px-6 py-2 shadow-lg w-fit">
+          <div className="bg-white border-2 border-gray-200 rounded-full px-6 py-2 shadow-lg w-fit">
             <p className="text-[#252525] text-sm md:text-base font-medium">
               {product.title} Collaborative Robot
             </p>
           </div>
 
-          <h1 className="text-[#101010] text-3xl sm:text-4xl lg:text-5xl leading-tight max-w-lg md:mt-8 ">
+          <h1 className="text-[#101010] text-3xl sm:text-4xl lg:text-5xl leading-15 max-w-lg md:mt-8 ">
             For precision tasks and demanding industrial environments.
           </h1>
 
@@ -98,7 +98,7 @@ export default async function ProductDetail({ params }) {
               alt=""
             />
             <h3 className="text-[#141414] font-semibold mt-2">
-              {product.Payload_kg}
+              {product.Payload_kg} kg
             </h3>
             <p className="text-sm">Payload</p>
           </div>
@@ -106,7 +106,7 @@ export default async function ProductDetail({ params }) {
           <div className="flex flex-col items-center">
             <Image src="/icon-reach.svg.png" width={40} height={40} alt="" />
             <h3 className="text-[#141414] font-semibold mt-2">
-              {product.Reach_mm}
+              {product.Reach_mm} mm
             </h3>
             <p className="text-sm">Reach</p>
           </div>
@@ -119,7 +119,7 @@ export default async function ProductDetail({ params }) {
               alt=""
             />
             <h3 className="text-[#141414] font-semibold mt-2">
-              {product.Weight_kg}
+              {product.Weight_kg} kg
             </h3>
             <p className="text-sm">Weight</p>
           </div>
@@ -132,7 +132,7 @@ export default async function ProductDetail({ params }) {
               alt=""
             />
             <h3 className="text-[#141414] font-semibold mt-2">
-              {product.Repeatability_mm}
+              {product.Repeatability_mm} mm
             </h3>
             <p className="text-sm">Repeatability</p>
           </div>
@@ -145,7 +145,7 @@ export default async function ProductDetail({ params }) {
               alt=""
             />
             <h3 className="text-[#141414] font-semibold mt-2">
-              {product.Degrees_of_freedom}
+              {product.Degrees_of_freedom}-DoF
             </h3>
             <p className="text-sm ">Degrees-of-freedom</p>
           </div>

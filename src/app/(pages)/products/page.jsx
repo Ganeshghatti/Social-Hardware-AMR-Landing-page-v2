@@ -20,25 +20,25 @@ export default function Products() {
         </div>
 
         <div className="flex md:gap-6 gap-3 sm:mt-0 ">
-          <div className="flex flex-col items-center gap-5">
+          <div className="flex flex-col items-center justify-center gap-5">
             <Image
               src="/icon-payload-1.svg.png"
               alt="img"
-              width={30}
-              height={30}
+              width={35}
+              height={35}
             />
             <p className="bg-gray-200 px-3 py-1 rounded-2xl text-xs md:text-sm sm:text-sm">
               3–20 Kg Payload Capacity
             </p>
           </div>
-          <div className="flex flex-col items-center gap-5">
-            <Image src="/icon-reach.svg.png" alt="img" width={30} height={30} />
+          <div className="flex flex-col items-center justify-center gap-5">
+            <Image src="/icon-reach.svg.png" alt="img" width={35} height={35} />
             <p className="bg-gray-200 px-3 py-1 rounded-2xl text-xs md:text-sm sm:text-sm">
               600-1700mm Reach{" "}
             </p>
           </div>
-          <div className="flex flex-col items-center gap-5">
-            <Image src="/image 6.png" alt="img" width={30} height={30} />
+          <div className="flex flex-col items-center justify-center gap-5">
+            <Image src="/image 6.png" alt="img" width={35} height={35} />
             <p className="bg-gray-200 px-3 py-1 rounded-2xl text-xs md:text-sm sm:text-sm">
               ±0.03mm to ±0.1mm Repeatability{" "}
             </p>

@@ -22,8 +22,8 @@ export default function HeroSection() {
           </button>
         </div>
 
-        <div className="md:w-1/2 flex items-center justify-center md:justify-start text-center md:text-left py-2 mt-5 md:py-16">
-          <h1 className="text-[#FF6600] font-normal md:ml-10 text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-snug md:leading-tight max-w-2xl">
+        <div className="md:w-1/2  flex items-center justify-center md:justify-start text-center md:text-left py-2 mt-5 md:py-16">
+          <h1 className="text-[#FF6600] font-normal md:ml-10 text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl leading-snug md:leading-tight max-w-3xl">
             Made in India <br /> Engineered for the World
           </h1>
         </div>
