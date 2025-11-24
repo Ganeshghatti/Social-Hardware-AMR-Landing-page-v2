@@ -9,7 +9,7 @@ export default function HeroSection() {
           src={robot}
           alt="Robot"
           fill
-          className="object-cover scale-150 blur-xs"
+          className="object-cover scale-150 blur-xs "
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/80 to-transparent" />
@@ -28,7 +28,7 @@ export default function HeroSection() {
               that helps you automate smarter.
             </p>
 
-            <div className=" mt-12 md:mt-10 flex flex-row gap-4 max-w-xs md:max-w-2xl">
+            <div className=" mt-12 md:mt-10 flex flex-row max-w-xs md:max-w-2xl">
               <input
                 type="text"
                 placeholder="Enter your Email address"
@@ -50,14 +50,14 @@ export default function HeroSection() {
         </p>
       </div>
 
-      <div className="absolute right-4 md:right-20 bottom-40 md:bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
+      <div className="absolute right-4 md:right-20 bottom-36 md:bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
         <h1 className="text-[110px] sm:text-[160px] md:text-[200px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
           BUILD
         </h1>
       </div>
 
-      <div className="absolute mx-2 md:mx-0 md:left-20 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
-        <h1 className="text-[105px] sm:text-[160px] md:text-[200px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
+      <div className="absolute mx-2 md:mx-0  left-0  md:left-90 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
+        <h1 className="text-[103px] sm:text-[160px] md:text-[200px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
           FUTURE
         </h1>
       </div>

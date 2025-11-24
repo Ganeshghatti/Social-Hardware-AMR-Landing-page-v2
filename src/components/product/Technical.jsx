@@ -1,25 +1,33 @@
 import { products } from "@/default-data/products";
 import Image from "next/image";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 export default function TechnicalOverview({ id }) {
   const product = products.find((p) => p.id == id);
   return (
     <div className=" w-full ">
       <div className="flex flex-col py-16 ">
-        <div className="w-64 mx-auto items-center justify-center flex border-2 shadow-md bg-[#FFFFFF] border-[#E5E5E5] rounded-2xl px-2  py-1">
+        <div className="w-64 mx-auto items-center justify-center flex border-2 shadow-sm bg-[#FFFFFF] border-[#E5E5E5] rounded-2xl px-2  py-1">
           <h2 className=" text-[#232323] font-semibold ">
             Technical Specifications
           </h2>
         </div>
-        <div className="mt-14 justify-center flex items-center">
-          <h1 className="2xl:text-6xl md:text-5xl text-4xl mx-auto max-w-4xl text-center">
+        <div className="mt-6 md:mt-14 justify-center flex items-center mx-auto">
+          <h1 className="2xl:text-6xl md:text-5xl text-4xl  max-w-4xl text-center">
             {product.title} Cobot <br />
             Performance Overview
           </h1>
         </div>
       </div>
 
-      <div className="w-full max-w-4xl md:mx-auto p-6 md:p-10 ">
+      <div className="w-full max-w-4xl md:mx-auto px-6 md:py-8 md:px-10 md:mb-10">
         <div className="w-full  overflow-hidden bg-white  border-gray-200 border-2">
           <div
             className="
@@ -27,9 +35,7 @@ export default function TechnicalOverview({ id }) {
       relative after:content-[''] after:absolute after:top-0 after:bottom-0 
       after:left-1/2 after:w-[1.4px] after:bg-gray-300"
           >
-            <p className="text-black font-semibold">
-              Reach Model No.
-            </p>
+            <p className="text-black font-semibold">Reach Model No.</p>
             <p className="text-gray-900 font-medium mx-2">{product.title}</p>
           </div>
 
@@ -167,61 +173,33 @@ export default function TechnicalOverview({ id }) {
         </div>
       </div>
 
-      <div className="flex justify-center items-center py-10 px-2 sm:px-4">
-        {/* <div className="grid grid-cols-2  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mt-4 lg:gap-14 w-full lg:w-3/4 mx-auto text-center">
-          <div className="flex flex-col items-center ">
-            <Image src="/Filter.png" alt="icon" width={30} height={25} />
-            <h3 className="text-[#141414] font-semibold  md:mt-1 max-w-20  text-md md:text-xl">
-              Linear Velocity
-            </h3>
-            <p className="mt-2 text-md md:text-lg">({product.Linear_Velocity_m_s})</p>
-          </div>
-
-          <div className="flex flex-col items-center">
-            <Image src="/Icon (3).png" alt="icon" width={25} height={30} />
-            <h3 className="text-[#141414] font-semibold mt-2 max-w-20 text-md md:text-xl">
-              Average Power
-            </h3>
-            <p className="mt-2 text-md md:text-lg">({product.Average_Power_W})</p>
-          </div>
-
-          <div className="flex flex-col items-center mt-4 md:mt-0 ">
-            <Image src="/Icon (2).png" alt="icon" width={20} height={20} />
-            <h3 className="text-[#141414] font-semibold text-md md:text-xl max-w-20 mt-2">
-              Peak Power
-            </h3>
-            <p className="mt-2 text-md md:text-lg">({product.Peak_Power_W})</p>
-          </div>
-
-          <div className="flex flex-col items-center mt-4 md:mt-0 ">
-            <Image src="/Flame.png" alt="icon" width={30} height={30} />
-            <h3 className="text-[#141414] font-semibold text-md md:text-xl max-w-30 mt-2">
-              Ambient Temperature
-            </h3>
-            <p className="mt-2 text-md md:text-lg">({product.Ambient_Temperature})</p>
-          </div>
-
-          <div className="flex flex-col items-center mt-4 md:mt-0">
-            <Image src="/Son.png" alt="icon" width={30} height={30} />
-            <h3 className="text-[#141414] font-semibold text-md md:text-xl mt-2">
-              Ambient Humidity
-            </h3>
-            <p className="mt-2 text-md md:text-lg">({product.Ambient_Humidity})</p>
-          </div>
-          <div className="flex flex-col items-center mt-4 md:mt-0">
-            <Image src="/eye.png" alt="icon" width={30} height={30} />
-            <h3 className="text-[#141414] font-semibold text-md md:text-xl mt-2">
-              Installation Orientation
-            </h3>
-            <p className="mt-2 text-md md:text-lg">{product.Installation_Orientation}</p>
-          </div>
-        </div> */}
-        <div className="max-w-4xl mx-auto flex gap-2 ">
+      <div className="flex justify-center items-center py-6 md:py-10 mt-8 md:mt-2 bg-[#F9F9F9] border-t-[#E5E5E5] border-1">
+        <div className="flex flex-wrap justify-center gap-4">
           {product.otherimages.map((image, idx) => (
-            <Image key={idx} src={image} alt="img" width={200} height={200} />
+            <Dialog key={idx}>
+              <DialogTrigger>
+                <Image
+                  src={image}
+                  alt="img"
+                  width={180}
+                  height={180}
+                  className="w-[140px] sm:w-[160px] md:w-[180px] h-auto object-contain"
+                />
+              </DialogTrigger>
+              <DialogContent>
+                <DialogHeader>
+                  <DialogTitle>{}</DialogTitle>
+                  <DialogDescription>
+                    This action cannot be undone. This will permanently delete
+                    your account and remove your data from our servers.
+                  </DialogDescription>
+                </DialogHeader>
+              </DialogContent>
+            </Dialog>
           ))}
         </div>
       </div>
+
       <div className="w-full">
         <div className="relative w-full h-screen">
           <Image
@@ -229,9 +207,17 @@ export default function TechnicalOverview({ id }) {
             alt="bg"
             width={1000}
             height={800}
-            className=" w-full h-[120vh] object-fill"
+            className=" w-full h-[120vh] object-fill hidden md:block"
           />
-          <div className="absolute inset-0 bg-black opacity-40"></div>
+
+          <Image
+            src="/bg_image.jpeg"
+            alt="bg"
+            width={1000}
+            height={800}
+            className=" w-full h-[120vh] object-fill block md:hidden"
+          />
+          <div className="absolute inset-0 bg-black opacity-50"></div>
           {/* 
           <div className="absolute -right-40 bottom-10 md:bottom-20">
             <Image
@@ -249,7 +235,9 @@ export default function TechnicalOverview({ id }) {
             </h1>
 
             <div className="mt-10 md:mt-14">
-              <h2 className="text-3xl md:text-4xl 2xl:text-5xl ">Download the official</h2>
+              <h2 className="text-3xl md:text-4xl 2xl:text-5xl ">
+                Download the official
+              </h2>
               <h2 className="text-3xl md:text-4xl 2xl:text-5xl   mt-3">
                 {product.title} cobot datasheet.
               </h2>
@@ -275,7 +263,7 @@ export default function TechnicalOverview({ id }) {
               />
 
               <button className="flex w-full md:w-3/4  mt-4">
-                <p className="bg-white py-5 px-6 rounded-l-2xl font-medium text-black flex-1 text-center">
+                <p className="bg-white py-4 px-6 rounded-l-2xl font-medium text-black flex-1 text-center">
                   Download Technical Datasheet
                 </p>
                 <Image

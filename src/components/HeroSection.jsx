@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="w-full bg-[#E5E5E5] font-geist">
+    <section className="w-full bg-[#F5F5F5] font-geist">
       <div className="mx-auto  flex flex-col-reverse md:flex-row border border-gray-300 justify-between px-6 sm:px-10 md:px-8 lg:px-10 gap-6 ">
         <div className="md:w-2/4 md:border-r  border-gray-300 py-0 md:py-10 flex flex-col justify-center items-center md:items-start">
           <p className="text-[#8D8D8D] font-geist font-normal leading-relaxed text-xs sm:text-base md:text-md max-w-xl ">
@@ -29,9 +29,9 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <div className="flex flex-col px-4 sm:px-6 md:px-10 bg-[#E5E5E5] py-10">
+      <div className="flex flex-col px-4 sm:px-6 md:px-10  py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-          <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[540px] overflow-hidden ">
+          <div className="relative w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[550px] overflow-hidden ">
             <Image
               src={a2}
               alt="Indigenous Innovation"

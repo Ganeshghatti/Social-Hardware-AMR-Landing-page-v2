@@ -6,7 +6,7 @@ export default function PhilosophySection() {
   return (
     <div className="py-8 font-geist">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
-        <div className="2xl:px-20 px-10 mx-auto md:mx-0 py-10 md:py-20">
+        <div className="2xl:px-16 md:px-10 px-5 mx-auto md:mx-0 py-10 md:py-20">
           <p className="text-[#232323] font-medium text-sm mb-3">
             Our Philosophy. Engineered for the World.
           </p>

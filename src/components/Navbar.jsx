@@ -6,8 +6,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-[#E5E5E5] text-[#232323] border-b-2 border-gray-300 w-full">
-      <div className="w-full px-10 py-4 flex justify-between items-center">
+    <nav className="bg-[#E5E5E5] text-[#232323] border-b-1 border-gray-200 w-full">
+      <div className="w-full px-4 md:px-10 py-4 flex justify-between items-center">
         <ul className="hidden md:flex justify-between w-full text-md font-normal tracking-wide">
           <li>
             <Link href="/" className="hover:text-gray-900 transition">

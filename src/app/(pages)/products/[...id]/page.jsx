@@ -4,7 +4,6 @@ import Image from "next/image";
 
 export default async function ProductDetail({ params }) {
   const { id } = await params;
- 
 
   const product = products.find((p) => p.id == id);
 
@@ -20,13 +19,13 @@ export default async function ProductDetail({ params }) {
     <div className="w-full bg-[#F9F9F9] font-geist relative overflow-hidden">
       <div className="w-full md:h-[700px] overflow-hidden flex flex-col md:flex-row items-center md:items-start ">
         <div className="w-full md:w-2/3 2xl:w-1/2  space-y-6 md:space-y-8 py-20 pl-5 md:pl-20">
-          <div className="bg-white border-2 border-gray-200 rounded-full px-6 py-2 shadow-lg w-fit">
+          <div className="bg-white border-2 border-gray-200 rounded-full px-6 py-2 shadow-sm w-fit">
             <p className="text-[#252525] text-sm md:text-base font-medium">
               {product.title} Collaborative Robot
             </p>
           </div>
 
-          <h1 className="text-[#101010] text-3xl sm:text-4xl lg:text-5xl leading-15 max-w-lg md:mt-8 ">
+          <h1 className="text-[#101010] text-3xl sm:text-4xl lg:text-5xl leading-9 md:leading-15 max-w-lg md:mt-8 ">
             For precision tasks and demanding industrial environments.
           </h1>
 
@@ -55,7 +54,8 @@ export default async function ProductDetail({ params }) {
       md:w-[740px]
       2xl:w-[800px]
       opacity-90
-      -translate-x-2
+      translate-x-14
+      2xl:translate-x-0
       -translate-y-10
       pointer-events-none
     "
@@ -68,11 +68,12 @@ export default async function ProductDetail({ params }) {
             height={600}
             className="
       absolute
-      translate-x-0
+      -translate-x-3
       md:top-30
-      xl:top-26
-      xl:-right-15
-      2xl:-translate-x-2/3
+      xl:top-23
+      xl:-right-18
+      2xl:-translate-x-99
+      2xl:top-20
       md:-right-0
       md:-translate-x-1/2
       xl:-translate-x-90
@@ -89,26 +90,37 @@ export default async function ProductDetail({ params }) {
       </div>
 
       <div className="border-1 bg-[#F9F9F9] py-10 flex justify-center">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-10 text-center">
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-10 text-center items-center ">
           <div className="flex flex-col items-center">
             <Image
               src="/tabler-icon-weight.svg.png"
               width={40}
               height={40}
               alt=""
+              className="w-8 h-8 sm:w-10 sm:h-10"
             />
-            <h3 className="text-[#141414] font-semibold mt-2">
+            <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
               {product.Payload_kg} kg
             </h3>
-            <p className="text-sm">Payload</p>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
+              Payload
+            </p>
           </div>
 
           <div className="flex flex-col items-center">
-            <Image src="/icon-reach.svg.png" width={40} height={40} alt="" />
-            <h3 className="text-[#141414] font-semibold mt-2">
+            <Image
+              src="/icon-reach.svg.png"
+              width={40}
+              height={40}
+              alt=""
+              className="w-8 h-8 sm:w-10 sm:h-10"
+            />
+            <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
               {product.Reach_mm} mm
             </h3>
-            <p className="text-sm">Reach</p>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
+              Reach
+            </p>
           </div>
 
           <div className="flex flex-col items-center">
@@ -117,11 +129,14 @@ export default async function ProductDetail({ params }) {
               width={40}
               height={40}
               alt=""
+              className="w-8 h-8 sm:w-10 sm:h-10"
             />
-            <h3 className="text-[#141414] font-semibold mt-2">
+            <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
               {product.Weight_kg} kg
             </h3>
-            <p className="text-sm">Weight</p>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
+              Weight
+            </p>
           </div>
 
           <div className="flex flex-col items-center">
@@ -130,24 +145,32 @@ export default async function ProductDetail({ params }) {
               width={40}
               height={40}
               alt=""
+              className="w-8 h-8 sm:w-10 sm:h-10"
             />
-            <h3 className="text-[#141414] font-semibold mt-2">
+            <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
               {product.Repeatability_mm} mm
             </h3>
-            <p className="text-sm">Repeatability</p>
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
+              Repeatability
+            </p>
           </div>
 
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center w-full sm:w-auto">
             <Image
               src="/tabler-icon-weight.svg fill (1).png"
               width={40}
               height={40}
-              alt=""
+              alt="icon"
+              className="w-8 h-8 sm:w-10 sm:h-10"
             />
-            <h3 className="text-[#141414] font-semibold mt-2">
+
+            <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
               {product.Degrees_of_freedom}-DoF
             </h3>
-            <p className="text-sm ">Degrees-of-freedom</p>
+
+            <p className="text-xs sm:text-sm md:text-base text-gray-600">
+              Degrees-of-freedom
+            </p>
           </div>
         </div>
       </div>
