@@ -51,13 +51,13 @@ export default function HeroSection() {
       </div>
 
       <div className="absolute right-4 md:right-20 bottom-36 md:bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
-        <h1 className="text-[110px] sm:text-[160px] md:text-[200px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
+        <h1 className="text-[110px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
           BUILD
         </h1>
       </div>
 
-      <div className="absolute mx-2 md:mx-0  left-0  md:left-90 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
-        <h1 className="text-[103px] sm:text-[160px] md:text-[200px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
+      <div className="absolute mx-2 md:mx-0  left-0  md:left-98 2xl:left-90 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
+        <h1 className="text-[103px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
           FUTURE
         </h1>
       </div>

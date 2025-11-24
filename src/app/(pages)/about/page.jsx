@@ -27,13 +27,13 @@ export default function PhilosophySection() {
             maintain. Request a consultation to see how we can tailor a system
             to your line.{" "}
           </p>
-          <Link href="/contact">
-            <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
-              Request Free Consultation <ArrowRight size={18} />
-            </button>
-          </Link>
-
-      
+          <div className="w-fit">
+            <Link href="/contact">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2 mb-4 text-sm sm:text-base">
+                Request Free Consultation <ArrowRight size={18} />
+              </button>
+            </Link>
+          </div>
         </div>
 
         <div className="flex  relative py-10 md:py-0">
@@ -100,7 +100,9 @@ export default function PhilosophySection() {
               width={50}
               height={40}
             />
-            <p className="bg-gray-200 px-3 py-1 text-sm rounded-xl">Inspection</p>
+            <p className="bg-gray-200 px-3 py-1 text-sm rounded-xl">
+              Inspection
+            </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2 ">
             <Image
@@ -120,7 +122,9 @@ export default function PhilosophySection() {
               width={30}
               height={30}
             />
-            <p className="bg-gray-200 px-3 py-1  text-sm rounded-xl">Assembly</p>
+            <p className="bg-gray-200 px-3 py-1  text-sm rounded-xl">
+              Assembly
+            </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
@@ -129,7 +133,9 @@ export default function PhilosophySection() {
               width={30}
               height={30}
             />
-            <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">Machine Tending</p>
+            <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">
+              Machine Tending
+            </p>
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
@@ -138,7 +144,9 @@ export default function PhilosophySection() {
               width={30}
               height={30}
             />
-            <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">Palletizing</p>
+            <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">
+              Palletizing
+            </p>
           </div>
         </div>
       </div>

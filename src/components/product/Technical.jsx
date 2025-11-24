@@ -188,10 +188,15 @@ export default function TechnicalOverview({ id }) {
               </DialogTrigger>
               <DialogContent>
                 <DialogHeader>
-                  <DialogTitle>{}</DialogTitle>
-                  <DialogDescription>
-                    This action cannot be undone. This will permanently delete
-                    your account and remove your data from our servers.
+                  <DialogTitle className="text-left w-full font-normal text-md">Variant {idx+1}</DialogTitle>
+                  <DialogDescription className="flex flex-col items-center justify-center">
+                    <Image
+                      src={image}
+                      alt="img"
+                      width={180}
+                      height={180}
+                      className="w-[140px] sm:w-[160px] md:w-[350px] h-auto object-contain "
+                    />
                   </DialogDescription>
                 </DialogHeader>
               </DialogContent>

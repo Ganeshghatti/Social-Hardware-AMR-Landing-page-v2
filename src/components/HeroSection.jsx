@@ -3,6 +3,7 @@ import a1 from "../../public/heroimage2.png";
 import a2 from "../../public/heroimage1.png";
 import arrow from "../../public/arrow.png";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -16,10 +17,13 @@ export default function HeroSection() {
             applications, our systems make advanced robotics safe, affordable,
             and easy to deploy.
           </p>
-
-          <button className="bg-[#FF6600] flex items-center gap-2 text-white px-4 sm:px-6 py-2 sm:py-3 mt-6 mb-4  shadow-md hover:bg-[#e05500] transition-colors duration-300 text-sm sm:text-base w-fit">
+          
+          <Link href="/products">
+            <button className="bg-[#FF6600] flex items-center gap-2 text-white px-4 sm:px-6 py-2 sm:py-3 mt-6 mb-4  shadow-md hover:bg-[#e05500] transition-colors duration-300 text-sm sm:text-base w-fit">
             Discover Products <ArrowRight size={18} />
           </button>
+          </Link>
+        
         </div>
 
         <div className="md:w-1/2  flex items-center justify-center md:justify-start text-center md:text-left py-2 mt-5 md:py-16">

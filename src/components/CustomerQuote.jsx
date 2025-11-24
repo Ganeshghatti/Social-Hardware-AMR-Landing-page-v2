@@ -32,11 +32,13 @@ export default function CustomerQuote() {
             your project.
           </p>
 
-          <Link href="/contact">
-            <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
-              Request Custom Quote <ArrowRight size={18} />
-            </button>
-          </Link>
+          <div className="w-fit">
+            <Link href="/contact" className="inline-block">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center gap-1  text-white font-medium px-5 py-2 mb-4 text-sm sm:text-base">
+                Request Custom Quote <ArrowRight size={18} />
+              </button>
+            </Link>
+          </div>
 
           <div className="grid grid-cols-3 md:flex w-full mt-5 md:mt-8 gap-2 md:gap-8 mb-5 md:mb-0">
             <div className="flex flex-col items-center gap-3 justify-center">
@@ -131,11 +133,13 @@ export default function CustomerQuote() {
             handle them on their own tomorrow.
           </p>
 
-          <Link href="/contact">
-            <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
-              Learn More About Tele-operation <ArrowRight size={18} />
-            </button>
-          </Link>
+          <div className="w-fit">
+            <Link href="/contact">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
+                Learn More About Tele-operation <ArrowRight size={18} />
+              </button>
+            </Link>
+          </div>
 
           <div className="grid grid-cols-3 md:flex w-full mt-5 md:mt-8 gap-2 md:gap-8">
             <div className="flex flex-col items-center justify-center gap-3">

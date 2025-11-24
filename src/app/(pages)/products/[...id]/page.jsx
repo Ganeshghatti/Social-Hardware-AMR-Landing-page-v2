@@ -68,7 +68,8 @@ export default async function ProductDetail({ params }) {
             height={600}
             className="
       absolute
-      -translate-x-3
+      -translate-x-10
+      -top-5
       md:top-30
       xl:top-23
       xl:-right-18
@@ -89,7 +90,7 @@ export default async function ProductDetail({ params }) {
         </div>
       </div>
 
-      <div className="border-1 bg-[#F9F9F9] py-10 flex justify-center">
+      <div className="border-1 bg-[#F9F9F9] py-10 flex items-center justify-center">
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 gap-10 text-center items-center ">
           <div className="flex flex-col items-center">
             <Image
