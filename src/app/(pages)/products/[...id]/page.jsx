@@ -20,7 +20,7 @@ export default async function ProductDetail({ params }) {
       <div className="w-full md:h-[700px] overflow-hidden flex flex-col md:flex-row items-center md:items-start ">
         <div className="w-full md:w-2/3 2xl:w-1/2  space-y-6 md:space-y-8 py-20 pl-5 md:pl-20">
           <div className="bg-white border-2 border-gray-200 rounded-full px-6 py-2 shadow-sm w-fit">
-            <p className="text-[#252525] text-sm md:text-base font-medium">
+            <p className="text-[#252525] text-sm md:text-base font-semibold">
               {product.title} Collaborative Robot
             </p>
           </div>
@@ -29,7 +29,7 @@ export default async function ProductDetail({ params }) {
             For precision tasks and demanding industrial environments.
           </h1>
 
-          <p className="text-[#757575] leading-relaxed max-w-lg md:mt-14 font-geist">
+          <p className="text-[#757575] leading-relaxed max-w-lg text-lg md:mt-14 mx-0.5 font-geist">
             The P3-R600-S100 is the ideal solution for small‑part assembly,
             light material handling, machine tending, dispensing, inspection,
             and lab automation. With a 3 kg payload and compact 600 mm reach, it

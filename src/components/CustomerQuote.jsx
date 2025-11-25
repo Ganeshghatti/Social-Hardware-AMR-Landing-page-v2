@@ -7,7 +7,7 @@ export default function CustomerQuote() {
   return (
     <div className="">
       <div className="w-full flex flex-col md:flex-row bg-[#F5F5F5] font-geist">
-        <div className="w-full  flex flex-col justify-center pl-4 md:pl-10">
+        <div className="w-full  flex flex-col justify-center pl-4 md:py-10 md:pl-10">
           <p className="hidden md:flex text-sm text-[#000000] font-semibold mb-3">
             Indigenous Platform
           </p>
@@ -18,7 +18,7 @@ export default function CustomerQuote() {
             system with us.
           </h1>
 
-          <p className="text-[#6D6D6D] text-sm md:text-base mt-4 max-w-xl mb-8">
+          <p className="text-[#6D6D6D] text-lg mt-5 md:mt-3 mx-1 max-w-xl mb-2">
             Define your objective and we’ll co‑create a platform that integrates
             advanced technologies engineered to your specific needs. We can
             tailor reach, payload, interfaces, safety, and software integration
@@ -26,7 +26,7 @@ export default function CustomerQuote() {
             your automation.
           </p>
 
-          <p className="text-[#6D6D6D] text-sm md:text-base max-w-xl mb-8">
+          <p className="text-[#6D6D6D] text-lg max-w-xl mb-8">
             Share your requirements to request a custom quotation, and we’ll
             propose the optimal configuration, lead time, and investment for
             your project.
@@ -34,7 +34,7 @@ export default function CustomerQuote() {
 
           <div className="w-fit">
             <Link href="/contact" className="inline-block">
-              <button className="bg-orange-500 hover:bg-orange-600 flex items-center gap-1  text-white font-medium px-5 py-2 mb-4 text-sm sm:text-base">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center gap-1  text-white font-medium px-5 py-2 mb-4 text-lg">
                 Request Custom Quote <ArrowRight size={18} />
               </button>
             </Link>
@@ -81,7 +81,7 @@ export default function CustomerQuote() {
           </div>
         </div>
 
-        <div className="w-full md:w-[109%] 2xl:w-[107%] relative h-[500px] md:h-[800px] overflow-hidden">
+        <div className="w-full md:w-[109%] 2xl:w-[107%] relative h-[500px] md:h-[880px] overflow-hidden">
           <div className="absolute inset-0 ">
             <Image
               src={robot}
@@ -105,16 +105,15 @@ export default function CustomerQuote() {
       </div>
 
       <div className="w-full flex flex-col mt-4 md:mt-0 md:flex-row bg-[#FFFFFF] font-geist gap-5">
-        <div className="w-full md:w-full relative h-[500px] md:h-[660px] overflow-hidden ">
+        <div className="w-full md:w-full relative h-[500px] md:h-[780px] overflow-hidden ">
           <Image
-            src="/1bc621bb2c43e9f8453de52b8d002f9f5f4a92eb.png"
+            src="/18bc30f82ed4172605c95d1b6a260f0685074096.jpg"
             alt="img"
             fill
             className="object-cover  "
           />
-          <div className="absolute inset-0 bg-black/50"></div>
         </div>
-        <div className="w-full  flex flex-col  mt-5 px-5 py-6 ">
+        <div className="w-full  flex flex-col  md:mt-5 px-5 py-6 md:py-10 ">
           <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-tight mb-6">
             Tele-op data capture.
             <br />
@@ -122,7 +121,7 @@ export default function CustomerQuote() {
             into smarter autonomy.
           </h1>
 
-          <p className="text-[#6D6D6D] text-sm md:text-base max-w-3xl  mb-8">
+          <p className="text-[#6D6D6D] text-lg max-w-3xl leading-7 md:leading-9 mb-8">
             Define your objective and we’ll co‑create a platform that integrates
             Our tele-operation platform lets experts “step inside” robots via XR
             and haptics, resolve complex situations in real time, and
@@ -135,7 +134,7 @@ export default function CustomerQuote() {
 
           <div className="w-fit">
             <Link href="/contact">
-              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-sm sm:text-base">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-lg">
                 Learn More About Tele-operation <ArrowRight size={18} />
               </button>
             </Link>

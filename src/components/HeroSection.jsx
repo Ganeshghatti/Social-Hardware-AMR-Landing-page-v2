@@ -10,7 +10,7 @@ export default function HeroSection() {
     <section className="w-full bg-[#F5F5F5] font-geist">
       <div className="mx-auto  flex flex-col-reverse md:flex-row border border-gray-300 justify-between px-6 sm:px-10 md:px-8 lg:px-10 gap-6 ">
         <div className="md:w-2/4 md:border-r  border-gray-300 py-0 md:py-10 flex flex-col justify-center items-center md:items-start">
-          <p className="text-[#8D8D8D] font-geist font-normal leading-relaxed text-xs sm:text-base md:text-md max-w-xl ">
+          <p className="text-[#8D8D8D] font-geist font-normal leading-relaxed text-md sm:text-lg md:text-md max-w-2xl ">
             We’re a Bengaluru-based robotics company, designing, building, and
             integrating cobots and vision systems for Indian industry and
             research. Engineered for real-world conditions and high-impact
@@ -19,7 +19,7 @@ export default function HeroSection() {
           </p>
           
           <Link href="/products">
-            <button className="bg-[#FF6600] flex items-center gap-2 text-white px-4 sm:px-6 py-2 sm:py-3 mt-6 mb-4  shadow-md hover:bg-[#e05500] transition-colors duration-300 text-sm sm:text-base w-fit">
+            <button className="bg-[#FF6600] flex items-center gap-2 text-white px-4 sm:px-6 py-2 sm:py-3 mt-6 mb-4  shadow-md hover:bg-[#e05500] transition-colors duration-300 text-md sm:text-base w-fit">
             Discover Products <ArrowRight size={18} />
           </button>
           </Link>
@@ -45,7 +45,7 @@ export default function HeroSection() {
             />
           </div>
 
-          <div className="relative w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[550px] overflow-hidden ">
+          <div className="relative w-full h-[350px] sm:h-[380px] md:h-[450px] lg:h-[550px] overflow-hidden ">
             <Image
               src={a1}
               alt="Engineers working"
@@ -56,7 +56,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-black/50"></div>
 
             <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-6 md:p-8 text-white">
-              <p className="text-xs text-[#FFFFFF] sm:text-sm md:text-base max-w-sm mt-2 sm:mt-4 leading-relaxed">
+              <p className="text-sm text-[#FFFFFF] sm:text-sm md:text-base max-w-sm mt-2 sm:mt-4 leading-relaxed">
                 From collaborative robots and UGVs to vision systems and custom
                 end-of-arm tooling, we can design and deliver solutions
                 precisely tailored to your application, process, and performance

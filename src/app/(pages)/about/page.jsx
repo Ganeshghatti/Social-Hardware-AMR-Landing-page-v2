@@ -15,21 +15,21 @@ export default function PhilosophySection() {
             automation solutions. <br />
             Indigenous robotics <br /> without boundaries.
           </h1>
-          <p className="text-[#6D6D6D] text-sm md:text-base mb-6 max-w-xl">
+          <p className="text-[#6D6D6D] text-lg pb-6 max-w-xl">
             We believe advanced robotics should be accessible, adaptable, and
             locally supported. That’s why we build indigenous systems that lead
             the way—no steep import dependencies, no support delays, just pure
             performance.{" "}
           </p>
-          <p className="text-[#6D6D6D] text-sm md:text-base mb-6 max-w-xl">
+          <p className="text-[#6D6D6D] text-lg  mb-6 max-w-xl">
             Whether you’re assembling, packaging, or running quality control,
             our robots feel natural to operate, fast to deploy, and reliable to
             maintain. Request a consultation to see how we can tailor a system
             to your line.{" "}
           </p>
-          <div className="w-fit">
+          <div className="w-fit mt-4 md:mt-12">
             <Link href="/contact">
-              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2 mb-4 text-sm sm:text-base">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2 mb-4 text-lg">
                 Request Free Consultation <ArrowRight size={18} />
               </button>
             </Link>

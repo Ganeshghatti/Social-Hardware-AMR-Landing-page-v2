@@ -87,7 +87,7 @@ export default function Productcard({
         {title}
       </h1>
 
-      <p className="text-xs sm:text-sm text-[#6D6D6D] leading-relaxed line-clamp-4">
+      <p className="2xl:text-base md:text-lg text-[#6D6D6D] leading-relaxed line-clamp-4">
         {description}
       </p>
     </div>
@@ -95,7 +95,7 @@ export default function Productcard({
     <Link href={`/products/${id}`} className="w-full flex items-center">
       <button className="
           bg-[#FF6600] font-semibold text-white py-2 px-3 
-          w-2/3 mx-auto mb-6 sm:mb-10 cut-corners text-sm sm:text-base
+          w-2/3 mx-auto mb-6 sm:mb-10 cut-corners text-md sm:text-lg
         "
       >
         View Specifications →

@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/80 to-transparent" />
 
         <div className="md:absolute z-10 text-white top-10 md:top-20  md:left-16 max-w-full p-4 md:p-0">
-          <p className="uppercase text-xs mt-5 md:mt-0 md:text-sm mb-3 md:mb-4">
+          <p className="uppercase text-sm mt-5 md:mt-0 md:text-sm mb-3 md:mb-4">
             Advanced Robotics & Automation
           </p>
           <h2 className="text-3xl md:text-5xl font-medium mb-4 md:mb-6 max-w-2xl leading-tight">
@@ -23,7 +23,7 @@ export default function HeroSection() {
           </h2>
 
           <div className="mt-4 md:mt-6">
-            <p className="max-w-xs md:max-w-sm text-sm md:text-base">
+            <p className="max-w-xs md:max-w-sm text-md md:text-base">
               Sign up for instant access to our Company Profile and curated news
               that helps you automate smarter.
             </p>
@@ -50,14 +50,14 @@ export default function HeroSection() {
         </p>
       </div>
 
-      <div className="absolute right-4 md:right-20 bottom-36 md:bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
-        <h1 className="text-[110px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
+      <div className="absolute right-1 md:right-20 bottom-36 md:bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
+        <h1 className="text-[103px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
           BUILD
         </h1>
       </div>
 
-      <div className="absolute mx-2 md:mx-0  left-0  md:left-98 2xl:left-90 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
-        <h1 className="text-[103px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
+      <div className="absolute mx-2 md:mx-0 right-1 left-0  md:left-98 2xl:left-90 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
+        <h1 className="text-[95px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
           FUTURE
         </h1>
       </div>
