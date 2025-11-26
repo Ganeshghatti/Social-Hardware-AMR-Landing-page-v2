@@ -7,7 +7,7 @@ import Future from "@/components/Future";
 
 export default function Home() {
   return (
-    <div className="bg-[#F5F5F5] w-full">
+    <div className="bg-[#F5F5F5]">
       <HeroSection />
       <div>
         <div>

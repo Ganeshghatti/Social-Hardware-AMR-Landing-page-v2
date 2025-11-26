@@ -29,7 +29,7 @@ export default async function ProductDetail({ params }) {
             For precision tasks and demanding industrial environments.
           </h1>
 
-          <p className="text-[#757575] leading-relaxed max-w-lg text-lg md:mt-14 mx-0.5 font-geist">
+          <p className="text-[#757575] leading-relaxed max-w-2xl text-md md:text-lg md:mt-14 mx-0.5 font-geist">
             The P3-R600-S100 is the ideal solution for small‑part assembly,
             light material handling, machine tending, dispensing, inspection,
             and lab automation. With a 3 kg payload and compact 600 mm reach, it
@@ -53,7 +53,7 @@ export default async function ProductDetail({ params }) {
       sm:w-[700px]
       md:w-[740px]
       2xl:w-[800px]
-      opacity-90
+      opacity-93
       translate-x-14
       2xl:translate-x-0
       -translate-y-10

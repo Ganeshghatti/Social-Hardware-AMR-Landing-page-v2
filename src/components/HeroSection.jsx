@@ -8,9 +8,9 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="w-full bg-[#F5F5F5] font-geist">
-      <div className="mx-auto  flex flex-col-reverse md:flex-row border border-gray-300 justify-between px-6 sm:px-10 md:px-8 lg:px-10 gap-6 ">
-        <div className="md:w-2/4 md:border-r  border-gray-300 py-0 md:py-10 flex flex-col justify-center items-center md:items-start">
-          <p className="text-[#8D8D8D] font-geist font-normal leading-relaxed text-md sm:text-lg md:text-md max-w-2xl ">
+      <div className="mx-auto  flex flex-col-reverse md:flex-row border-1 border-[#E5E5E5] justify-between px-6 sm:px-10 md:px-8 lg:px-10 gap-6 ">
+        <div className="md:w-2/4 md:border-r-1 border-[#E5E5E5] py-0 md:py-10 flex flex-col justify-center items-center md:items-start">
+          <p className="text-[#8D8D8D] font-geist font-normal leading-relaxed text-md md:text-lg max-w-2xl ">
             We’re a Bengaluru-based robotics company, designing, building, and
             integrating cobots and vision systems for Indian industry and
             research. Engineered for real-world conditions and high-impact
@@ -34,7 +34,7 @@ export default function HeroSection() {
       </div>
 
       <div className="flex flex-col px-4 sm:px-6 md:px-10  py-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className="relative w-full h-[300px] sm:h-[380px] md:h-[450px] lg:h-[550px] overflow-hidden ">
             <Image
               src={a2}
@@ -56,7 +56,7 @@ export default function HeroSection() {
             <div className="absolute inset-0 bg-black/50"></div>
 
             <div className="absolute inset-0 flex flex-col justify-between p-4 sm:p-6 md:p-8 text-white">
-              <p className="text-sm text-[#FFFFFF] sm:text-sm md:text-base max-w-sm mt-2 sm:mt-4 leading-relaxed">
+              <p className="text-sm text-[#FFFFFF] sm:text-sm md:text-base max-w-md mt-2 sm:mt-4 leading-relaxed">
                 From collaborative robots and UGVs to vision systems and custom
                 end-of-arm tooling, we can design and deliver solutions
                 precisely tailored to your application, process, and performance

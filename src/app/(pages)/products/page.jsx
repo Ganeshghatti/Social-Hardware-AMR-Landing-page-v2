@@ -12,7 +12,7 @@ export default function Products() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl font-normal mb-2">
             Collaborative Robots{" "}
           </h1>
-          <p className="text-[#6D6D6D] text-md md:text-lg max-w-2xl ">
+          <p className="text-[#8D8D8D] mt-4 text-md md:text-lg max-w-2xl ">
             Cost-effective, ready-made cobot solutions with payloads from 3kg to
             20kg.
             <br />
@@ -20,7 +20,7 @@ export default function Products() {
             palletizing.
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-0 sm:mt-0">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-0 sm:mt-0 max-w-2xl md:mr-14">
           <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 text-center">
             <Image
               src="/icon-payload-1.svg.png"
@@ -29,7 +29,7 @@ export default function Products() {
               height={35}
               className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
             />
-            <p className="bg-gray-200 px-3 py-1 rounded-2xl text-[12px] sm:text-xs md:text-sm whitespace-nowrap">
+            <p className="bg-gray-200 text-[#232323] px-5 py-1 rounded-2xl text-[14px] sm:text-xs md:text-sm whitespace-nowrap">
               3–20 Kg Payload Capacity
             </p>
           </div>
@@ -42,7 +42,7 @@ export default function Products() {
               height={35}
               className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
             />
-            <p className="bg-gray-200 px-3 py-1 rounded-2xl text-[12px] sm:text-xs md:text-sm whitespace-nowrap">
+            <p className="bg-gray-200 text-[#232323] px-5 py-1 rounded-2xl text-[14px] sm:text-xs md:text-sm whitespace-nowrap">
               600–1700mm Reach
             </p>
           </div>
@@ -56,7 +56,7 @@ export default function Products() {
               className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
             />
 
-            <p className="bg-gray-200 px-3 py-1 rounded-2xl text-[12px] sm:text-xs md:text-sm whitespace-nowrap">
+            <p className="bg-gray-200 text-[#232323] px-5 py-1 rounded-2xl text-[14px] sm:text-xs md:text-sm whitespace-nowrap">
               ±0.03mm to ±0.1mm Repeatability
             </p>
           </div>

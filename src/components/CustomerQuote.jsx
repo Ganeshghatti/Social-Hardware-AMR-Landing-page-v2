@@ -18,7 +18,7 @@ export default function CustomerQuote() {
             system with us.
           </h1>
 
-          <p className="text-[#6D6D6D] text-lg mt-5 md:mt-3 mx-1 max-w-xl mb-2">
+          <p className="text-[#6D6D6D] text-md md:text-lg mt-5 md:mt-3 mx-1 max-w-xl mb-2">
             Define your objective and we’ll co‑create a platform that integrates
             advanced technologies engineered to your specific needs. We can
             tailor reach, payload, interfaces, safety, and software integration
@@ -26,7 +26,7 @@ export default function CustomerQuote() {
             your automation.
           </p>
 
-          <p className="text-[#6D6D6D] text-lg max-w-xl mb-8">
+          <p className="text-[#6D6D6D] text-md md:text-lg max-w-xl mb-8">
             Share your requirements to request a custom quotation, and we’ll
             propose the optimal configuration, lead time, and investment for
             your project.
@@ -34,7 +34,7 @@ export default function CustomerQuote() {
 
           <div className="w-fit">
             <Link href="/contact" className="inline-block">
-              <button className="bg-orange-500 hover:bg-orange-600 flex items-center gap-1  text-white font-medium px-5 py-2 mb-4 text-lg">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center gap-1  text-white font-medium px-5 py-2 mb-4 text-md md:text-lg">
                 Request Custom Quote <ArrowRight size={18} />
               </button>
             </Link>
@@ -50,7 +50,7 @@ export default function CustomerQuote() {
                 height={20}
               />
 
-              <p className="bg-[#ECECEC] px-3 py-1 text-[11px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
+              <p className="bg-[#ECECEC] px-3 py-1 text-[12px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
                 Vision Systems
               </p>
             </div>
@@ -62,7 +62,7 @@ export default function CustomerQuote() {
                 height={20}
                 className="w-12 h-10 sm:w-14 sm:h-14 md:w-12 md:h-10"
               />
-              <p className="bg-[#ECECEC] px-3 py-1 text-[11px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
+              <p className="bg-[#ECECEC] px-3 py-1 text-[12px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
                 End-of-arm Tooling{" "}
               </p>
             </div>
@@ -74,7 +74,7 @@ export default function CustomerQuote() {
                 height={28}
                 className="w-10 h-10 sm:w-12 sm:h-14 md:w-12 md:h-10"
               />
-              <p className="bg-[#ECECEC] px-3 py-1 text-[11px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
+              <p className="bg-[#ECECEC] px-3 py-1 text-[12px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
                 Teach Pendants{" "}
               </p>
             </div>
@@ -82,12 +82,12 @@ export default function CustomerQuote() {
         </div>
 
         <div className="w-full md:w-[109%] 2xl:w-[107%] relative h-[500px] md:h-[880px] overflow-hidden">
-          <div className="absolute inset-0 ">
+          <div className="absolute inset-0 bg-[#000000]/50 ">
             <Image
               src={robot}
               alt="Customer Quote Expo"
               fill
-              className="object-cover opacity-60"
+              className="object-cover opacity-40 "
               priority
             />
           </div>
@@ -121,8 +121,7 @@ export default function CustomerQuote() {
             into smarter autonomy.
           </h1>
 
-          <p className="text-[#6D6D6D] text-lg max-w-3xl leading-7 md:leading-9 mb-8">
-            Define your objective and we’ll co‑create a platform that integrates
+          <p className="text-[#6D6D6D] text-md md:text-lg max-w-3xl leading-7 md:leading-9 mb-8">
             Our tele-operation platform lets experts “step inside” robots via XR
             and haptics, resolve complex situations in real time, and
             automatically capture the rich, labeled data your models need. Every
@@ -134,7 +133,7 @@ export default function CustomerQuote() {
 
           <div className="w-fit">
             <Link href="/contact">
-              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-lg">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-md md:text-lg">
                 Learn More About Tele-operation <ArrowRight size={18} />
               </button>
             </Link>
@@ -147,9 +146,9 @@ export default function CustomerQuote() {
                 alt="img"
                 width={60}
                 height={60}
-                className="w-14 h-12 sm:w-14 sm:h-14 md:w-15 md:h-12"
+                className="w-14 h-12 sm:w-14 sm:h-14 md:w-16 md:h-12"
               />
-              <p className="bg-[#ECECEC] px-3 py-1 text-[11px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
+              <p className="bg-[#ECECEC] px-4 py-1 text-[12px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
                 Plug-and-play
               </p>
             </div>
@@ -160,9 +159,9 @@ export default function CustomerQuote() {
                 alt="img"
                 width={60}
                 height={60}
-                className="w-14 h-12 sm:w-14 sm:h-14 md:w-15 md:h-12"
+                className="w-14 h-12 sm:w-14 sm:h-14 md:w-16 md:h-12"
               />
-              <p className="bg-[#ECECEC] px-3 py-1 text-[11px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
+              <p className="bg-[#ECECEC] px-4 py-1 text-[12px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
                 GPU-optimized
               </p>
             </div>
@@ -173,9 +172,9 @@ export default function CustomerQuote() {
                 alt="img"
                 width={60}
                 height={60}
-                className="w-14 h-12 sm:w-14 sm:h-14 md:w-15 md:h-12"
+                className="w-14 h-12 sm:w-14 sm:h-14 md:w-16 md:h-12"
               />
-              <p className="bg-[#ECECEC] px-3 py-1 text-[11px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
+              <p className="bg-[#ECECEC] px-4 py-1 text-[12px] sm:text-xs md:text-sm rounded-xl whitespace-nowrap">
                 Extended Reality
               </p>
             </div>

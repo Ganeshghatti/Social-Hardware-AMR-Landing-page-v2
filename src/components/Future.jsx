@@ -9,10 +9,10 @@ export default function HeroSection() {
           src={robot}
           alt="Robot"
           fill
-          className="object-cover scale-150 blur-xs "
+          className="object-contain object-right-bottom  scale-150 blur-xs scale-x-[-1]"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
 
         <div className="md:absolute z-10 text-white top-10 md:top-20  md:left-16 max-w-full p-4 md:p-0">
           <p className="uppercase text-sm mt-5 md:mt-0 md:text-sm mb-3 md:mb-4">
@@ -51,13 +51,13 @@ export default function HeroSection() {
       </div>
 
       <div className="absolute right-1 md:right-20 bottom-36 md:bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
-        <h1 className="text-[103px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-white/95 tracking-tight">
+        <h1 className="text-[103px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-[#FFFFFF] tracking-tight">
           BUILD
         </h1>
       </div>
 
       <div className="absolute mx-2 md:mx-0 right-1 left-0  md:left-98 2xl:left-90 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
-        <h1 className="text-[95px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-white/40 tracking-tight">
+        <h1 className="text-[95px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-extrabold text-[#AFAFAF] tracking-tight">
           FUTURE
         </h1>
       </div>

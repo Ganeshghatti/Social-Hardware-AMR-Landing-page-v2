@@ -83,7 +83,7 @@ export default function Productcard({
     </div>
 
     <div className="p-4 sm:p-6 flex flex-col gap-3 items-center text-center">
-      <h1 className="text-lg sm:text-xl font-medium text-[#000000]">
+      <h1 className="text-lg sm:text-xl font-semibold text-[#000000]">
         {title}
       </h1>
 

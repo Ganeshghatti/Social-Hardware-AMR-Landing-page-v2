@@ -45,7 +45,7 @@ export default function Footer() {
           <h1 className="text-[#333333] font-semibold text-2xl">Locations</h1>
 
           <div>
-            <h2 className="text-[#000000] text-md font-medium mt-4">
+            <h2 className="text-[#000000] text-lg font-medium mt-4">
               Corporate Office:
             </h2>
             <p className="text-[#333333] mt-3 text-sm font-medium">
@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h2 className="text-[#000000] text-md font-medium mt-4">
+            <h2 className="text-[#000000] text-lg font-medium mt-4">
               R&D Lab:
             </h2>
             <p className="text-[#333333] mt-3 text-sm font-medium">
@@ -65,9 +65,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
+        <div className="md:ml-10">
           <h1 className="text-[#333333] font-semibold text-2xl">
-            ISO Certifications
+            Certifications
           </h1>
 
           <ul className="list-disc pl-5 space-y-2 mt-5">
@@ -123,7 +123,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h1 className="text-[#333333] font-semibold text-2xl">Quick Links</h1>
+          <h1 className="text-[#333333] font-semibold text-2xl">Site</h1>
 
           <ul className="space-y-3 mt-4">
             <li>
