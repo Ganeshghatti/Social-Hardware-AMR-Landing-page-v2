@@ -20,18 +20,18 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/customise" className="hover:text-gray-900 transition">
+            <Link href="/#customise" className="hover:text-gray-900 transition">
               CUSTOMISE
             </Link>
           </li>
           <li>
-            <Link href="/company" className="hover:text-gray-900 transition">
-              COMPANY PROFILE
+            <Link href="#" className="hover:text-gray-900 transition">
+              COMPANY 
             </Link>
           </li>
           <li>
-            <Link href="#gallery" className="hover:text-gray-900 transition">
-              GALLERY
+            <Link href="#" className="hover:text-gray-900 transition">
+              PARTNERS
             </Link>
           </li>
         </ul>

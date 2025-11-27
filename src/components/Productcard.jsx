@@ -65,44 +65,45 @@ export default function Productcard({
 
   return (
     <div className="flex justify-center items-center font-geist w-full">
-  <div className="
+      <div
+        className="
       bg-white flex flex-col shadow-md mt-3 hover:shadow-lg rounded-2xl 
       transition-transform duration-300 overflow-hidden 
       w-full max-w-[300px] sm:max-w-[300px] lg:max-w-[360px]
       hover:-translate-y-1
     "
-  >
-    <div className="flex justify-center items-center bg-gray-100 h-48 sm:h-56 md:h-64">
-      <Image
-        src={image}
-        alt={title}
-        width={300}
-        height={300}
-        className="object-contain w-full h-full p-3"
-      />
-    </div>
-
-    <div className="p-4 sm:p-6 flex flex-col gap-3 items-center text-center">
-      <h1 className="text-lg sm:text-xl font-semibold text-[#000000]">
-        {title}
-      </h1>
-
-      <p className="2xl:text-base md:text-lg text-[#6D6D6D] leading-relaxed line-clamp-4">
-        {description}
-      </p>
-    </div>
-
-    <Link href={`/products/${id}`} className="w-full flex items-center">
-      <button className="
-          bg-[#FF6600] font-semibold text-white py-2 px-3 
-          w-2/3 mx-auto mb-6 sm:mb-10 cut-corners text-md sm:text-lg
-        "
       >
-        View Specifications →
-      </button>
-    </Link>
-  </div>
-</div>
+        <div className="flex justify-center items-center bg-gray-100 h-48 sm:h-56 md:h-64">
+          <Image
+            src={image}
+            alt={title}
+            width={300}
+            height={300}
+            className="object-contain w-full h-full p-3 scale-x-[-1]"
+          />
+        </div>
 
+        <div className="p-4 sm:p-6 flex flex-col gap-3 items-center text-center">
+          <h1 className="text-lg sm:text-xl font-semibold text-[#000000]">
+            {title}
+          </h1>
+
+          <p className="2xl:text-base md:text-lg text-[#6D6D6D] leading-relaxed line-clamp-4">
+            {description}
+          </p>
+        </div>
+
+        <Link href={`/products/${id}`} className="w-full flex items-center">
+          <button
+            className="
+          bg-[#FF6600] font-medium text-[#F8F8F8] py-2 px-3 flex items-center justify-center gap-1
+          w-2/3 mx-auto mb-8 sm:mb-10 cut-corners text-md sm:text-lg
+        "
+          >
+            View Specifications <ArrowRight size={13} className="text-white " />
+          </button>
+        </Link>
+      </div>
+    </div>
   );
 }

@@ -4,9 +4,9 @@ import Link from "next/link";
 
 export default function PhilosophySection() {
   return (
-    <div className="py-4 font-geist">
+    <div className="py-4 font-geist" id="consultation">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-10">
-        <div className="2xl:px-16 md:px-10 px-5 mx-auto md:mx-0 py-10 md:py-20">
+        <div className="2xl:px-12 md:px-10 px-5 mx-auto md:mx-0 py-10 md:py-20">
           <p className="text-[#232323] font-medium text-sm mb-3">
             Our Philosophy. Engineered for the World.
           </p>
@@ -29,7 +29,7 @@ export default function PhilosophySection() {
           </p>
           <div className="w-fit mt-8 md:mt-12">
             <Link href="/contact">
-              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2 mb-4 text-lg">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-[#FFFFFF] font-medium px-5 py-2 mb-4 text-md  md:text-lg">
                 Request Free Consultation <ArrowRight size={18} />
               </button>
             </Link>

@@ -17,14 +17,14 @@ import product3b from "../../public/10KG_3.png";
 export const products = [
   {
     id: "1",
-    title: "P3-R600-100",
+    title: "P3-R600",
     image: product1,
     otherimages: [product1a, product1b],
     description:
       "3 kg payload, 540 mm reach.Ideal for bench tops, tight spaces, and safe collaboration.",
     Degrees_of_freedom: "6",
-    Payload_kg: "3kg",
-    Reach_mm: "540nm",
+    Payload_kg: "3",
+    Reach_mm: "540",
     Repeatability_mm: "A±0.03",
     Weight_kg: "13",
     IP_Classification: "IP54",
@@ -47,7 +47,7 @@ export const products = [
   },
   {
     id: "2",
-    title: "P5-R900-120",
+    title: "P5-R900",
     image: product2,
     otherimages: [product2a, product2b],
 
@@ -83,7 +83,7 @@ export const products = [
 
     description:
       "10 kg payload, 1300 mm reach, ready for heavy handling and expanded work envelopes.",
-    title: "P5-R900-121",
+    title: "P10-R1300",
     Degrees_of_freedom: "6",
     Payload_kg: "10",
     Reach_mm: "1300",
@@ -112,7 +112,7 @@ export const products = [
     image: product4,
     otherimages: [product4a, product4b],
 
-    title: "P5-R900-122",
+    title: "P20-R1650",
     description:
       "20 kg payload , 1650 mm reach. made for heavy picks and long reach placement.",
     Degrees_of_freedom: "6",

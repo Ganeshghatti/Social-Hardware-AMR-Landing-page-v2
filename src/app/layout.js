@@ -1,4 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import { Montserrat } from 'next/font/google'
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -13,6 +15,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+export const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300','400','500','700'],  // choose weights you need
+  variable: '--font-montserrat',      // optional — use for CSS variable
+  display: 'swap',
+})
+
+
 export const metadata = {
   title: "Social Hardware",
   description:
@@ -25,7 +36,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable}`}>
       <body>
         <Navbar />
         {children}

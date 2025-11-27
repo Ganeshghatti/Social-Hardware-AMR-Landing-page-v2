@@ -7,12 +7,12 @@ export default function CustomerQuote() {
   return (
     <div className="">
       <div className="w-full flex flex-col md:flex-row bg-[#F5F5F5] font-geist">
-        <div className="w-full  flex flex-col justify-center pl-4 md:py-10 md:pl-10">
+        <div className="w-full  flex flex-col justify-center pl-4 md:py-10 md:pl-10"  id="customise">
           <p className="hidden md:flex text-sm text-[#000000] font-semibold mb-3">
             Indigenous Platform
           </p>
 
-          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-tight mb-6">
+          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-8 md:leading-18 2xl:leading-20 mb-6">
             One Platform,
             <br /> Infinite possibilities. <br /> Craft your custom <br />
             system with us.
@@ -81,7 +81,7 @@ export default function CustomerQuote() {
           </div>
         </div>
 
-        <div className="w-full md:w-[109%] 2xl:w-[107%] relative h-[500px] md:h-[880px] overflow-hidden">
+        <div className="w-full md:w-[109%] 2xl:w-[107%] relative h-[500px] md:h-[900px] overflow-hidden" >
           <div className="absolute inset-0 bg-[#000000]/50 ">
             <Image
               src={robot}
@@ -104,7 +104,7 @@ export default function CustomerQuote() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col mt-4 md:mt-0 md:flex-row bg-[#FFFFFF] font-geist gap-5">
+      <div className="w-full flex flex-col mt-4 md:mt-0 md:flex-row bg-[#FFFFFF] font-geist gap-5" id="teleoperation">
         <div className="w-full md:w-full relative h-[500px] md:h-[780px] overflow-hidden ">
           <Image
             src="/18bc30f82ed4172605c95d1b6a260f0685074096.jpg"
@@ -114,7 +114,7 @@ export default function CustomerQuote() {
           />
         </div>
         <div className="w-full  flex flex-col  md:mt-5 px-5 py-6 md:py-10 ">
-          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-tight mb-6">
+          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-9 md:leading-18 2xl:leading-20 mb-6">
             Tele-op data capture.
             <br />
             Turn human intervention <br />

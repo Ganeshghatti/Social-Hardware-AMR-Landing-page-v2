@@ -12,11 +12,11 @@ export default function Footer() {
   return (
     <footer className="  font-geist w-full">
       <div
-        className="mx-auto px-5 py-20 sm:px-10  bg-[#F5F5F5]
+        className="mx-auto px-5 py-20 md:px-14  bg-[#F5F5F5]
                   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 
-                  gap-10 lg:gap-20"
+                  gap-10 lg:gap-25"
       >
-        <div className="space-y-6 max-w-sm">
+        <div className="space-y-6 max-w-sm text-center md:text-left">
           <h1 className="text-[#333333] font-semibold text-2xl">Contacts</h1>
           <h2 className="text-lg font-medium text-[#333333] tracking-wide">
             Questions? Let’s talk cobots.
@@ -25,23 +25,27 @@ export default function Footer() {
             We’re ready to help with product options, specs, pricing, and to
             discuss distributor partnerships and ongoing support.
           </p>
-          <div className="gap-2 flex flex-col">
+          <div className="gap-2 flex flex-col items-center md:items-start">
             <div className=" flex">
               {/* <Image src="/SVG.png" alt="m" width={15} height={10} /> */}
-              <p className="text-[#333333] leading-relaxed text-sm font-semibold">
-                Call: +91 7337743354
-              </p>
+              <a href="tel:+917337743354">
+                <p className="text-[#333333] leading-relaxed text-sm font-semibold cursor-pointer">
+                  Call: +91 7337743354
+                </p>
+              </a>
             </div>
-            <div className=" flex">
+            <div className=" flex ">
               {/* <Image src="/SVG (1).png" alt="m" width={15} height={10} /> */}
-              <p className="text-[#333333] leading-relaxed text-sm font-semibold">
-                Email: info@socialhardware.in
-              </p>
+              <a href="mailto:info@socialhardware.in">
+                <p className="text-[#333333] leading-relaxed text-sm font-semibold cursor-pointer">
+                  Email: info@socialhardware.in{" "}
+                </p>
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="max-w-sm">
+        <div className="max-w-sm text-center md:text-start">
           <h1 className="text-[#333333] font-semibold text-2xl">Locations</h1>
 
           <div>
@@ -65,57 +69,39 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="md:ml-10">
+        <div className="md:ml-10 items-center flex flex-col md:items-start">
           <h1 className="text-[#333333] font-semibold text-2xl">
             Certifications
           </h1>
 
           <ul className="list-disc pl-5 space-y-2 mt-5">
             <li>
-              <Link
-                href="/"
-                className="font-medium text-md text-[#333333] hover:text-orange-600"
-              >
+              <Link href="/" className="font-medium text-md text-[#333333] ">
                 ISO 9001:2015
               </Link>
             </li>
             <li>
-              <Link
-                href="/"
-                className="font-medium text-md text-[#333333] hover:text-orange-600"
-              >
+              <Link href="/" className="font-medium text-md text-[#333333]">
                 ISO 31000:2018
               </Link>
             </li>
             <li>
-              <Link
-                href="/"
-                className="font-medium text-md text-[#333333] hover:text-orange-600"
-              >
+              <Link href="/" className="font-medium text-md text-[#333333] ">
                 ISO 31000:2018
               </Link>
             </li>
             <li>
-              <Link
-                href="/"
-                className="font-medium text-md text-[#333333] hover:text-orange-600"
-              >
+              <Link href="/" className="font-medium text-md text-[#333333]">
                 ISO 13850:2015
               </Link>
             </li>
             <li>
-              <Link
-                href="/"
-                className="font-medium text-md text-[#333333] hover:text-orange-600"
-              >
+              <Link href="/" className="font-medium text-md text-[#333333]">
                 ISO 10218-1:2011
               </Link>
             </li>
             <li>
-              <Link
-                href="/"
-                className="font-medium text-md text-[#333333] hover:text-orange-600"
-              >
+              <Link href="/" className="font-medium text-md text-[#333333] ">
                 ISOMEC 17025
               </Link>
             </li>
@@ -123,9 +109,9 @@ export default function Footer() {
         </div>
 
         <div>
-          <h1 className="text-[#333333] font-semibold text-2xl">Site</h1>
+          <h1 className="text-[#333333] font-semibold text-2xl text-center md:text-start">Site</h1>
 
-          <ul className="space-y-3 mt-4">
+          <ul className="space-y-3 mt-4 text-center md:text-start">
             <li>
               <Link
                 href="/"
@@ -144,7 +130,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="#profile"
+                href="#consultation"
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
                 Consultation{" "}
@@ -160,7 +146,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="#gallery"
+                href="#teleoperation"
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
                 Teleoperation{" "}
@@ -172,9 +158,9 @@ export default function Footer() {
 
       <div
         className="max-w-8xl mx-auto px-6 py-8 pt-6  bg-[#FFFFFF] 
-                  flex flex-col md:flex-row justify-between text-sm"
+                  flex flex-col md:flex-row justify-between text-sm text-center md:text-start"
       >
-        <div className=" flex flex-col md:flex-row justify-between w-full md:mx-10 gap-4">
+        <div className=" flex flex-col md:flex-row justify-between w-full md:mx-10 gap-4 items-center md:items-start">
           <div className="flex gap-2">
             {/* <a href="https://x.com/social_hardware" target="_blank">
             </a> */}
@@ -186,9 +172,12 @@ export default function Footer() {
             </a>
           </div>
           <div className="text-[#333333] text-md font-medium">
-            <a href="#" className="hover:text-orange-500 ">
+            <Link
+              href="/terms-and-condition"
+              className="hover:text-orange-500 "
+            >
               Terms & Conditions
-            </a>
+            </Link>
           </div>
           <p className="text-[#333333]  text-sm font-medium">
             © {new Date().getFullYear()} Social Hardware International Pvt. Lrd.
@@ -196,9 +185,9 @@ export default function Footer() {
           </p>
 
           <div className="text-[#333333]  text-sm font-medium">
-            <a href="#" className="hover:text-orange-500">
+            <Link href="/privacy-policy" className="hover:text-orange-500">
               Privacy Policy
-            </a>
+            </Link>
           </div>
         </div>
       </div>
