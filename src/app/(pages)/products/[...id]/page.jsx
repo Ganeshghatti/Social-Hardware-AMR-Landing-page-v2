@@ -19,13 +19,17 @@ export default async function ProductDetail({ params }) {
     <div className="w-full bg-[#F9F9F9] font-geist relative overflow-hidden">
       <div className="w-full md:h-[700px] overflow-hidden flex flex-col md:flex-row items-center md:items-start ">
         <div className="w-full md:w-2/3 2xl:w-1/2  space-y-6 md:space-y-8 py-20 pl-5 md:pl-20">
-          <div className="bg-white border-2 border-gray-200 rounded-full px-6 py-2 shadow-sm w-fit">
+          <div
+            className="bg-white border-2 border-gray-200 rounded-full px-6 py-2 shadow-sm w-fit 
+             transition-all duration-300 ease-out 
+             hover:shadow-md hover:scale-100 hover:border-gray-300 hover:bg-gray-50"
+          >
             <p className="text-[#252525] text-sm md:text-base font-semibold">
               {product.title} Collaborative Robot
             </p>
           </div>
 
-          <h1 className="text-[#101010] text-3xl sm:text-4xl lg:text-5xl leading-9 md:leading-15 max-w-lg md:mt-8 ">
+          <h1 className="text-[#101010] text-3xl sm:text-4xl lg:text-5xl leading-9 md:leading-17 max-w-lg md:mt-8 ">
             For precision tasks and demanding industrial environments.
           </h1>
 

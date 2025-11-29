@@ -93,16 +93,10 @@ const PRIVACY_POLICY_DATA = {
         "Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these external sites. We encourage you to review the privacy policies of any third-party sites you visit.",
       ],
     },
-    {
-      id: "childrens-privacy",
-      title: "7. Children's Privacy",
-      paragraphs: [
-        "Our services are not intended for individuals under the age of 18. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately.",
-      ],
-    },
+   
     {
       id: "changes",
-      title: "8. Changes to This Privacy Policy",
+      title: "7. Changes to This Privacy Policy",
       paragraphs: [
         'We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.',
         "Changes to this Privacy Policy are effective when they are posted on this page.",

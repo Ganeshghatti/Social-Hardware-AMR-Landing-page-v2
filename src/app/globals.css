@@ -12,6 +12,10 @@ body {
   font-family: var(--font-geist-sans), sans-serif;
 }
 
+.font-montserrat {
+  font-family: var(--font-montserrat), sans-serif;
+}
+
 
 @theme inline {
   --radius-sm:  calc(var(--radius) - 4px);
@@ -144,3 +148,6 @@ body {
     0 20px
   );
 }
+
+
+

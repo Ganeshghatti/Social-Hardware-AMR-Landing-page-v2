@@ -96,8 +96,8 @@ export default function Productcard({
         <Link href={`/products/${id}`} className="w-full flex items-center">
           <button
             className="
-          bg-[#FF6600] font-medium text-[#F8F8F8] py-2 px-3 flex items-center justify-center gap-1
-          w-2/3 mx-auto mb-8 sm:mb-10 cut-corners text-md sm:text-lg
+          bg-[#FF6600] font-medium font-montserrat text-[#F8F8F8] py-2 px-3 flex items-center justify-center gap-1
+          w-2/3 mx-auto mb-8 sm:mb-10 cut-corners text-md sm:text-md
         "
           >
             View Specifications <ArrowRight size={13} className="text-white " />

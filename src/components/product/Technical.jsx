@@ -8,17 +8,24 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { DialogOverlay } from "@radix-ui/react-dialog";
 
 export default function TechnicalOverview({ id }) {
   const product = products.find((p) => p.id == id);
   return (
     <div className=" w-full ">
       <div className="flex flex-col py-16 ">
-        <div className="w-64 mx-auto items-center justify-center flex border-2 shadow-sm bg-[#FFFFFF] border-[#E5E5E5] rounded-2xl px-2  py-1">
-          <h2 className=" text-[#232323] font-semibold ">
+        <div
+          className="w-64 mx-auto flex items-center justify-center 
+             border-2 border-[#E5E5E5] bg-white rounded-2xl px-2 py-1 shadow-sm
+             transition-all duration-300 ease-out
+             hover:shadow-md hover:scale-100 hover:border-gray-300 hover:bg-gray-50"
+        >
+          <h2 className="text-[#232323] font-semibold">
             Technical Specifications
           </h2>
         </div>
+
         <div className="mt-6 md:mt-14 justify-center flex items-center mx-auto">
           <h1 className="2xl:text-6xl md:text-5xl text-4xl  max-w-4xl text-center">
             {product.title} Cobot <br />
@@ -172,30 +179,53 @@ export default function TechnicalOverview({ id }) {
           </div>
         </div>
       </div>
-
       <div className="flex justify-center items-center py-6 md:py-10 mt-8 md:mt-2 bg-[#F9F9F9] border-t-[#E5E5E5] border-1">
         <div className="flex flex-wrap justify-center gap-4">
           {product.otherimages.map((image, idx) => (
             <Dialog key={idx}>
+              {/* Trigger */}
               <DialogTrigger>
                 <Image
-                  src={image}
+                  src={image.image}
                   alt="img"
                   width={180}
                   height={180}
-                  className="w-[140px] sm:w-[160px] md:w-[180px] h-auto object-contain"
+                  className="w-[140px] sm:w-[160px] md:w-[180px] h-auto object-contain cursor-pointer hover:scale-[1.03] transition"
                 />
               </DialogTrigger>
-              <DialogContent>
+
+              <DialogOverlay
+                className="
+            fixed inset-0 
+            bg-black/70 
+            backdrop-blur-sm 
+            animate-in fade-in-50
+          "
+              />
+
+              <DialogContent
+                className="
+            max-w-[90vw]
+            md:max-w-[50vw]
+            lg:max-w-[40vw]
+            bg-white
+            rounded-lg
+            shadow-xl
+            animate-in zoom-in-50
+          "
+              >
                 <DialogHeader>
-                  <DialogTitle className="text-left w-full font-normal text-md">Variant {idx+1}</DialogTitle>
+                  <DialogTitle className="text-left w-full font-normal text-md">
+                    {image.name}
+                  </DialogTitle>
+
                   <DialogDescription className="flex flex-col items-center justify-center">
                     <Image
-                      src={image}
+                      src={image.image}
                       alt="img"
                       width={180}
                       height={180}
-                      className="w-[140px] sm:w-[160px] md:w-[350px] h-auto object-contain "
+                      className="w-[300px] sm:w-[400px] md:w-[600px] h-auto object-contain"
                     />
                   </DialogDescription>
                 </DialogHeader>
@@ -234,16 +264,16 @@ export default function TechnicalOverview({ id }) {
             />
           </div> */}
 
-          <div className="absolute top-10 md:top-24 md:left-1/2 md:-translate-x-1/2 text-white text-center px-4">
-            <h1 className="text-3xl md:text-4xl 2xl:text-5xl font-normal">
+          <div className="absolute top-10 md:top-24 left-3 md:left-1/2 md:-translate-x-1/2 text-white text-center px-4">
+            <h1 className="text-3xl md:text-5xl 2xl:text-6xl font-normal">
               Ready to dive deeper?
             </h1>
 
             <div className="mt-10 md:mt-14">
-              <h2 className="text-3xl md:text-4xl 2xl:text-5xl ">
+              <h2 className="text-2xl md:text-4xl 2xl:text-5xl ">
                 Download the official
               </h2>
-              <h2 className="text-3xl md:text-4xl 2xl:text-5xl   mt-3">
+              <h2 className="text-2xl md:text-4xl 2xl:text-5xl   mt-3">
                 {product.title} cobot datasheet.
               </h2>
             </div>
@@ -268,7 +298,7 @@ export default function TechnicalOverview({ id }) {
               />
 
               <button className="flex w-full md:w-3/4  mt-4">
-                <p className="bg-white py-4 px-6 rounded-l-2xl font-medium text-black flex-1 text-center">
+                <p className="bg-white py-4 px-6 text-md md:text-lg rounded-l-2xl font-medium text-black flex-1 text-center">
                   Download Technical Datasheet
                 </p>
                 <Image

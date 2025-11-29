@@ -45,7 +45,6 @@ const TERMS_CONDITIONS_DATA = {
       paragraphs: [
         "We strive to provide accurate and up-to-date information about our products and services. However, we do not warrant that product descriptions, specifications, or other content on our website is accurate, complete, reliable, current, or error-free.",
         "We reserve the right to correct any errors, inaccuracies, or omissions and to change or update information at any time without prior notice. We also reserve the right to limit the quantities of any products or services that we offer.",
-        "All products are intended for research and development purposes only. Products are not intended for use as drugs, medical devices, or for human consumption unless specifically indicated.",
       ],
     },
     {
@@ -61,7 +60,7 @@ const TERMS_CONDITIONS_DATA = {
         "Fraudulent or invalid payment information",
         "Unauthorized or illegal use of our Services",
       ],
-      footer: "Payment terms will be specified in your order confirmation. We accept various payment methods as indicated during checkout. All payments must be made in U.S. dollars unless otherwise specified.",
+      footer: "Payment terms will be specified in your order confirmation. We accept various payment methods as indicated during checkout.",
     },
     {
       id: "shipping-delivery",
@@ -89,7 +88,6 @@ const TERMS_CONDITIONS_DATA = {
       paragraphs: [
         "To the fullest extent permitted by applicable law, Social Hardware shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from your use of our Services.",
         "Our total liability to you for all claims arising out of or relating to the use of our Services shall not exceed the amount you paid to us in the 12 months preceding the claim.",
-        "Products are provided for research and development purposes only. Users are responsible for ensuring compliance with all applicable laws and regulations regarding the use, handling, storage, and disposal of chemical products.",
       ],
     },
     {
@@ -97,7 +95,7 @@ const TERMS_CONDITIONS_DATA = {
       title: "9. Governing Law",
       paragraphs: [
         "These Terms shall be governed by and construed in accordance with the laws of the State of North Carolina, United States, without regard to its conflict of law provisions.",
-        "Any disputes arising out of or relating to these Terms or our Services shall be subject to the exclusive jurisdiction of the state and federal courts located in North Carolina, United States.",
+        "Any disputes arising out of or relating to these Terms or our Services shall be subject to the exclusive jurisdiction of the state.",
       ],
     },
     {

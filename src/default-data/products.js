@@ -19,7 +19,7 @@ export const products = [
     id: "1",
     title: "P3-R600",
     image: product1,
-    otherimages: [product1a, product1b],
+    otherimages: [{image : product1a , name:"P3-R600 5KG"} , {image : product1b , name:"P3-R600 10KG"}],
     description:
       "3 kg payload, 540 mm reach.Ideal for bench tops, tight spaces, and safe collaboration.",
     Degrees_of_freedom: "6",
@@ -49,7 +49,7 @@ export const products = [
     id: "2",
     title: "P5-R900",
     image: product2,
-    otherimages: [product2a, product2b],
+    otherimages: [{image : product2a , name : "P5-R900 5KG"} , {image :product2b , name : "P5-R900 10KG"}],
 
     description:
       "5 kg payload, 912 mm reach, optimized for larger work envelopes and high‑throughput handling.",
@@ -79,7 +79,7 @@ export const products = [
   {
     id: "3",
     image: product3,
-    otherimages: [product3a, product3b],
+    otherimages: [{image: product3a , name : "P10-R1300 5KG"} , {image : product3b , name : "P10-R1300 10KG"}],
 
     description:
       "10 kg payload, 1300 mm reach, ready for heavy handling and expanded work envelopes.",
@@ -110,7 +110,7 @@ export const products = [
   {
     id: "4",
     image: product4,
-    otherimages: [product4a, product4b],
+    otherimages: [{image : product4a , name : "P20-R1650"} , {image : product4b , name : "P20-R1650"}],
 
     title: "P20-R1650",
     description:

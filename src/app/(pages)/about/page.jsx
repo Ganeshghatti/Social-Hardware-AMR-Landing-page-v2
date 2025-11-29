@@ -36,7 +36,7 @@ export default function PhilosophySection() {
           </div>
         </div>
 
-        <div className="flex md:-right-35 relative py-10 md:py-0">
+        <div className="flex  md:-right-20 2xl:-right-35 relative py-10 md:py-0">
           <div className="md:hidden w-72 aspect-[1/1] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/webinar.png"
@@ -97,7 +97,7 @@ export default function PhilosophySection() {
             <Image
               src="/3de3f26c39b50a1ca4777861f39cc71a97ca65a1.png"
               alt="image1"
-              width={60}
+              width={75}
               height={50}
             />
             <p className="bg-gray-200 px-3 py-1 text-sm rounded-xl">
@@ -108,7 +108,7 @@ export default function PhilosophySection() {
             <Image
               src="/e99540f3ca9af8df2135b09ec4caacd4a47fa96b.png"
               alt="image1"
-              width={45}
+              width={50}
               height={30}
             />
             <p className="bg-gray-200 text-[#232323] text-sm px-3 py-1 rounded-xl">
@@ -119,7 +119,7 @@ export default function PhilosophySection() {
             <Image
               src="/f65577d576288aa40c096b47573f3b3e9a51e10d.png"
               alt="image1"
-              width={40}
+              width={45}
               height={30}
             />
             <p className="bg-gray-200 text-[#232323] px-3 py-1  text-sm rounded-xl">
@@ -141,7 +141,7 @@ export default function PhilosophySection() {
             <Image
               src="/bdde462fbdf621d704a62fe2da0cb89504e3c0be.png"
               alt="image1"
-              width={45}
+              width={55}
               height={30}
             />
             <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">
