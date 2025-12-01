@@ -298,7 +298,7 @@ export default function TechnicalOverview({ id }) {
               />
 
               <button className="flex w-full md:w-3/4  mt-4">
-                <p className="bg-white py-4 px-6 text-md md:text-lg rounded-l-2xl font-medium text-black flex-1 text-center">
+                <p className="bg-white py-4 md:px-6 text-sm md:text-lg rounded-l-2xl font-medium text-black flex-1 text-center">
                   Download Technical Datasheet
                 </p>
                 <Image

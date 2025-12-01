@@ -5,7 +5,7 @@ import CustomerQuote from "@/components/CustomerQuote";
 import Products from "./(pages)/products/page";
 import Future from "@/components/Future";
 
-export default function Home() {
+export default async function Home() {
   return (
     <div className="bg-[#F5F5F5]">
       <HeroSection />

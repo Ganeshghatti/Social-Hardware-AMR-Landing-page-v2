@@ -1,5 +1,6 @@
 import Image from "next/image";
 import robot from "../../public/robot3.png";
+import ContactInput from "./ui/input";
 
 export default function HeroSection() {
   return (
@@ -27,7 +28,7 @@ export default function HeroSection() {
               Sign up for instant access to our Company Profile and curated news
               that helps you automate smarter.
             </p>
-
+{/* 
             <div className=" mt-12 md:mt-10 flex flex-row max-w-xs md:max-w-2xl">
               <input
                 type="text"
@@ -38,7 +39,8 @@ export default function HeroSection() {
               <button className="text-black bg-white py-2 px-6 md:px-10 text-sm md:text-base font-semibold">
                 Send
               </button>
-            </div>
+            </div> */}
+            <ContactInput/>
           </div>
         </div>
       </div>
