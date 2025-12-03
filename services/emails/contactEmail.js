@@ -3,6 +3,7 @@ import { contactTemplate } from "../templates/contactTemplate.js";
 
 export const ContactEmail = async (email) => {
   try {
+    await transporter.verify();
     const mailOptions = {
       from: "Social Hardware <no-reply@socialhardware.in>",
       to: email,

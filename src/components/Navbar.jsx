@@ -7,7 +7,7 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#F5F5F5] text-[#232323] border-b-1 border-[#E5E5E5] w-full">
-      <div className="w-full px-4 md:px-10 py-6 flex justify-between items-center">
+      <div className="w-full px-4 md:px-10 py-5 flex justify-between items-center">
         <ul className="hidden md:flex justify-between w-full text-md font-normal tracking-wide">
           <li>
             <Link href="/" className="hover:text-gray-900 transition">

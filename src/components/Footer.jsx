@@ -17,7 +17,7 @@ export default function Footer() {
                   gap-10 lg:gap-25"
       >
         <div className="space-y-6 max-w-sm text-center md:text-left">
-          <h1 className="text-[#333333] font-semibold text-2xl">Contacts</h1>
+          <h1 className="text-[#333333] font-medium text-2xl">Contacts</h1>
           <h2 className="text-lg font-medium text-[#333333] tracking-wide">
             Questions? Let’s talk cobots.
           </h2>
@@ -46,7 +46,7 @@ export default function Footer() {
         </div>
 
         <div className="max-w-sm text-center md:text-start">
-          <h1 className="text-[#333333] font-semibold text-2xl">Locations</h1>
+          <h1 className="text-[#333333] font-medium text-2xl">Locations</h1>
 
           <div>
             <h2 className="text-[#000000] text-lg font-medium mt-4">
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
         <div className="md:ml-10 items-center flex flex-col md:items-start">
-          <h1 className="text-[#333333] font-semibold text-2xl">
+          <h1 className="text-[#333333] font-medium text-2xl">
             Certifications
           </h1>
 
@@ -109,7 +109,7 @@ export default function Footer() {
         </div>
 
         <div>
-          <h1 className="text-[#333333] font-semibold text-2xl text-center md:text-start">Site</h1>
+          <h1 className="text-[#333333] font-medium text-2xl text-center md:text-start">Site</h1>
 
           <ul className="space-y-3 mt-4 text-center md:text-start">
             <li>
@@ -180,7 +180,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-[#333333]  text-sm font-medium">
-            © {new Date().getFullYear()} Social Hardware International Pvt. Lrd.
+            © {new Date().getFullYear()} Social Hardware International Pvt. Ltd.
             All rights reserved.{" "}
           </p>
 

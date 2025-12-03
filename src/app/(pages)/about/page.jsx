@@ -10,7 +10,7 @@ export default function PhilosophySection() {
           <p className="text-[#232323] font-medium text-sm mb-3">
             Our Philosophy. Engineered for the World.
           </p>
-          <h1 className="text-3xl lg:text-5xl 2xl:text-6xl md:max-w-6xl max-w-2xl leading-tight mb-6">
+          <h1 className="text-3xl lg:text-6xl 2xl:text-6xl md:max-w-6xl max-w-2xl md:leading-18 mb-6">
             Simple, cost-effective <br />
             automation solutions. <br />
             Indigenous robotics <br /> without boundaries.
@@ -36,7 +36,7 @@ export default function PhilosophySection() {
           </div>
         </div>
 
-        <div className="flex  md:-right-20 2xl:-right-35 relative py-10 md:py-0">
+        <div className="flex  md:-right-1 2xl:-right-35 relative py-5 md:py-0">
           <div className="md:hidden w-72 aspect-[1/1] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/webinar.png"
@@ -108,7 +108,7 @@ export default function PhilosophySection() {
             <Image
               src="/e99540f3ca9af8df2135b09ec4caacd4a47fa96b.png"
               alt="image1"
-              width={50}
+              width={43}
               height={30}
             />
             <p className="bg-gray-200 text-[#232323] text-sm px-3 py-1 rounded-xl">
@@ -137,11 +137,11 @@ export default function PhilosophySection() {
               Machine Tending
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-2">
+          <div className="flex flex-col items-center justify-center gap-1">
             <Image
               src="/bdde462fbdf621d704a62fe2da0cb89504e3c0be.png"
               alt="image1"
-              width={55}
+              width={45}
               height={30}
             />
             <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">

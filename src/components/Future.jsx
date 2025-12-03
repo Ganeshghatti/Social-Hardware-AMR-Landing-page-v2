@@ -5,15 +5,15 @@ import ContactInput from "./ui/input";
 export default function HeroSection() {
   return (
     <section className="min-h-screen relative w-full font-geist bg-black text-white flex flex-col md:flex-row">
-      <div className="relative w-full overflow-hidden flex">
+      <div className="relative w-2/3 overflow-hidden flex">
         <Image
           src={robot}
           alt="Robot"
           fill
-          className="object-contain object-right-bottom  scale-150 blur-xs scale-x-[-1]"
+          className="object-cover scale-110 blur-xs scale-x-[-1.5]"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/60 to-transparent" />
 
         <div className="md:absolute z-10 text-white top-10 md:top-20  md:left-16 max-w-full p-4 md:p-0">
           <p className="uppercase text-sm mt-5 md:mt-0 md:text-sm mb-3 md:mb-4">
@@ -52,14 +52,14 @@ export default function HeroSection() {
         </p>
       </div>
 
-      <div className="absolute right-1 md:right-20 bottom-36 md:bottom-55 2xl:bottom-70 flex flex-col justify-center leading-[0.8]">
-        <h1 className="text-[103px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-bold text-[#FFFFFF] tracking-tight">
+      <div className="absolute right-1 md:right-20 bottom-36 md:bottom-55 2xl:bottom-70 flex flex-col  justify-center leading-[0.8]">
+        <h1 className="text-[103px] sm:text-[160px] md:text-[255px] 2xl:text-[280px] font-bold text-[#FFFFFF] tracking-tight">
           BUILD
         </h1>
       </div>
 
-      <div className="absolute mx-2 md:mx-0 right-1 left-0  md:left-98 2xl:left-90 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
-        <h1 className="text-[95px] sm:text-[160px] md:text-[205px] 2xl:text-[280px] font-bold text-[#AFAFAF] tracking-tight">
+      <div className="absolute mx-2 md:mx-0 right-1 left-0  md:left-85 2xl:left-90 bottom-0 flex flex-col justify-center mb-10 leading-[0.8]">
+        <h1 className="text-[90px] sm:text-[160px] md:text-[230px] 2xl:text-[280px] font-bold text-[#AFAFAF] tracking-20">
           FUTURE
         </h1>
       </div>

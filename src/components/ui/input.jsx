@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { submitHandler } from "../../../actions/Contactemail.action";
 import toast, { Toaster } from "react-hot-toast";
+import { ArrowRight } from "lucide-react";
 
 export default function ContactInput() {
   const [email, setemail] = useState("");
@@ -42,9 +43,9 @@ export default function ContactInput() {
         <button
           type="submit"
           disabled={loading}
-          className="text-black bg-white py-2 px-6 md:px-10 text-sm md:text-base font-semibold disabled:opacity-40"
+          className="text-black flex gap-1 items-center justify-center bg-white py-2 px-6 md:px-10 text-sm md:text-base font-semibold disabled:opacity-40"
         >
-          {loading ? "Sending..." : "Send"}
+          {loading ? "Sending..." : "Send"} <ArrowRight size={16}/>
         </button>
       </form>
 

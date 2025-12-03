@@ -15,7 +15,7 @@ export default function CustomerQuote() {
             Indigenous Platform
           </p>
 
-          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-8 md:leading-18 2xl:leading-20 mb-6">
+          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-6xl 2xl:text-6xl text-[#232323] font-normal leading-8 md:leading-18 2xl:leading-20 mb-6">
             One Platform,
             <br /> Infinite possibilities. <br /> Craft your custom <br />
             system with us.
@@ -117,14 +117,14 @@ export default function CustomerQuote() {
           />
         </div>
         <div className="w-full  flex flex-col  md:mt-5 px-5 py-6 md:py-10 ">
-          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl text-[#232323] font-normal leading-9 md:leading-18 2xl:leading-20 mb-6">
+          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-6xl 2xl:text-6xl text-[#232323] font-normal leading-9 md:leading-18 2xl:leading-20 mb-6">
             Tele-op data capture.
             <br />
             Turn human intervention <br />
             into smarter autonomy.
           </h1>
 
-          <p className="text-[#6D6D6D] text-md md:text-lg max-w-3xl leading-7 md:leading-9 mb-8">
+          <p className="text-[#6D6D6D] text-md md:text-lg max-w-4xl leading-7 md:leading-9 mb-8">
             Our tele-operation platform lets experts “step inside” robots via XR
             and haptics, resolve complex situations in real time, and
             automatically capture the rich, labeled data your models need. Every

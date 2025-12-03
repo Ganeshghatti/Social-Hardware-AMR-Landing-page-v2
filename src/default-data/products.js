@@ -52,7 +52,7 @@ export const products = [
     otherimages: [{image : product2a , name : "P5-R900 5KG"} , {image :product2b , name : "P5-R900 10KG"}],
 
     description:
-      "5 kg payload, 912 mm reach, optimized for larger work envelopes and high‑throughput handling.",
+      "5 kg payload, 912 mm reach, optimized for larger work envelopes & for high‑throughput.",
     Degrees_of_freedom: "6",
     Payload_kg: "5",
     Reach_mm: "912",
