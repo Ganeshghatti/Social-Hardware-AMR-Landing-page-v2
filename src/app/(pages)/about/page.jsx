@@ -95,9 +95,9 @@ export default function PhilosophySection() {
         <div className="mx-auto w-2/3 text-[#232323]  font-medium mt-0 md:mt-10 flex justify-between mb-10 ">
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              src="/3de3f26c39b50a1ca4777861f39cc71a97ca65a1.png"
+              src="/icon3.svg"
               alt="image1"
-              width={75}
+              width={50}
               height={50}
             />
             <p className="bg-gray-200 px-3 py-1 text-sm rounded-xl">
@@ -106,10 +106,10 @@ export default function PhilosophySection() {
           </div>
           <div className="flex flex-col items-center justify-center gap-2 ">
             <Image
-              src="/e99540f3ca9af8df2135b09ec4caacd4a47fa96b.png"
+              src="/icon1.svg"
               alt="image1"
-              width={43}
-              height={30}
+              width={50}
+              height={50}
             />
             <p className="bg-gray-200 text-[#232323] text-sm px-3 py-1 rounded-xl">
               Material Handling
@@ -117,10 +117,10 @@ export default function PhilosophySection() {
           </div>
           <div className="flex flex-col text-sm items-center justify-center gap-2">
             <Image
-              src="/f65577d576288aa40c096b47573f3b3e9a51e10d.png"
+              src="/icon4.svg"
               alt="image1"
-              width={45}
-              height={30}
+              width={50}
+              height={50}
             />
             <p className="bg-gray-200 text-[#232323] px-3 py-1  text-sm rounded-xl">
               Assembly
@@ -128,21 +128,21 @@ export default function PhilosophySection() {
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              src="/ee34bc284bfcbccb991689c43e0fd5212e9b817f.png"
+              src="/icon5.svg"
               alt="image1"
-              width={40}
-              height={30}
+              width={50}
+              height={50}
             />
             <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">
               Machine Tending
             </p>
           </div>
-          <div className="flex flex-col items-center justify-center gap-1">
+          <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              src="/bdde462fbdf621d704a62fe2da0cb89504e3c0be.png"
+              src="/icon2.svg"
               alt="image1"
-              width={45}
-              height={30}
+              width={50}
+              height={50}
             />
             <p className="bg-gray-200 text-sm px-3 py-1 rounded-xl">
               Palletizing

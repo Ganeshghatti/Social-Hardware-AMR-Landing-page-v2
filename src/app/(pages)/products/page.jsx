@@ -1,6 +1,6 @@
 import React from "react";
 
-import Productcard from "@/components/Productcard";
+import Productcard from "@/components/home/Productcard";
 import { products } from "@/default-data/products";
 import Image from "next/image";
 
