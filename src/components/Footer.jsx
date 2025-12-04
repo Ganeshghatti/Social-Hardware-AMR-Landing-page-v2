@@ -1,12 +1,6 @@
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FaLinkedinIn,
-  FaYoutube,
-  FaInstagram,
-  FaFacebookF,
-} from "react-icons/fa";
+import linkedin from "@/../public/linkedin_icon.png"
 
 export default function Footer() {
   return (
@@ -27,7 +21,6 @@ export default function Footer() {
           </p>
           <div className="gap-2 flex flex-col items-center md:items-start">
             <div className=" flex">
-              {/* <Image src="/SVG.png" alt="m" width={15} height={10} /> */}
               <a href="tel:+917337743354">
                 <p className="text-[#333333] leading-relaxed text-sm font-semibold cursor-pointer">
                   Call: +91 7337743354
@@ -35,7 +28,6 @@ export default function Footer() {
               </a>
             </div>
             <div className=" flex ">
-              {/* <Image src="/SVG (1).png" alt="m" width={15} height={10} /> */}
               <a href="mailto:info@socialhardware.in">
                 <p className="text-[#333333] leading-relaxed text-sm font-semibold cursor-pointer">
                   Email: info@socialhardware.in{" "}
@@ -168,7 +160,7 @@ export default function Footer() {
               href="https://www.linkedin.com/company/social-hardware"
               target="_blank"
             >
-              <Image src="/Vector.png" alt="img" width={20} height={20} />
+              <Image src={linkedin} alt="img" width={20} height={20} />
             </a>
           </div>
           <div className="text-[#333333] text-md font-medium">

@@ -1,6 +1,7 @@
 import TechnicalOverview from "@/components/product/Technical";
 import { products } from "@/default-data/products";
 import Image from "next/image";
+import productbg from "@/../public/product_bg1.png"
 
 export default async function ProductDetail({ params }) {
   const { id } = await params;
@@ -44,7 +45,7 @@ export default async function ProductDetail({ params }) {
 
         <div className="relative w-full h-[450px] sm:h-[500px] md:h-[500px] lg:h-[500px] mt-12 md:mt-0">
           <Image
-            src="/7de2fad25af3759bc8d4199093e2be092621f32d.png"
+            src={productbg}
             alt="background pattern"
             width={940}
             height={800}

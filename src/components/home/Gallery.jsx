@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../../../public/9804c0985d15150ca9e6e87a82762a9252970962.jpg";
-import image2 from "../../../public/61bea505ad5462ef0098b481439bcdfa4c587f66.jpg";
-import image3 from "../../../public/5632cb87617bc1e253fa0e41c4d4983447bde34f.png";
+import image1 from "../../../public/gallery_img1.jpg";
+import image2 from "../../../public/gallery_img2.jpg";
+import image3 from "../../../public/gallery_img3.png";
 import Image from "next/image";
 
 export default function Gallery() {

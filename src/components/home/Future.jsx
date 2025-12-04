@@ -1,5 +1,5 @@
 import Image from "next/image";
-import robot from "../../../public/robot3.png";
+import robot from "../../../public/future_section_bg.png";
 import ContactInput from "../ui/input";
 
 export default function Future() {

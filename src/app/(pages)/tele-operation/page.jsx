@@ -1,7 +1,7 @@
-import ContactInput from "@/components/ui/input";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
+import icon1 from "@/../public/plug_icon.png";
+import icon2 from "@/../public/gpu_icon.png";
+import icon3 from "@/../public/googles_icon.png";
 
 export default function TeleOperation() {
   return (
@@ -33,7 +33,7 @@ export default function TeleOperation() {
           <div className="grid grid-cols-3 md:flex w-full mt-5 md:mt-8 gap-3 md:gap-8">
             <div className="flex flex-col items-center text-center justify-center gap-2 sm:gap-3">
               <Image
-                src="/e34164118a20d9c4283429da7392c5774a406392.png"
+                src={icon1}
                 alt="img"
                 width={60}
                 height={60}
@@ -46,7 +46,7 @@ export default function TeleOperation() {
 
             <div className="flex flex-col items-center text-center justify-center gap-2 sm:gap-3">
               <Image
-                src="/cff04ca3e6ac4dd78cd4c51bbe26bc9eb175c748.png"
+                src={icon2}
                 alt="img"
                 width={60}
                 height={60}
@@ -59,7 +59,7 @@ export default function TeleOperation() {
 
             <div className="flex flex-col items-center text-center justify-center gap-2 sm:gap-3">
               <Image
-                src="/8973de563bb3adcbf57c9db83e2d16f88e8b10ab.png"
+                src={icon3}
                 alt="img"
                 width={60}
                 height={60}
@@ -72,7 +72,6 @@ export default function TeleOperation() {
           </div>
         </div>
 
-        {/* Right Side Big Image */}
         <div className="w-full md:w-full relative h-[300px] sm:h-[400px] md:h-[700px] overflow-hidden ">
           <Image
             src="/18bc30f82ed4172605c95d1b6a260f0685074096.jpg"
@@ -83,7 +82,7 @@ export default function TeleOperation() {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-5 w-full mt-10">
+      <div className="flex flex-col md:flex-row gap-5 w-full mt-6">
         <div className="w-full md:w-1/2 relative h-[300px] sm:h-[450px] md:h-[700px]  overflow-hidden">
           <Image
             src="/tele-opeation-image1.jpg"
@@ -93,7 +92,7 @@ export default function TeleOperation() {
           />
         </div>
 
-        <div className="w-full md:w-1/2  items-start md:items-center justify-center  space-y-6 bg-white flex flex-col mt-5 md:mt-10 md:px-20 px-6">
+        <div className="w-full md:w-1/2  items-start md:items-center justify-center  space-y-6 bg-white flex flex-col mt-5 md:mt-6 md:px-20 px-6">
           <div className="">
             <h2 className="text-lg sm:text-2xl font-bold">
               Seamless Integration
@@ -144,7 +143,7 @@ export default function TeleOperation() {
         </div>
       </div>
 
-      <section className="min-h-screen relative w-full font-geis text-white flex flex-col md:flex-row mt-5">
+      <section className="min-h-screen relative w-full font-geis text-white flex flex-col md:flex-row mt-2">
         <div className="relative w-full h-[700px] md:h-[900px] overflow-hidden flex">
           <Image
             src="/tele-operation-bg.png"

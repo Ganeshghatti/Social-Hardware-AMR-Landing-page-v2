@@ -1,5 +1,12 @@
 import Image from "next/image";
-import robot from "../../../public/robot3.png";
+import robot from "../../../public/future_section_bg.png";
+import teleImg from "../../../public/tele_image1.jpg"
+import icon1 from "@/../public/plug_icon.png";
+import icon2 from "@/../public/gpu_icon.png";
+import icon3 from "@/../public/googles_icon.png";
+import icon4 from "@/../public/eye_icon.svg";
+import icon5 from "@/../public/robot_hand_icon.svg";
+import icon6 from "@/../public/monitor-mobbile.svg";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
@@ -46,7 +53,7 @@ export default function CustomerQuote() {
           <div className="grid grid-cols-3 md:flex w-full mt-5 md:mt-8 gap-2 md:gap-8 mb-5 md:mb-0">
             <div className="flex flex-col items-center gap-3 justify-center">
               <Image
-                src="/Group 39860.svg"
+                src={icon4}
                 className="w-12 h-10 sm:w-14 sm:h-10 md:w-12 md:h-10"
                 alt="img"
                 width={20}
@@ -59,7 +66,7 @@ export default function CustomerQuote() {
             </div>
             <div className="flex flex-col items-center gap-3">
               <Image
-                src="/Gemini_Generated_Image_paxxiipaxxiipaxx-removebg-preview 1.svg"
+                src={icon5}
                 alt="img"
                 width={20}
                 height={20}
@@ -71,7 +78,7 @@ export default function CustomerQuote() {
             </div>
             <div className="flex flex-col items-center gap-3">
               <Image
-                src="/monitor-mobbile.svg"
+                src={icon6}
                 alt="img"
                 width={28}
                 height={28}
@@ -110,7 +117,7 @@ export default function CustomerQuote() {
       <div className="w-full flex flex-col mt-4 md:mt-0 md:flex-row bg-[#FFFFFF] font-geist gap-5" id="teleoperation">
         <div className="w-full md:w-full relative h-[500px] md:h-[780px] overflow-hidden ">
           <Image
-            src="/18bc30f82ed4172605c95d1b6a260f0685074096.jpg"
+            src={teleImg}
             alt="img"
             fill
             className="object-cover  "
@@ -145,7 +152,7 @@ export default function CustomerQuote() {
           <div className="grid grid-cols-3 md:flex w-full mt-5 md:mt-8 gap-2 md:gap-8">
             <div className="flex flex-col items-center justify-center gap-3">
               <Image
-                src="/e34164118a20d9c4283429da7392c5774a406392.png"
+                src={icon1}
                 alt="img"
                 width={60}
                 height={60}
@@ -158,7 +165,7 @@ export default function CustomerQuote() {
 
             <div className="flex flex-col items-center justify-center gap-3">
               <Image
-                src="/cff04ca3e6ac4dd78cd4c51bbe26bc9eb175c748.png"
+                src={icon2}
                 alt="img"
                 width={60}
                 height={60}
@@ -171,7 +178,7 @@ export default function CustomerQuote() {
 
             <div className="flex flex-col items-center justify-center gap-3 ">
               <Image
-                src="/8973de563bb3adcbf57c9db83e2d16f88e8b10ab.png"
+                src={icon3}
                 alt="img"
                 width={60}
                 height={60}

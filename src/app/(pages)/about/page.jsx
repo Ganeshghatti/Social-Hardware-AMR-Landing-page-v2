@@ -1,5 +1,15 @@
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, icons } from "lucide-react";
+import image2 from "@/../public/home_image2.jpg"
+import image1 from "@/../public/webinar.png"
+import image3 from "@/../public/home_image3.png"
+import image4 from "@/../public/image1.png"
+
+import icon1 from "@/../public/search_icon.svg";
+import icon2 from "@/../public/material_handling_icon.svg";
+import icon3 from "@/../public/assembly_icon.svg";
+import icon4 from "@/../public/machine_icon.svg";
+import icon5 from "@/../public/palletizing_icon.svg"
 import Link from "next/link";
 
 export default function PhilosophySection() {
@@ -39,7 +49,7 @@ export default function PhilosophySection() {
         <div className="flex  md:-right-1 2xl:-right-35 relative py-5 md:py-0">
           <div className="md:hidden w-72 aspect-[1/1] rounded-2xl overflow-hidden shadow-lg">
             <Image
-              src="/webinar.png"
+              src={image1}
               alt="Customizable Cobots"
               fill
               className="object-cover"
@@ -50,7 +60,7 @@ export default function PhilosophySection() {
               <div className="flex m-0 p-0">
                 <div className="relative w-80 aspect-[1/1] clip-hex overflow-hidden group">
                   <Image
-                    src="/08a656df6d37321563836e4c05b2a3b2eaf73263.jpg"
+                    src={image2}
                     alt="Customizable Cobots"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -60,7 +70,7 @@ export default function PhilosophySection() {
 
                 <div className="w-80 aspect-[1/1] clip-hex overflow-hidden group  absolute left-72">
                   <Image
-                    src="/image1.png"
+                    src={image4}
                     alt="Robot 2"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -71,7 +81,7 @@ export default function PhilosophySection() {
               <div className="flex w-full justify-center p-0 m-0">
                 <div className=" w-80 aspect-[1/1] clip-hex overflow-hidden group absolute left-36 top-62 ">
                   <Image
-                    src="/webinar.png"
+                    src={image1}
                     alt="Robot 3"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
@@ -80,7 +90,7 @@ export default function PhilosophySection() {
 
                 <div className=" w-80 aspect-[1/1] clip-hex overflow-hidden group absolute -right-108 top-62">
                   <Image
-                    src="/dd742b64aede2d05ae65e82d00ca2bc224863134.png"
+                    src={image3}
                     alt="Robot 4"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105 "
@@ -95,7 +105,7 @@ export default function PhilosophySection() {
         <div className="mx-auto w-2/3 text-[#232323]  font-medium mt-0 md:mt-10 flex justify-between mb-10 ">
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              src="/icon3.svg"
+              src={icon1}
               alt="image1"
               width={50}
               height={50}
@@ -106,7 +116,7 @@ export default function PhilosophySection() {
           </div>
           <div className="flex flex-col items-center justify-center gap-2 ">
             <Image
-              src="/icon1.svg"
+              src={icon2}
               alt="image1"
               width={50}
               height={50}
@@ -117,7 +127,7 @@ export default function PhilosophySection() {
           </div>
           <div className="flex flex-col text-sm items-center justify-center gap-2">
             <Image
-              src="/icon4.svg"
+              src={icon3}
               alt="image1"
               width={50}
               height={50}
@@ -128,7 +138,7 @@ export default function PhilosophySection() {
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              src="/icon5.svg"
+              src={icon4}
               alt="image1"
               width={50}
               height={50}
@@ -139,7 +149,7 @@ export default function PhilosophySection() {
           </div>
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
-              src="/icon2.svg"
+              src={icon5}
               alt="image1"
               width={50}
               height={50}

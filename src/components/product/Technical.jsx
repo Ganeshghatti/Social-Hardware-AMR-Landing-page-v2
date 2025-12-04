@@ -1,5 +1,8 @@
 import { products } from "@/default-data/products";
 import Image from "next/image";
+import image_bg from "@/../public/product_bg.png";
+import image_bg1 from "@/../public/bg_image.jpeg"
+
 import {
   Dialog,
   DialogContent,
@@ -238,7 +241,7 @@ export default function TechnicalOverview({ id }) {
       <div className="w-full">
         <div className="relative w-full h-screen">
           <Image
-            src="/f53e0ad7b543cdecf768ca6156f604d73a1a1811.png"
+            src={image_bg}
             alt="bg"
             width={1000}
             height={800}
@@ -246,7 +249,7 @@ export default function TechnicalOverview({ id }) {
           />
 
           <Image
-            src="/bg_image.jpeg"
+            src={image_bg1}
             alt="bg"
             width={1000}
             height={800}
