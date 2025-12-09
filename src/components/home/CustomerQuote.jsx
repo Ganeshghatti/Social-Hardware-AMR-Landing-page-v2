@@ -17,14 +17,15 @@ export default function CustomerQuote() {
   return (
     <div className="">
       <div className="w-full flex flex-col md:flex-row bg-[#F5F5F5] font-geist">
-        <div className="w-full  flex flex-col justify-center pl-4 md:py-10 md:pl-10"  id="customise">
-          <p className="hidden md:flex text-sm text-[#000000] font-semibold mb-3">
+        <div className="w-full  flex flex-col justify-center pl-4 md:py-2 md:pl-10"  id="customise">
+          <p className="hidden md:flex text-sm text-[#000000] font-semibold mb-5">
             Indigenous Platform
           </p>
 
-          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-6xl 2xl:text-6xl text-[#232323] font-normal leading-8 md:leading-18 2xl:leading-20 mb-6">
-            One Platform,
-            <br /> Infinite possibilities. <br /> Craft your custom <br />
+          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-6xl 2xl:text-6xl text-[#232323] font-normal leading-8 md:leading-17 2xl:leading-20 mb-6">
+            {/* One Platform,
+            <br /> Infinite possibilities. <br />  */}
+            Craft your custom <br />
             system with us.
           </h1>
 

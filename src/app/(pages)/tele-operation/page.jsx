@@ -10,8 +10,8 @@ export default function TeleOperation() {
         className="w-full py-10 px-4 sm:px-8 md:px-8 2xl:px-12 flex flex-col mt-4 md:mt-0 md:flex-row bg-[#FFFFFF] gap-5"
         id="teleoperation"
       >
-        <div className="w-full flex flex-col md:mt-5 px-4 sm:px-6 md:px-5 py-6 md:py-10">
-          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-6xl 2xl:text-6xl text-[#232323] font-normal leading-tight md:leading-[4.5rem] mb-6">
+        <div className="w-full flex flex-col md:mt-5 px-4 sm:px-6 md:px-5 py-6 md:py-2">
+          <h1 className="hidden md:flex text-3xl sm:text-4xl md:text-6xl 2xl:text-6xl text-[#232323] font-normal leading-tight md:leading-[5rem] mb-6">
             Tele-op data capture.
             <br />
             Turn human intervention <br />

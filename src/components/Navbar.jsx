@@ -10,27 +10,27 @@ export default function Navbar() {
       <div className="w-full px-4 md:px-10 py-5 flex justify-between items-center">
         <ul className="hidden md:flex justify-between w-full text-md font-normal tracking-wide">
           <li>
-            <Link href="/" className="hover:text-gray-900 transition">
+            <Link href="/" className="hover:text-orange-600 transition">
               HOME
             </Link>
           </li>
           <li>
-            <Link href="/products" className="hover:text-gray-900 transition">
+            <Link href="/products" className="hover:text-orange-600 transition">
               PRODUCTS
             </Link>
           </li>
           <li>
-            <Link href="/#customise" className="hover:text-gray-900 transition">
+            <Link href="/#customise" className="hover:text-orange-600 transition">
               CUSTOMISE
             </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-gray-900 transition">
+            <Link href="#" className="hover:text-orange-600 transition">
               COMPANY 
             </Link>
           </li>
           <li>
-            <Link href="#" className="hover:text-gray-900 transition">
+            <Link href="#" className="hover:text-orange-600 transition">
               PARTNERS
             </Link>
           </li>
