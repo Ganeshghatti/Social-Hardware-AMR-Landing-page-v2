@@ -8,7 +8,7 @@ export default function Future() {
       <div className="relative w-2/3 overflow-hidden flex">
         <Image
           src={robot}
-          alt="Robot"
+          alt="Advanced collaborative robot system by Social Hardware"
           fill
           className="object-cover scale-110 blur-xs scale-x-[-1.5]"
           priority
@@ -28,7 +28,7 @@ export default function Future() {
               Sign up for instant access to our Company Profile and curated news
               that helps you automate smarter.
             </p>
-{/* 
+            {/* 
             <div className=" mt-12 md:mt-10 flex flex-row max-w-xs md:max-w-2xl">
               <input
                 type="text"
@@ -40,7 +40,7 @@ export default function Future() {
                 Send
               </button>
             </div> */}
-            <ContactInput/>
+            <ContactInput />
           </div>
         </div>
       </div>

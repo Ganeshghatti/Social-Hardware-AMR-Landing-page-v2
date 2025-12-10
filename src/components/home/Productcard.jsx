@@ -67,7 +67,7 @@ export default function Productcard({
     <div className="flex justify-center items-center font-geist w-full">
       <div
         className="
-      bg-white flex flex-col shadow-md mt-3 hover:shadow-lg rounded-2xl 
+      bg-white flex flex-col shadow-md mt-3 hover:shadow-lg 
       transition-transform duration-300 overflow-hidden 
       w-full max-w-[300px] sm:max-w-[300px] lg:max-w-[360px]
       hover:-translate-y-1
@@ -97,7 +97,7 @@ export default function Productcard({
           <button
             className="
           bg-[#FF6600] font-medium font-montserrat text-[#F8F8F8] py-2 px-3 flex items-center justify-center gap-1
-          w-2/3 mx-auto mb-8 sm:mb-10 cut-corners text-md sm:text-md
+          w-2/3 mx-auto mb-8 sm:mb-10 cut-corners text-md sm:text-md cursor-pointer
         "
           >
             View Specifications <ArrowRight size={13} className="text-white " />

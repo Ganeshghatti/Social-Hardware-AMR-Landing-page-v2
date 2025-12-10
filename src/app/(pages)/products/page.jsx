@@ -24,7 +24,7 @@ export default function Products() {
           <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 text-center">
             <Image
               src="/icon-payload-1.svg.png"
-              alt="img"
+              alt="Payload capacity icon"
               width={35}
               height={35}
               className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
@@ -37,7 +37,7 @@ export default function Products() {
           <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 text-center">
             <Image
               src="/icon-reach.svg.png"
-              alt="img"
+              alt="Robot reach range icon"
               width={35}
               height={35}
               className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"
@@ -50,7 +50,7 @@ export default function Products() {
           <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-5 text-center col-span-2 md:col-span-1 mx-auto">
             <Image
               src="/image 6.png"
-              alt="img"
+              alt="Repeatability precision icon"
               width={35}
               height={35}
               className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10"

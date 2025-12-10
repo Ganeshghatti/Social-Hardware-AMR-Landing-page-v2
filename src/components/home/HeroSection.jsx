@@ -18,7 +18,7 @@ export default function HeroSection() {
           </p>
 
           <Link href="/products">
-            <button className="bg-[#FF6600] flex items-center gap-2 text-white px-4 sm:px-6 py-2 sm:py-2 mt-6 mb-2  shadow-md hover:bg-[#e05500] transition-colors duration-300 text-md sm:text-base w-fit">
+            <button className="bg-[#FF6600] flex items-center gap-2 text-white px-4 sm:px-6 py-2 sm:py-2 mt-6 mb-2  shadow-md hover:bg-[#e05500] transition-colors duration-300 text-md sm:text-base w-fit cursor-pointer">
               Discover Products <ArrowRight size={18} />
             </button>
           </Link>

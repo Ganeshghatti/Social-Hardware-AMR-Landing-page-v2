@@ -34,7 +34,7 @@ export default function TeleOperation() {
             <div className="flex flex-col items-center text-center justify-center gap-2 sm:gap-3">
               <Image
                 src={icon1}
-                alt="img"
+                alt="Plug-and-play integration icon"
                 width={60}
                 height={60}
                 className="w-12 sm:w-14 h-12 sm:h-14 md:w-16 md:h-12"
@@ -47,7 +47,7 @@ export default function TeleOperation() {
             <div className="flex flex-col items-center text-center justify-center gap-2 sm:gap-3">
               <Image
                 src={icon2}
-                alt="img"
+                alt="GPU-optimized performance icon"
                 width={60}
                 height={60}
                 className="w-12 sm:w-14 h-12 sm:h-14 md:w-16 md:h-12"
@@ -60,7 +60,7 @@ export default function TeleOperation() {
             <div className="flex flex-col items-center text-center justify-center gap-2 sm:gap-3">
               <Image
                 src={icon3}
-                alt="img"
+                alt="Extended Reality VR/AR icon"
                 width={60}
                 height={60}
                 className="w-12 sm:w-14 h-12 sm:h-14 md:w-18 md:h-12"
@@ -74,8 +74,8 @@ export default function TeleOperation() {
 
         <div className="w-full md:w-full relative h-[300px] sm:h-[400px] md:h-[700px] overflow-hidden ">
           <Image
-            src="/18bc30f82ed4172605c95d1b6a260f0685074096.jpg"
-            alt="img"
+            src="/tele_image1.jpg"
+            alt="Tele-operation VR control interface"
             fill
             className="object-cover"
           />
@@ -86,7 +86,7 @@ export default function TeleOperation() {
         <div className="w-full md:w-1/2 relative h-[300px] sm:h-[450px] md:h-[700px]  overflow-hidden">
           <Image
             src="/tele-opeation-image1.jpg"
-            alt="img"
+            alt="Robot arm with tele-operation control"
             fill
             className="object-cover"
           />
@@ -179,13 +179,13 @@ export default function TeleOperation() {
                 className="px-8 py-4 w-full md:w-3/4 mt-4 bg-[#282828] text-white rounded-2xl"
               />
 
-              <button className="flex w-full md:w-3/4  mt-4">
+              <button className="flex w-full md:w-3/4  mt-4 cursor-pointer">
                 <p className="bg-white py-4 md:px-6 text-sm md:text-lg rounded-l-2xl font-medium text-black flex-1 text-center">
                   Download Technical Datasheet
                 </p>
                 <Image
                   src="/arrow-right.png"
-                  alt="arrow"
+                  alt="Submit arrow"
                   width={54}
                   height={50}
                 />

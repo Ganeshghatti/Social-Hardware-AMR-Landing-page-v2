@@ -28,7 +28,7 @@ export default function ContactInput() {
     <>
       <form
         action={onSubmit}
-        className="mt-12 md:mt-10 flex flex-row max-w-xs md:max-w-2xl"
+        className="mt-12 md:mt-10 flex flex-col sm:flex-row w-full max-w-xs sm:max-w-md md:max-w-2xl gap-2 sm:gap-0"
       >
         <input
           type="email"
@@ -37,15 +37,15 @@ export default function ContactInput() {
           onChange={(e) => setemail(e.target.value)}
           placeholder="Enter your Email address"
           required
-          className="bg-black py-4 px-4 md:px-10 text-white text-sm md:text-base flex-1 border-1 border-gray-200 md:border-0"
+          className="bg-black py-3 sm:py-4 px-4 md:px-10 text-white text-sm md:text-base flex-1 border border-gray-200 sm:border-r-0"
         />
 
         <button
           type="submit"
           disabled={loading}
-          className="text-black flex gap-1 items-center justify-center bg-white py-2 px-6 md:px-10 text-sm md:text-base font-semibold disabled:opacity-40"
+          className="text-black flex gap-1 items-center justify-center bg-white py-3 sm:py-2 px-6 md:px-10 text-sm md:text-base font-semibold disabled:opacity-40 cursor-pointer whitespace-nowrap"
         >
-          {loading ? "Sending..." : "Send"} <ArrowRight size={16}/>
+          {loading ? "Sending..." : "Send"} <ArrowRight size={16} />
         </button>
       </form>
 

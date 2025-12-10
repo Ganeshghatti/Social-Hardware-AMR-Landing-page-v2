@@ -1,6 +1,6 @@
 import Image from "next/image";
 import robot from "../../../public/future_section_bg.png";
-import teleImg from "../../../public/tele_image1.jpg"
+import teleImg from "../../../public/tele_image1.jpg";
 import icon1 from "@/../public/plug_icon.png";
 import icon2 from "@/../public/gpu_icon.png";
 import icon3 from "@/../public/googles_icon.png";
@@ -10,14 +10,14 @@ import icon6 from "@/../public/monitor-mobbile.svg";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-
 export default function CustomerQuote() {
-
-
   return (
     <div className="">
       <div className="w-full flex flex-col md:flex-row bg-[#F5F5F5] font-geist">
-        <div className="w-full  flex flex-col justify-center pl-4 md:py-2 md:pl-10"  id="customise">
+        <div
+          className="w-full  flex flex-col justify-center pl-4 md:py-2 md:pl-10"
+          id="customise"
+        >
           <p className="hidden md:flex text-sm text-[#000000] font-semibold mb-5">
             Indigenous Platform
           </p>
@@ -45,7 +45,7 @@ export default function CustomerQuote() {
 
           <div className="w-fit">
             <Link href="/#" className="inline-block">
-              <button  className="bg-orange-500 hover:bg-orange-600 flex items-center gap-1  text-white font-medium px-5 py-2 mb-4 text-md md:text-lg">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center gap-1  text-white font-medium px-5 py-2 mb-4 text-md md:text-lg cursor-pointer">
                 Request Custom Quote <ArrowRight size={18} />
               </button>
             </Link>
@@ -56,7 +56,7 @@ export default function CustomerQuote() {
               <Image
                 src={icon4}
                 className="w-12 h-10 sm:w-14 sm:h-10 md:w-12 md:h-10"
-                alt="img"
+                alt="Vision Systems icon"
                 width={20}
                 height={20}
               />
@@ -68,7 +68,7 @@ export default function CustomerQuote() {
             <div className="flex flex-col items-center gap-3">
               <Image
                 src={icon5}
-                alt="img"
+                alt="End-of-arm Tooling icon"
                 width={20}
                 height={20}
                 className="w-12 h-10 sm:w-14 sm:h-14 md:w-12 md:h-10"
@@ -80,7 +80,7 @@ export default function CustomerQuote() {
             <div className="flex flex-col items-center gap-3">
               <Image
                 src={icon6}
-                alt="img"
+                alt="Teach Pendants icon"
                 width={28}
                 height={28}
                 className="w-10 h-10 sm:w-12 sm:h-14 md:w-12 md:h-10"
@@ -92,11 +92,11 @@ export default function CustomerQuote() {
           </div>
         </div>
 
-        <div className="w-full md:w-[109%] 2xl:w-[107%] relative h-[500px] md:h-[900px] overflow-hidden" >
+        <div className="w-full md:w-[109%] 2xl:w-[107%] relative h-[500px] md:h-[900px] overflow-hidden">
           <div className="absolute inset-0 bg-[#000000]/50 ">
             <Image
               src={robot}
-              alt="Customer Quote Expo"
+              alt="Custom cobot system configuration"
               fill
               className="object-cover opacity-40 "
               priority
@@ -115,11 +115,14 @@ export default function CustomerQuote() {
         </div>
       </div>
 
-      <div className="w-full flex flex-col mt-4 md:mt-0 md:flex-row bg-[#FFFFFF] font-geist gap-5" id="teleoperation">
+      <div
+        className="w-full flex flex-col mt-4 md:mt-0 md:flex-row bg-[#FFFFFF] font-geist gap-5"
+        id="teleoperation"
+      >
         <div className="w-full md:w-full relative h-[500px] md:h-[780px] overflow-hidden ">
           <Image
             src={teleImg}
-            alt="img"
+            alt="Tele-operation control system"
             fill
             className="object-cover  "
           />
@@ -144,7 +147,7 @@ export default function CustomerQuote() {
 
           <div className="w-fit">
             <Link href="/tele-operation">
-              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-md md:text-lg">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-white font-medium px-5 py-2  w-fit mb-4 text-md md:text-lg cursor-pointer">
                 Learn More About Tele-operation <ArrowRight size={18} />
               </button>
             </Link>
@@ -154,7 +157,7 @@ export default function CustomerQuote() {
             <div className="flex flex-col items-center justify-center gap-3">
               <Image
                 src={icon1}
-                alt="img"
+                alt="Plug-and-play integration icon"
                 width={60}
                 height={60}
                 className="w-14 h-12 sm:w-14 sm:h-14 md:w-16 md:h-12"
@@ -167,7 +170,7 @@ export default function CustomerQuote() {
             <div className="flex flex-col items-center justify-center gap-3">
               <Image
                 src={icon2}
-                alt="img"
+                alt="GPU-optimized performance icon"
                 width={60}
                 height={60}
                 className="w-14 h-12 sm:w-14 sm:h-14 md:w-16 md:h-12"
@@ -180,7 +183,7 @@ export default function CustomerQuote() {
             <div className="flex flex-col items-center justify-center gap-3 ">
               <Image
                 src={icon3}
-                alt="img"
+                alt="Extended Reality VR/AR icon"
                 width={60}
                 height={60}
                 className="w-14 h-12 sm:w-14 sm:h-14 md:w-16 md:h-12"

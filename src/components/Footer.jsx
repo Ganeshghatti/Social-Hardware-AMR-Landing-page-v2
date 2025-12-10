@@ -1,8 +1,20 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
-import linkedin from "@/../public/linkedin_icon.png"
+import { usePathname } from "next/navigation";
+import linkedin from "@/../public/linkedin_icon.png";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  // Helper function to get correct href for section links
+  const getSectionHref = (sectionId) => {
+    if (pathname === "/") {
+      return sectionId; // Just the anchor on home page
+    }
+    return `/${sectionId}`; // Full path from other routes
+  };
+
   return (
     <footer className="  font-geist w-full">
       <div
@@ -10,7 +22,7 @@ export default function Footer() {
                   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 
                   gap-10 lg:gap-25"
       >
-        <div className="space-y-6 max-w-sm text-center md:text-left">
+        <div className="space-y-6 max-w-sm text-center md:text-left mx-auto md:mx-0">
           <h1 className="text-[#333333] font-medium text-2xl">Contacts</h1>
           <h2 className="text-lg font-medium text-[#333333] tracking-wide">
             Questions? Let’s talk cobots.
@@ -37,7 +49,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="max-w-sm text-center md:text-start">
+        <div className="max-w-sm text-center md:text-start mx-auto md:mx-0">
           <h1 className="text-[#333333] font-medium text-2xl">Locations</h1>
 
           <div>
@@ -61,47 +73,49 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="md:ml-10 items-center flex flex-col md:items-start">
+        <div className="md:ml-10 items-center flex flex-col text-center md:text-left">
           <h1 className="text-[#333333] font-medium text-2xl">
             Certifications
           </h1>
 
-          <ul className="list-disc pl-5 space-y-2 mt-5">
+          <ul className="list-disc pl-5 space-y-2 mt-5 text-left">
             <li>
-              <Link href="/" className="font-medium text-md text-[#333333] ">
+              <span className="font-medium text-md text-[#333333]">
                 ISO 9001:2015
-              </Link>
+              </span>
             </li>
             <li>
-              <Link href="/" className="font-medium text-md text-[#333333]">
+              <span className="font-medium text-md text-[#333333]">
                 ISO 31000:2018
-              </Link>
+              </span>
             </li>
             <li>
-              <Link href="/" className="font-medium text-md text-[#333333] ">
+              <span className="font-medium text-md text-[#333333]">
                 ISO 31000:2018
-              </Link>
+              </span>
             </li>
             <li>
-              <Link href="/" className="font-medium text-md text-[#333333]">
+              <span className="font-medium text-md text-[#333333]">
                 ISO 13850:2015
-              </Link>
+              </span>
             </li>
             <li>
-              <Link href="/" className="font-medium text-md text-[#333333]">
+              <span className="font-medium text-md text-[#333333]">
                 ISO 10218-1:2011
-              </Link>
+              </span>
             </li>
             <li>
-              <Link href="/" className="font-medium text-md text-[#333333] ">
+              <span className="font-medium text-md text-[#333333]">
                 ISOMEC 17025
-              </Link>
+              </span>
             </li>
           </ul>
         </div>
 
-        <div>
-          <h1 className="text-[#333333] font-medium text-2xl text-center md:text-start">Site</h1>
+        <div className="flex flex-col items-center md:items-start">
+          <h1 className="text-[#333333] font-medium text-2xl text-center md:text-start">
+            Site
+          </h1>
 
           <ul className="space-y-3 mt-4 text-center md:text-start">
             <li>
@@ -114,7 +128,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="#product"
+                href={getSectionHref("#product")}
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
                 Products
@@ -122,7 +136,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="#consultation"
+                href={getSectionHref("#consultation")}
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
                 Consultation{" "}
@@ -130,7 +144,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="#customise"
+                href={getSectionHref("#customise")}
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
                 Customization{" "}
@@ -138,7 +152,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="#teleoperation"
+                href="/tele-operation"
                 className="font-medium text-md text-[#333333] hover:text-orange-600"
               >
                 Teleoperation{" "}
@@ -160,7 +174,12 @@ export default function Footer() {
               href="https://www.linkedin.com/company/social-hardware"
               target="_blank"
             >
-              <Image src={linkedin} alt="img" width={20} height={20} />
+              <Image
+                src={linkedin}
+                alt="LinkedIn - Social Hardware"
+                width={20}
+                height={20}
+              />
             </a>
           </div>
           <div className="text-[#333333] text-md font-medium">
