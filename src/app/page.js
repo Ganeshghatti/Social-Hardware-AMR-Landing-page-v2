@@ -1,9 +1,9 @@
-import About from "./(pages)/about/page";
 import Products from "./(pages)/products/page";
 import Future from "@/components/home/Future";
 import CustomerQuote from "@/components/home/CustomerQuote";
 import Gallery from "@/components/home/Gallery";
 import HeroSection from "@/components/home/HeroSection";
+import Consultation from "@/components/home/Consultation";
 
 export default async function Home() {
   return (
@@ -15,7 +15,7 @@ export default async function Home() {
         </div>
       </div>
       <div>
-        <About />
+        <Consultation />
       </div>
       <div>
         <Future />
@@ -24,7 +24,7 @@ export default async function Home() {
         <CustomerQuote />
       </div>
       <div>
-        <Gallery/>
+        <Gallery />
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 import { products } from "@/default-data/products";
 import Image from "next/image";
 import image_bg from "@/../public/product_bg.png";
-import image_bg1 from "@/../public/bg_image.jpeg"
+import image_bg1 from "@/../public/bg_image.jpeg";
 
 import {
   Dialog,
@@ -190,7 +190,7 @@ export default function TechnicalOverview({ id }) {
               <DialogTrigger>
                 <Image
                   src={image.image}
-                  alt="img"
+                  alt={image.name || `Product view ${idx + 1}`}
                   width={180}
                   height={180}
                   className="w-[140px] sm:w-[160px] md:w-[180px] h-auto object-contain cursor-pointer hover:scale-[1.03] transition"
@@ -225,7 +225,7 @@ export default function TechnicalOverview({ id }) {
                   <DialogDescription className="flex flex-col items-center justify-center">
                     <Image
                       src={image.image}
-                      alt="img"
+                      alt={image.name || `Product detail view ${idx + 1}`}
                       width={180}
                       height={180}
                       className="w-[300px] sm:w-[400px] md:w-[600px] h-auto object-contain"
@@ -300,13 +300,13 @@ export default function TechnicalOverview({ id }) {
                 className="px-8 py-4 w-full md:w-3/4 mt-4 bg-[#282828] text-white rounded-2xl"
               />
 
-              <button className="flex w-full md:w-3/4  mt-4">
+              <button className="flex w-full md:w-3/4  mt-4 cursor-pointer">
                 <p className="bg-white py-4 md:px-6 text-sm md:text-lg rounded-l-2xl font-medium text-black flex-1 text-center">
                   Download Technical Datasheet
                 </p>
                 <Image
                   src="/arrow-right.png"
-                  alt="arrow"
+                  alt="Submit arrow"
                   width={54}
                   height={50}
                 />

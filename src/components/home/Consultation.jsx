@@ -1,18 +1,18 @@
 import Image from "next/image";
-import { ArrowRight, icons } from "lucide-react";
-import image2 from "@/../public/home_image2.jpg"
-import image1 from "@/../public/webinar.png"
-import image3 from "@/../public/home_image3.png"
-import image4 from "@/../public/image1.png"
+import { ArrowRight } from "lucide-react";
+import image2 from "@/../public/home_image2.jpg";
+import image1 from "@/../public/webinar.png";
+import image3 from "@/../public/home_image3.png";
+import image4 from "@/../public/image1.png";
 
 import icon1 from "@/../public/search_icon.svg";
 import icon2 from "@/../public/material_handling_icon.svg";
 import icon3 from "@/../public/assembly_icon.svg";
 import icon4 from "@/../public/machine_icon.svg";
-import icon5 from "@/../public/palletizing_icon.svg"
+import icon5 from "@/../public/palletizing_icon.svg";
 import Link from "next/link";
 
-export default function PhilosophySection() {
+export default function Consultation() {
   return (
     <div className="py-4 font-geist" id="consultation">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-5 md:gap-10">
@@ -27,19 +27,19 @@ export default function PhilosophySection() {
           </h1>
           <p className="text-[#6D6D6D] text-md md:text-lg pb-6 max-w-xl">
             We believe advanced robotics should be accessible, adaptable, and
-            locally supported. That’s why we build indigenous systems that lead
+            locally supported. That's why we build indigenous systems that lead
             the way—no steep import dependencies, no support delays, just pure
             performance.{" "}
           </p>
           <p className="text-[#6D6D6D] text-md md:text-lg  mb-6 max-w-xl">
-            Whether you’re assembling, packaging, or running quality control,
+            Whether you're assembling, packaging, or running quality control,
             our robots feel natural to operate, fast to deploy, and reliable to
             maintain. Request a consultation to see how we can tailor a system
             to your line.{" "}
           </p>
           <div className="w-fit mt-8 md:mt-12">
             <Link href="/contact">
-              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-[#FFFFFF] font-medium px-5 py-2 mb-4 text-md  md:text-lg">
+              <button className="bg-orange-500 hover:bg-orange-600 flex items-center  gap-1 text-[#FFFFFF] font-medium px-5 py-2 mb-4 text-md  md:text-lg cursor-pointer">
                 Request Free Consultation <ArrowRight size={18} />
               </button>
             </Link>
@@ -65,13 +65,12 @@ export default function PhilosophySection() {
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
-                  {/* <div className="absolute inset-0 bg-black/40 flex flex-col p-4 opacity-100"></div> */}
                 </div>
 
                 <div className="w-80 aspect-[1/1] clip-hex overflow-hidden group  absolute left-72">
                   <Image
                     src={image4}
-                    alt="Robot 2"
+                    alt="Robot arm assembly"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -82,7 +81,7 @@ export default function PhilosophySection() {
                 <div className=" w-80 aspect-[1/1] clip-hex overflow-hidden group absolute left-36 top-62 ">
                   <Image
                     src={image1}
-                    alt="Robot 3"
+                    alt="Webinar and training"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105"
                   />
@@ -91,7 +90,7 @@ export default function PhilosophySection() {
                 <div className=" w-80 aspect-[1/1] clip-hex overflow-hidden group absolute -right-108 top-62">
                   <Image
                     src={image3}
-                    alt="Robot 4"
+                    alt="Industrial automation"
                     fill
                     className="object-cover transition-transform duration-300 group-hover:scale-105 "
                   />
@@ -106,7 +105,7 @@ export default function PhilosophySection() {
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
               src={icon1}
-              alt="image1"
+              alt="Inspection automation icon"
               width={50}
               height={50}
             />
@@ -117,7 +116,7 @@ export default function PhilosophySection() {
           <div className="flex flex-col items-center justify-center gap-2 ">
             <Image
               src={icon2}
-              alt="image1"
+              alt="Material Handling automation icon"
               width={50}
               height={50}
             />
@@ -128,7 +127,7 @@ export default function PhilosophySection() {
           <div className="flex flex-col text-sm items-center justify-center gap-2">
             <Image
               src={icon3}
-              alt="image1"
+              alt="Assembly automation icon"
               width={50}
               height={50}
             />
@@ -139,7 +138,7 @@ export default function PhilosophySection() {
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
               src={icon4}
-              alt="image1"
+              alt="Machine Tending automation icon"
               width={50}
               height={50}
             />
@@ -150,7 +149,7 @@ export default function PhilosophySection() {
           <div className="flex flex-col items-center justify-center gap-2">
             <Image
               src={icon5}
-              alt="image1"
+              alt="Palletizing automation icon"
               width={50}
               height={50}
             />

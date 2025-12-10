@@ -1,7 +1,7 @@
 import TechnicalOverview from "@/components/product/Technical";
 import { products } from "@/default-data/products";
 import Image from "next/image";
-import productbg from "@/../public/product_bg1.png"
+import productbg from "@/../public/product_bg1.png";
 
 export default async function ProductDetail({ params }) {
   const { id } = await params;
@@ -102,7 +102,7 @@ export default async function ProductDetail({ params }) {
               src="/tabler-icon-weight.svg.png"
               width={40}
               height={40}
-              alt=""
+              alt="Payload capacity icon"
               className="w-8 h-8 sm:w-10 sm:h-10"
             />
             <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
@@ -118,7 +118,7 @@ export default async function ProductDetail({ params }) {
               src="/icon-reach.svg.png"
               width={40}
               height={40}
-              alt=""
+              alt="Robot reach range icon"
               className="w-8 h-8 sm:w-10 sm:h-10"
             />
             <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
@@ -134,7 +134,7 @@ export default async function ProductDetail({ params }) {
               src="/icon-payload-1.svg.png"
               width={40}
               height={40}
-              alt=""
+              alt="Robot weight icon"
               className="w-8 h-8 sm:w-10 sm:h-10"
             />
             <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
@@ -151,7 +151,7 @@ export default async function ProductDetail({ params }) {
                 src="/tabler-icon-weight.svg fill.png"
                 width={40}
                 height={40}
-                alt=""
+                alt="Repeatability precision icon"
                 className="w-8 h-8 sm:w-10 sm:h-10"
               />
               <h3 className="text-[#141414] font-semibold mt-2 text-sm sm:text-base md:text-lg">
